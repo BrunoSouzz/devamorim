@@ -74,7 +74,7 @@
             class="w-full h-full rounded-xl flex items-center justify-center overflow-hidden relative"
           >
             <img
-              src="@/assets/images/profile.jpg"
+              src="@/assets/images/Profile.jpg"
               alt="Foto de perfil de Bruno Amorim"
               class="w-full h-full object-cover object-top rounded-xl group-hover:scale-105 transition-transform duration-500"
             />
