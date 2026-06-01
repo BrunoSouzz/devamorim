@@ -34,7 +34,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import ProjectCard from 'src/components/ProjectCard.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
 
 // Lista de dados dos seus projetos
 const myProjects = ref([
