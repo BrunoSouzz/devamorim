@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section id="projetos" class="py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+  <section id="projetos" class="py-20 bg-slate-50 dark:bg-slate-900 scroll-mt-20 transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-6">
 
       <div class="mb-12 space-y-2 text-center md:text-left">
@@ -34,7 +34,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import ProjectCard from '/src/components/ProjectCard.vue'
+import ProjectCard from '../components/projectcard.vue'
 
 // Lista de dados dos seus projetos
 const myProjects = ref([

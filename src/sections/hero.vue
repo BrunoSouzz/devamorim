@@ -42,14 +42,14 @@
 
         <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-4 font-mono text-sm">
           <a
-            href="#projetos"
+            href="#projects"
             class="group px-6 py-3 bg-purple-500 hover:bg-purple-600 text-slate-950 font-bold rounded-lg shadow-lg shadow-purple-500/20 transition-all hover:-translate-y-0.5 flex items-center gap-2"
           >
             <span>Ver meus projetos</span>
             <span class="text-xs opacity-70 group-hover:translate-x-0.5 transition-transform">-></span>
           </a>
           <a
-            href="#contato"
+            href="#contact"
             class="px-6 py-3 border border-slate-300 dark:border-slate-700 hover:border-purple-500 dark:hover:border-purple-400 text-slate-600 dark:text-slate-300 hover:text-purple-600 dark:hover:text-white font-medium rounded-lg transition-all hover:-translate-y-0.5"
           >
             ./contato.sh
@@ -74,7 +74,7 @@
             class="w-full h-full rounded-xl flex items-center justify-center overflow-hidden relative"
           >
             <img
-              src="../assets/images/profile.jpg"
+              src="../assets/images/Profile.jpg"
               alt="Foto de perfil de Bruno Amorim"
               class="w-full h-full object-cover object-top rounded-xl group-hover:scale-105 transition-transform duration-500"
             />

@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section id="contato" class="py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+  <section id="contato" class="py-20 bg-slate-50 dark:bg-slate-900 scroll-mt-20 transition-colors duration-300">
     <div class="w-full px-6 md:px-12 flex flex-col lg:flex-row gap-12 items-start">
 
       <div class="w-full lg:w-5/12 space-y-6">

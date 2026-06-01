@@ -56,7 +56,7 @@
 
       <div class="flex items-center space-x-6 font-mono text-xs">
         <a
-          href="https://github.com"
+          href="https://github.com/BrunoSouzz"
           target="_blank"
           class="group flex items-center gap-1 hover:text-violet-600 dark:hover:text-purple-400 transition-colors duration-300"
         >
@@ -68,7 +68,7 @@
         </a>
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/dev-brunoamorim"
           target="_blank"
           class="group flex items-center gap-1 hover:text-violet-600 dark:hover:text-purple-400 transition-colors duration-300"
         >
