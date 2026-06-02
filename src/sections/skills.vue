@@ -96,10 +96,10 @@
             <div class="space-y-1.5">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-semibold">Python / Flask</span>
-                <span class="text-blue-500">25%</span>
+                <span class="text-blue-500">54%</span>
               </div>
               <div class="h-1.5 w-full bg-slate-100 dark:bg-slate-900 rounded-full overflow-hidden p-px border border-slate-200/50 dark:border-slate-800/50">
-                <div class="h-full bg-blue-500 rounded-full transition-all duration-500 w-[25%] group-hover:bg-linear-to-r group-hover:from-blue-500 group-hover:to-yellow-500"></div>
+                <div class="h-full bg-blue-500 rounded-full transition-all duration-500 w-[54%] group-hover:bg-linear-to-r group-hover:from-blue-500 group-hover:to-yellow-500"></div>
               </div>
             </div>
 
