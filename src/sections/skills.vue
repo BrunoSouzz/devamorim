@@ -96,20 +96,20 @@
             <div class="space-y-1.5">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-semibold">Python / Flask</span>
-                <span class="text-blue-500">70%</span>
+                <span class="text-blue-500">25%</span>
               </div>
               <div class="h-1.5 w-full bg-slate-100 dark:bg-slate-900 rounded-full overflow-hidden p-px border border-slate-200/50 dark:border-slate-800/50">
-                <div class="h-full bg-blue-500 rounded-full transition-all duration-500 w-[70%] group-hover:bg-linear-to-r group-hover:from-blue-500 group-hover:to-yellow-500"></div>
+                <div class="h-full bg-blue-500 rounded-full transition-all duration-500 w-[25%] group-hover:bg-linear-to-r group-hover:from-blue-500 group-hover:to-yellow-500"></div>
               </div>
             </div>
 
             <div class="space-y-1.5">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-semibold">REST APIs & SQL</span>
-                <span class="text-purple-500">75%</span>
+                <span class="text-purple-500">65%</span>
               </div>
               <div class="h-1.5 w-full bg-slate-100 dark:bg-slate-900 rounded-full overflow-hidden p-px border border-slate-200/50 dark:border-slate-800/50">
-                <div class="h-full bg-purple-500 rounded-full transition-all duration-500 w-[75%] group-hover:bg-linear-to-r group-hover:from-purple-500 group-hover:to-indigo-500"></div>
+                <div class="h-full bg-purple-500 rounded-full transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-purple-500 group-hover:to-indigo-500"></div>
               </div>
             </div>
           </div>
@@ -130,30 +130,30 @@
             <div class="space-y-1.5">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-semibold">Flutter / Dart</span>
-                <span class="text-blue-400">65%</span>
+                <span class="text-blue-400">45%</span>
               </div>
               <div class="h-1.5 w-full bg-slate-100 dark:bg-slate-900 rounded-full overflow-hidden p-px border border-slate-200/50 dark:border-slate-800/50">
-                <div class="h-full bg-blue-500 rounded-full transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-blue-500 group-hover:to-white"></div>
+                <div class="h-full bg-blue-500 rounded-full transition-all duration-500 w-[45%] group-hover:bg-linear-to-r group-hover:from-blue-500 group-hover:to-white"></div>
               </div>
             </div>
 
             <div class="space-y-1.5">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-semibold">Estruturas de Dados</span>
-                <span class="text-purple-500">80%</span>
+                <span class="text-purple-500">50%</span>
               </div>
               <div class="h-1.5 w-full bg-slate-100 dark:bg-slate-900 rounded-full overflow-hidden p-px border border-slate-200/50 dark:border-slate-800/50">
-                <div class="h-full bg-purple-500 rounded-full transition-all duration-500 w-[80%] group-hover:bg-linear-to-r group-hover:from-purple-500 group-hover:to-indigo-500"></div>
+                <div class="h-full bg-purple-500 rounded-full transition-all duration-500 w-[50%] group-hover:bg-linear-to-r group-hover:from-purple-500 group-hover:to-indigo-500"></div>
               </div>
             </div>
 
             <div class="space-y-1.5">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-semibold">Análise de Algoritmos</span>
-                <span class="text-purple-500">75%</span>
+                <span class="text-purple-500">65%</span>
               </div>
               <div class="h-1.5 w-full bg-slate-100 dark:bg-slate-900 rounded-full overflow-hidden p-px border border-slate-200/50 dark:border-slate-800/50">
-                <div class="h-full bg-purple-500 rounded-full transition-all duration-500 w-[75%] group-hover:bg-linear-to-r group-hover:from-purple-500 group-hover:to-indigo-500"></div>
+                <div class="h-full bg-purple-500 rounded-full transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-purple-500 group-hover:to-indigo-500"></div>
               </div>
             </div>
           </div>
