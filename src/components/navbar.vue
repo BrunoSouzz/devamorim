@@ -64,14 +64,14 @@
 
           <a href="#contact" class="group flex items-center transition-colors hover:text-violet-600 dark:hover:text-purple-400">
             <span class="text-slate-300 dark:text-slate-700 group-hover:text-violet-500 transition-colors mr-1 font-normal">5.</span>
-            <span>contact.api</span>
+            <span>contact.js</span>
           </a>
 
         </div>
 
         <div class="hidden md:block h-4 w-px bg-slate-200 dark:bg-slate-800"></div>
 
-       
+
         <div class="flex items-center gap-1.5 font-mono text-[10px] text-slate-400 dark:text-slate-500 select-none bg-slate-50 dark:bg-slate-900/60 px-2 py-1 rounded border border-slate-200 dark:border-slate-800/40">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
           <span>STABLE_PORT_443</span>
