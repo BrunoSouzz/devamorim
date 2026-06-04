@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-white text-slate-800 dark:bg-slate-900 dark:text-white font-sans antialiased selection:bg-emerald-500/30 transition-colors duration-300">
     <Navbar :isDarkMode="isDarkMode" @toggle-theme="onToggleTheme" />
 
-    <main class="pt-20">
+    <main>
       <Hero id="home" />
 
       <About id="about" />
