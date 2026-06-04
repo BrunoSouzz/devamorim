@@ -9,3 +9,13 @@ html {
 body, #app {
   scroll-behavior: smooth;
 }
+
+::selection {
+  background-color: rgba(139, 92, 246, 0.2);
+  color: #4c1d95;
+}
+
+.dark ::selection {
+  background-color: rgba(168, 85, 247, 0.3);
+  color: #e9d5ff; 
+}
