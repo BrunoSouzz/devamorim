@@ -10,47 +10,47 @@
             <span>bruno@portfolio:~$ ./contact.sh</span>
           </div>
           <h2 class="text-3xl font-mono text-slate-900 dark:text-white tracking-tight sm:text-4xl">
-            Iniciar uma Conexão
+            Iniciar um Contato
           </h2>
           <p class="text-slate-500 dark:text-slate-400 text-sm sm:text-base leading-relaxed font-mono">
-            // Tem um projeto em mente ou quer automatizar algo?<br />
-            // Mande uma mensagem e vamos converter essa ideia em código funcional.
+            /* Tem um projeto em mente ou quer começar um?<br />
+            /* Mande uma mensagem e vamos converter essa ideia.
           </p>
         </div>
 
         <div class="space-y-4 w-full">
-          <a 
-            href="mailto:devbrunoamorim@gmail.com" 
+          <a
+            href="mailto:devbrunoamorim@gmail.com"
             class="block p-4 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/80 rounded-xl transition-all duration-300 hover:border-violet-500/50 dark:hover:border-purple-500/50 hover:shadow-lg hover:shadow-violet-500/5 dark:hover:shadow-purple-500/5 hover:-translate-y-0.5 group"
           >
             <span class="block font-mono text-[11px] font-bold text-slate-400 dark:text-slate-500 select-none mb-1">
-              // EMAIL
+              /* EMAIL
             </span>
             <span class="block font-mono text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-violet-600 dark:group-hover:text-purple-400 transition-colors duration-200">
               devbrunoamorim@gmail.com
             </span>
           </a>
 
-          <a 
-            href="https://www.linkedin.com/in/dev-brunoamorim" 
+          <a
+            href="https://www.linkedin.com/in/dev-brunoamorim"
             target="_blank"
             class="block p-4 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/80 rounded-xl transition-all duration-300 hover:border-violet-500/50 dark:hover:border-purple-500/50 hover:shadow-lg hover:shadow-violet-500/5 dark:hover:shadow-purple-500/5 hover:-translate-y-0.5 group"
           >
             <span class="block font-mono text-[11px] font-bold text-slate-400 dark:text-slate-500 select-none mb-1">
-              // LINKEDIN
+              /* LINKEDIN
             </span>
             <span class="block font-mono text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-violet-600 dark:group-hover:text-purple-400 transition-colors duration-200">
               Bruno Amorim
             </span>
           </a>
 
-          <a 
-            href="https://github.com/BrunoSouzz" 
+          <a
+            href="https://github.com/BrunoSouzz"
             target="_blank"
             class="block p-4 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/80 rounded-xl transition-all duration-300 hover:border-violet-500/50 dark:hover:border-purple-500/50 hover:shadow-lg hover:shadow-violet-500/5 dark:hover:shadow-purple-500/5 hover:-translate-y-0.5 group"
           >
             <span class="block font-mono text-[11px] font-bold text-slate-400 dark:text-slate-500 select-none mb-1">
-              // GITHUB
+              /* GITHUB
             </span>
             <span class="block font-mono text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-violet-600 dark:group-hover:text-purple-400 transition-colors duration-200">
               @BrunoSouzz
@@ -132,10 +132,10 @@
               {{ isSubmitting ? 'Transmitindo...' : 'Enviar Mensagem' }}
             </Button>
 
-            <p v-if="submitStatus === 'success'" class="text-xs text-emerald-500 font-mono mt-2 animate-pulse">
+            <p v-if="submitStatus === 'success'" class="text-xs text-emerald-600 font-mono mt-2 animate-ping">
               [SUCCESS]: Mensagem enviada com sucesso!
             </p>
-            <p v-if="submitStatus === 'error'" class="text-xs text-rose-500 font-mono mt-2">
+            <p v-if="submitStatus === 'error'" class="text-xs text-red-600 font-mono mt-2 animate-ping">
               [ERROR]: Falha ao transmitir dados. Tente novamente.
             </p>
           </div>
@@ -148,7 +148,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import Button from '@/components/button.vue' 
+import Button from '@/components/button.vue'
 
 const formData = ref({
   name: '',
