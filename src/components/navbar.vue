@@ -68,14 +68,6 @@
           </a>
 
         </div>
-
-        <div class="hidden md:block h-4 w-px bg-slate-200 dark:bg-slate-800"></div>
-
-
-        <div class="flex items-center gap-1.5 font-mono text-[10px] text-slate-400 dark:text-slate-500 select-none bg-slate-50 dark:bg-slate-900/60 px-2 py-1 rounded border border-slate-200 dark:border-slate-800/40">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>STABLE_PORT_443</span>
-        </div>
       </div>
 
     </div>
