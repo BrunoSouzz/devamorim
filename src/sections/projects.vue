@@ -71,6 +71,13 @@ const myProjects = ref([
     liveLink: 'https://vitalmen.vercel.app/'
   },
   {
+    title: 'HyperSave',
+    description: 'HyperSave é uma aplicação desenvolvida para facilitar o download e gerenciamento de vídeos e áudios a partir de diferentes plataformas, oferecendo uma experiência simples, rápida e intuitiva.',
+    tags: ['Node.js', 'Express', 'Tailwindcss', 'JavaScript','Vue.js', 'ytdl-core'],
+    githubLink: 'https://github.com/BrunoSouzz/HyperSave',
+    liveLink: 'https://hyper-save.vercel.app/'
+  },
+  {
     title: 'Neuroguia',
     description: 'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um aplicativo para ajudar pessoas com deficiências cognitivas a se orientarem melhor no dia a dia. As ferramentas utilizadas incluem Dart e Flutter para o desenvolvimento do aplicativo, e Node.js para o backend.',
     tags: ['Dart', 'Flutter', 'Node.js', 'PostgreSQL'],
