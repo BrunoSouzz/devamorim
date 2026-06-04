@@ -61,6 +61,7 @@ const myProjects = ref([
     description: 'Um chatbot inteligente, desenvolvido com Python e Flask, utilizando a API do gemini para fornecer respostas automáticas.',
     tags: ['Python', 'HTML', 'CSS', 'JavaScript', 'Flask', 'Gemini API'],
     githubLink: 'https://github.com/BrunoSouzz/Spectra-AI-Assistant',
+    liveLink: 'https://spectra-ai-assistant.vercel.app',
   },
   {
     title: 'VitalMen',
