@@ -67,7 +67,7 @@
           <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
-                [01_EDU]
+                [_EDU]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// ACADEMIC</span>
             </div>
@@ -89,7 +89,7 @@
           <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
-                [02_STACK]
+                [_STACK]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// ENV_FOCUS</span>
             </div>
@@ -104,7 +104,7 @@
           <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
-                [03_LOGIC]
+                [_LOGIC]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// METRICS</span>
             </div>
@@ -119,7 +119,7 @@
           <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
-                [04_IDLE]
+                [_IDLE]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// RUNTIME</span>
             </div>
