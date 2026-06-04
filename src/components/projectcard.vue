@@ -103,7 +103,9 @@ const techThemes = {
   flutter: 'text-sky-500 dark:text-sky-400 bg-sky-500/5 dark:bg-sky-500/10 border-sky-200 dark:border-sky-500/20',
   'node.js': 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-200 dark:border-emerald-500/20',
   vue: 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-200 dark:border-emerald-500/20',
-  'vue.js': 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-200 dark:border-emerald-500/20'
+  'vue.js': 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-200 dark:border-emerald-500/20',
+  tailwindcss: 'text-teal-600 dark:text-teal-400 bg-teal-500/5 dark:bg-teal-500/10 border-teal-200 dark:border-teal-500/20',
+  express: 'text-gray-600 dark:text-gray-400 bg-gray-500/5 dark:bg-gray-500/10 border-gray-200 dark:border-gray-500/20',
 }
 
 // Retorna a cor específica ou um roxo padrão do sistema caso a tecnologia seja nova
