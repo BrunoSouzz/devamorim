@@ -73,14 +73,6 @@
 
         <div class="hidden lg:block h-5 w-px bg-slate-200 dark:bg-slate-900"></div>
 
-        <div class="hidden lg:flex items-center gap-2 px-2.5 py-1 bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-md font-mono text-[10px] text-slate-500 dark:text-slate-400 select-none">
-          <span class="relative flex h-1.5 w-1.5">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
-          </span>
-          <span>STABLE_PORT_443</span>
-        </div>
-
         <button
           @click="isMenuOpen = !isMenuOpen"
           class="md:hidden w-9 h-9 flex items-center justify-center border border-slate-200 dark:border-slate-900 rounded-lg bg-slate-50/50 dark:bg-slate-900/40 text-slate-600 dark:text-slate-300 cursor-pointer"
