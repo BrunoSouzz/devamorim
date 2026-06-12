@@ -59,10 +59,10 @@ html.dark ::-webkit-scrollbar-track {
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-  background-color: #64748b; /* correspondente ao bg-slate-500 */
-  border: 3px solid #020617; /* Borda escura para afinar a barra */
+  background-color: #b73cf4; /* correspondente ao bg-slate-500 */
+  border: 3px solid #b73cf4; /* Borda escura para afinar a barra */
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
-  background-color: #94a3b8; /* correspondente ao bg-slate-400 no hover */
+  background-color: #b95bef; /* correspondente ao bg-slate-400 no hover */
 }
