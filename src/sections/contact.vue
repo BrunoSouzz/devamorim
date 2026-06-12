@@ -21,9 +21,11 @@
           Contato
         </h2>
 
-        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-xl mx-auto md:mx-0 leading-relaxed">
+        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
           Envie uma requisição para iniciar uma nova conexão de projeto, discutir uma oportunidade ou apenas trocar uma ideia.
         </p>
+
+        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-violet-500/40 dark:via-purple-500/40 to-transparent mt-6"></div>
 
       </div>
 
