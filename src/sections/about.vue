@@ -47,21 +47,21 @@
             <div class="flex items-start gap-4 group/line">
               <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-violet-500">01</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
-                Sou **Bruno Amorim**, desenvolvedor focado em construir aplicações eficientes, limpas e com interfaces intuitivas. Busco transformar lógicas complexas em código bem estruturado.
+                Sou <strong class="font-semibold text-violet-600 dark:text-purple-400">Bruno Amorim</strong>, desenvolvedor focado em construir aplicações eficientes, limpas e com interfaces intuitivas. Busco transformar lógicas complexas em código bem estruturado.
               </p>
             </div>
 
             <div class="flex items-start gap-4 group/line">
               <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-violet-500">02</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
-                Atualmente cursando **Ciência da Computação** na Uninassau Aracaju, concilio a base teórica acadêmica (algoritmos e estruturas de dados) com a criação de projetos full-stack reais.
+                Atualmente cursando <strong class="font-semibold text-violet-600 dark:text-purple-400">Ciência da Computação</strong> na Uninassau Aracaju, concilio a base teórica acadêmica (algoritmos e estruturas de dados) com a criação de projetos full-stack reais.
               </p>
             </div>
 
             <div class="flex items-start gap-4 group/line">
               <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-violet-500">03</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
-                Minhas principais frentes cobrem ecossistemas reativos no front-end com **Vue.js** e **Tailwind CSS**, além de soluções integradas no back-end utilizando **Node.js** e **Python**.
+                Minhas principais frentes cobrem ecossistemas reativos no front-end com <strong class="font-semibold text-violet-600 dark:text-purple-400">Vue.js</strong> e <strong class="font-semibold text-violet-600 dark:text-purple-400">Tailwind CSS</strong>, além de soluções integradas no back-end utilizando <strong class="font-semibold text-violet-600 dark:text-purple-400">Node.js</strong> e <strong class="font-semibold text-violet-600 dark:text-purple-400">Python</strong>.
               </p>
             </div>
 

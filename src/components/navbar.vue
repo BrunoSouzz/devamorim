@@ -50,7 +50,7 @@
           >
           <div class="flex items-center text-slate-400 dark:text-slate-500 select-none">
             <span>portfolio</span>
-            <span class="mx-1 text-slate-300 dark:text-slate-800">/</span>
+            <span class="mx-1 text-slate-500 dark:text-slate-400">/</span>
             <span
               class="text-slate-900 dark:text-white font-bold group-hover:text-violet-600 dark:group-hover:text-purple-400 transition-colors"
               >bruno</span
