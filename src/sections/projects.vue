@@ -12,7 +12,7 @@
       + SYS.REPOS_INIT_0x04
     </div>
     <div class="absolute bottom-12 right-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden lg:block tracking-widest">
-      // TOTAL_DEPLOYED_MODULES [05]
+      // TOTAL_DEPLOYED_MODULES [06]
     </div>
 
     <div class="max-w-6xl mx-auto px-6 relative z-10">
