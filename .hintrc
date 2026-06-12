@@ -8,7 +8,10 @@
       {
         "ignore": [
           "-webkit-text-size-adjust",
-          "color: color-mix(in oklab, currentcolor 50%, transparent)"
+          "color: color-mix(in oklab, currentcolor 50%, transparent)",
+          "scrollbar-color",
+          "scrollbar-width",
+          "scrollbar-width: thin"
         ]
       }
     ]
