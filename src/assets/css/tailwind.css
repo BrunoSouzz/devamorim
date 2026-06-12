@@ -38,31 +38,36 @@ body, #app {
   height: 12px;
 }
 
-/* --- TEMA CLARO (Padrão) --- */
+/* --- TEMA CLARO --- */
 ::-webkit-scrollbar-track {
-  background: #f8fafc; /* correspondente ao bg-slate-50 */
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b73cf4; /* correspondente ao bg-slate-300 */
+  background-color: #b73cf4; /* A cor que você quer */
   border-radius: 9999px;
-  border: 3px solid #b73cf4; /* Cria o efeito de borda/padding com a mesma cor do track */
+  /* A borda DEVE ser da mesma cor do fundo (#f8fafc) para criar o espaço */
+  border: 3px solid #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #b95bef; /* correspondente ao bg-slate-400 */
+  background-color: #b95bef;
+  border: 3px solid #f8fafc; /* Mantém a borda na cor do fundo no hover */
 }
 
-/* --- TEMA ESCURO (.dark) --- */
+/* --- TEMA ESCURO --- */
 html.dark ::-webkit-scrollbar-track {
-  background: #020617; /* correspondente ao bg-slate-950 da sua imagem */
+  background: #020617;
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-  background-color: #b73cf4; /* correspondente ao bg-slate-500 */
-  border: 3px solid #b73cf4; /* Borda escura para afinar a barra */
+  background-color: #b73cf4; /* A cor que você quer */
+  border-radius: 9999px;
+  /* A borda DEVE ser da mesma cor do fundo escuro (#020617) */
+  border: 3px solid #020617;
 }
 
 html.dark ::-webkit-scrollbar-thumb:hover {
-  background-color: #b95bef; /* correspondente ao bg-slate-400 no hover */
+  background-color: #b95bef;
+  border: 3px solid #020617; /* Mantém a borda na cor do fundo no hover */
 }
