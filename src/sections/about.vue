@@ -29,6 +29,8 @@
           Um pouco sobre minha trajetória, minha paixão por tecnologia e o que me motiva a construir soluções digitais de alto impacto.
         </p>
 
+        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-violet-500/40 dark:via-purple-500/40 to-transparent mt-6"></div>
+
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">

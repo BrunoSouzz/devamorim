@@ -34,6 +34,8 @@
           Uma visão detalhada das linguagens, frameworks e ferramentas que utilizo focando em arquitetura limpa, performance e escalabilidade.
         </p>
 
+        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-violet-500/40 dark:via-purple-500/40 to-transparent mt-6"></div>
+
       </div>
 
       <!-- Grid de Módulos de Performance -->
