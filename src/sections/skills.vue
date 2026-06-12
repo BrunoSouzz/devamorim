@@ -159,7 +159,7 @@
               </div>
             </div>
 
-            <!-- Skill: Estruturas de Dados (Fuchsia/Pink para Core Acadêmico) -->
+            <!-- Skill: Arquitetura de Software (Violet/Purple) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-bold">Estruturas de Dados</span>
@@ -174,10 +174,10 @@
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-bold">Arquitetura de Software</span>
-                <span class="text-violet-600 dark:text-purple-400 font-medium">50%</span>
+                <span class="text-violet-600 dark:text-purple-400 font-medium">65%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-violet-500 rounded-xs transition-all duration-500 w-[50%] group-hover:bg-linear-to-r group-hover:from-violet-500 group-hover:to-purple-500"></div>
+                <div class="h-full bg-violet-500 rounded-xs transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-violet-500 group-hover:to-purple-500"></div>
               </div>
             </div>
           </div>
