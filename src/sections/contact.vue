@@ -9,7 +9,7 @@
     ></div>
 
     <div class="w-full max-w-5xl mx-auto px-6 relative z-10">
-      <div class="flex flex-col items-center md:items-start text-center md:text-left mb-12">
+      <div class="flex flex-col items-center text-center mb-12">
 
         <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
