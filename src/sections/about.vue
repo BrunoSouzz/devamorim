@@ -37,7 +37,7 @@
           <div class="flex items-center justify-between px-4 py-2.5 border-b border-slate-200 dark:border-slate-900 bg-slate-100/50 dark:bg-slate-950/50 select-none">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-800"></span>
-              <span class="font-mono text-[11px] text-slate-400 dark:text-slate-500">profile.md</span>
+              <span class="font-mono text-[11px] text-slate-400 dark:text-slate-500">about_me.md</span>
             </div>
             <span class="font-mono text-[10px] text-violet-500 dark:text-purple-500/80 font-bold">UTF-8</span>
           </div>

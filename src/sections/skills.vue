@@ -103,7 +103,7 @@
             <!-- Skill: Node.js (Green/Lime) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
-                <span class="text-slate-700 dark:text-slate-300 font-bold">Node.js <span class="text-[10px] text-slate-400 font-normal">Runtime</span></span>
+                <span class="text-slate-700 dark:text-slate-300 font-bold">Node.js <span class="text-[10px] text-slate-400 font-normal">v26.x</span></span>
                 <span class="text-green-600 dark:text-green-400 font-medium">75%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
@@ -114,7 +114,7 @@
             <!-- Skill: Python / Flask (Blue/Steel) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
-                <span class="text-slate-700 dark:text-slate-300 font-bold">Python <span class="text-[10px] text-slate-400 font-normal">/ Flask</span></span>
+                <span class="text-slate-700 dark:text-slate-300 font-bold">Python <span class="text-[10px] text-slate-400 font-normal">v3.x</span></span>
                 <span class="text-blue-500 dark:text-blue-400 font-medium">54%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
@@ -125,11 +125,11 @@
             <!-- Skill: REST APIs & SQL -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
-                <span class="text-slate-700 dark:text-slate-300 font-bold">REST APIs &amp; SQL</span>
-                <span class="text-indigo-500 dark:text-indigo-400 font-medium">65%</span>
+                <span class="text-slate-700 dark:text-slate-300 font-bold">PostgreSQL <span class="text-[10px] text-slate-400 font-normal">v17.x</span></span>
+                <span class="text-indigo-500 dark:text-indigo-400 font-medium">45%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-violet-500"></div>
+                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[45%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-violet-500"></div>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@
             <!-- Skill: Flutter / Dart (Sky/Light Blue) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
-                <span class="text-slate-700 dark:text-slate-300 font-bold">Flutter <span class="text-[10px] text-slate-400 font-normal">/ Dart</span></span>
+                <span class="text-slate-700 dark:text-slate-300 font-bold">Dart <span class="text-[10px] text-slate-400 font-normal">/ Flutter</span></span>
                 <span class="text-sky-500 dark:text-sky-400 font-medium">45%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
@@ -173,11 +173,11 @@
             <!-- Skill: Análise de Algoritmos (Violet/Purple) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
-                <span class="text-slate-700 dark:text-slate-300 font-bold">Análise de Algoritmos</span>
-                <span class="text-violet-600 dark:text-purple-400 font-medium">65%</span>
+                <span class="text-slate-700 dark:text-slate-300 font-bold">Arquitetura de Software</span>
+                <span class="text-violet-600 dark:text-purple-400 font-medium">50%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-violet-500 rounded-xs transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-violet-500 group-hover:to-purple-500"></div>
+                <div class="h-full bg-violet-500 rounded-xs transition-all duration-500 w-[50%] group-hover:bg-linear-to-r group-hover:from-violet-500 group-hover:to-purple-500"></div>
               </div>
             </div>
           </div>
