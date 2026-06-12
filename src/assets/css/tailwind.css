@@ -44,13 +44,13 @@ body, #app {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #cbd5e1; /* correspondente ao bg-slate-300 */
+  background-color: #b73cf4; /* correspondente ao bg-slate-300 */
   border-radius: 9999px;
-  border: 3px solid #f8fafc; /* Cria o efeito de borda/padding com a mesma cor do track */
+  border: 3px solid #b73cf4; /* Cria o efeito de borda/padding com a mesma cor do track */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #94a3b8; /* correspondente ao bg-slate-400 */
+  background-color: #b95bef; /* correspondente ao bg-slate-400 */
 }
 
 /* --- TEMA ESCURO (.dark) --- */
