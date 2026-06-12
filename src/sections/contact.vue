@@ -9,13 +9,22 @@
     ></div>
 
     <div class="w-full max-w-5xl mx-auto px-6 relative z-10">
-      <div class="mb-12 text-center md:text-left">
-        <h2 class="text-4xl font-mono font-black text-slate-950 dark:text-white tracking-tight">
-          /contact_<span class="text-violet-600 dark:text-purple-400">js</span>
+      <div class="flex flex-col items-center md:items-start text-center md:text-left mb-12">
+
+        <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
+          <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
+          <span class="text-violet-600 dark:text-purple-400 font-semibold">node contact.js</span>
+          <span class="w-2.5 h-5 bg-violet-600 dark:bg-purple-400 animate-pulse"></span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
+          Contato
         </h2>
-        <p class="text-slate-500 dark:text-slate-400 font-mono text-xs sm:text-sm mt-2">
-          // Envie uma requisição para iniciar uma nova conexão de projeto.
+
+        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-xl mx-auto md:mx-0 leading-relaxed">
+          Envie uma requisição para iniciar uma nova conexão de projeto, discutir uma oportunidade ou apenas trocar uma ideia.
         </p>
+
       </div>
 
       <div
