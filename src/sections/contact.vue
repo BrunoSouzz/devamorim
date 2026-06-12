@@ -11,7 +11,7 @@
     <div class="w-full max-w-5xl mx-auto px-6 relative z-10">
       <div class="mb-12 text-center md:text-left">
         <h2 class="text-4xl font-mono font-black text-slate-950 dark:text-white tracking-tight">
-          /contact_<span class="text-violet-600 dark:text-purple-400 animate-pulse">api</span>
+          /contact_<span class="text-violet-600 dark:text-purple-400">js</span>
         </h2>
         <p class="text-slate-500 dark:text-slate-400 font-mono text-xs sm:text-sm mt-2">
           // Envie uma requisição para iniciar uma nova conexão de projeto.
