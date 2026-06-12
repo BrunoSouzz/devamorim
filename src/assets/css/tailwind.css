@@ -44,9 +44,8 @@ body, #app {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b73cf4; /* A cor que você quer */
+  background-color: #b73cf4 !important;
   border-radius: 9999px;
-  /* A borda DEVE ser da mesma cor do fundo (#f8fafc) para criar o espaço */
   border: 3px solid #f8fafc;
 }
 
@@ -61,9 +60,7 @@ html.dark ::-webkit-scrollbar-track {
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-  background-color: #b73cf4; /* A cor que você quer */
-  border-radius: 9999px;
-  /* A borda DEVE ser da mesma cor do fundo escuro (#020617) */
+  background-color: #b73cf4 !important;
   border: 3px solid #020617;
 }
 
