@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
   /* Scrollbar para Firefox (Tema Claro) */
   scrollbar-width: thin;
-  scrollbar-color: #cbd5e1 #f8fafc;
+  scrollbar-color: #4c1d95 #b73cf4;
 }
 
 html.dark {
@@ -44,7 +44,7 @@ body, #app {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #b73cf4 !important;
+  background-color: #b73cf4;
   border-radius: 9999px;
   border: 3px solid #f8fafc;
 }
@@ -60,7 +60,7 @@ html.dark ::-webkit-scrollbar-track {
 }
 
 html.dark ::-webkit-scrollbar-thumb {
-  background-color: #b73cf4 !important;
+  background-color: #b73cf4 ;
   border: 3px solid #020617;
 }
 
