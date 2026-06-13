@@ -6,12 +6,12 @@ html {
   scroll-behavior: smooth;
   /* Scrollbar para Firefox (Tema Claro) */
   scrollbar-width: thin;
-  scrollbar-color: #4c1d95 #b73cf4;
+  scrollbar-color: #4c1d95 #f8fafc;
 }
 
 html.dark {
   /* Scrollbar para Firefox (Tema Escuro) */
-  scrollbar-color: #64748b #020617;
+  scrollbar-color: #4c1d95 #020617;
 }
 
 body, #app {
