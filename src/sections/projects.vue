@@ -68,7 +68,6 @@ const myProjects = ref([
     description: 'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um site para os homens saberem mais sobre saúde e bem-estar proprio. As ferramentas utilizadas incluem HTML, CSS e JavaScript no frontend. Python, Flask no backend. PostgreSQL no banco de dados.',
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PostgreSQL'],
     githubLink: 'https://github.com/BrunoSouzz/VitalMen-Project',
-    liveLink: 'https://vitalmen.vercel.app/'
   },
   {
     title: 'HyperSave',
