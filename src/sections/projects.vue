@@ -93,6 +93,12 @@ const myProjects = ref([
     description: 'Uma aplicação web para calcular orçamentos de forma simples e eficiente.',
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
     githubLink: 'https://github.com/BrunoSouzz/budget-calculator'
+  },
+  {
+    title: 'NutriExpress',
+    description: 'API REST desenvolvida para gerenciamento de pedidos e produtos de um serviço de alimentação saudável, aplicando arquitetura em camadas e persistência de dados.',
+    tags: ['Java', 'Spring Boot', 'JPA', 'PostgreSQL', 'REST API'],
+    githubLink: 'https://github.com/BrunoSouzz/NutriExpress'
   }
 ])
 </script>
