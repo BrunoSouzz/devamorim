@@ -54,7 +54,7 @@
 import { ref } from 'vue'
 import ProjectCard from '@/components/projectcard.vue'
 
-// Lista de dados dos seus projetos
+// Lista de dados dos meus projetos
 const myProjects = ref([
   {
     title: 'Spectra I.A',

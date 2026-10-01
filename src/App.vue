@@ -9,7 +9,11 @@
 
       <Skills id="skills" />
 
-      <Projects id="projects" />
+      <!-- ID ajustado para 'projetos' -->
+      <Projects id="projetos" />
+
+      <!-- ID ajustado para 'certificados' -->
+      <Certificados id="certificados" />
 
       <Contact id="contact" />
     </main>
@@ -26,6 +30,7 @@ import Hero from './sections/hero.vue'
 import About from './sections/about.vue'
 import Skills from './sections/skills.vue'
 import Projects from './sections/projects.vue'
+import Certificados from './sections/certificate.vue'
 import Contact from './sections/contact.vue'
 
 const isDarkMode = ref(true)
@@ -44,7 +49,6 @@ const onToggleTheme = () => {
 }
 
 onMounted(applyTheme)
-
 
 watch(isDarkMode, applyTheme)
 </script>

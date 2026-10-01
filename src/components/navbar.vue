@@ -43,7 +43,7 @@
 
         <div class="h-5 w-px bg-slate-200 dark:bg-slate-900"></div>
 
-        <a href="#home" class="flex items-center gap-2 group font-mono text-xs">
+        <a @click.prevent="scrollTo('home')" href="#home" class="flex items-center gap-2 group font-mono text-xs">
           <span
             class="text-violet-600 dark:text-purple-400 font-bold transition-transform duration-300 group-hover:scale-110"
             >&lt;/&gt;</span
@@ -68,7 +68,9 @@
 
       <div class="flex items-center gap-4 lg:gap-6">
         <div class="hidden md:flex items-center h-16 font-mono text-[11px] font-bold tracking-wide">
+          <!-- 1. index.html -->
           <a
+            @click.prevent="scrollTo('home')"
             href="#home"
             :class="[
               'group flex items-center h-full px-3 border-b-2 transition-all duration-200',
@@ -77,25 +79,14 @@
                 : 'border-transparent text-slate-500 dark:text-slate-400 hover:border-orange-500 hover:bg-slate-500/5 dark:hover:bg-slate-400/5 hover:text-slate-900 dark:hover:text-white',
             ]"
           >
-            <span
-              :class="[
-                'w-1.5 h-1.5 rounded-full bg-orange-500 mr-2 transition-opacity',
-                activeSection === 'home' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100',
-              ]"
-            ></span>
-            <span
-              :class="[
-                'font-normal mr-1',
-                activeSection === 'home'
-                  ? 'text-slate-500 dark:text-slate-400'
-                  : 'text-slate-300 dark:text-slate-700',
-              ]"
-              >1.</span
-            >
+            <span :class="['w-1.5 h-1.5 rounded-full bg-orange-500 mr-2 transition-opacity', activeSection === 'home' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
+            <span :class="['font-normal mr-1', activeSection === 'home' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">1.</span>
             <span>index.html</span>
           </a>
 
+          <!-- 2. README.md -->
           <a
+            @click.prevent="scrollTo('about')"
             href="#about"
             :class="[
               'group flex items-center h-full px-3 border-b-2 transition-all duration-200',
@@ -104,25 +95,14 @@
                 : 'border-transparent text-slate-500 dark:text-slate-400 hover:border-blue-400 hover:bg-slate-500/5 dark:hover:bg-slate-400/5 hover:text-slate-900 dark:hover:text-white',
             ]"
           >
-            <span
-              :class="[
-                'w-1.5 h-1.5 rounded-full bg-blue-400 mr-2 transition-opacity',
-                activeSection === 'about' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100',
-              ]"
-            ></span>
-            <span
-              :class="[
-                'font-normal mr-1',
-                activeSection === 'about'
-                  ? 'text-slate-500 dark:text-slate-400'
-                  : 'text-slate-300 dark:text-slate-700',
-              ]"
-              >2.</span
-            >
+            <span :class="['w-1.5 h-1.5 rounded-full bg-blue-400 mr-2 transition-opacity', activeSection === 'about' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
+            <span :class="['font-normal mr-1', activeSection === 'about' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">2.</span>
             <span>README.md</span>
           </a>
 
+          <!-- 3. skills.json -->
           <a
+            @click.prevent="scrollTo('skills')"
             href="#skills"
             :class="[
               'group flex items-center h-full px-3 border-b-2 transition-all duration-200',
@@ -131,52 +111,46 @@
                 : 'border-transparent text-slate-500 dark:text-slate-400 hover:border-amber-400 hover:bg-slate-500/5 dark:hover:bg-slate-400/5 hover:text-slate-900 dark:hover:text-white',
             ]"
           >
-            <span
-              :class="[
-                'w-1.5 h-1.5 rounded-full bg-amber-400 mr-2 transition-opacity',
-                activeSection === 'skills' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100',
-              ]"
-            ></span>
-            <span
-              :class="[
-                'font-normal mr-1',
-                activeSection === 'skills'
-                  ? 'text-slate-500 dark:text-slate-400'
-                  : 'text-slate-300 dark:text-slate-700',
-              ]"
-              >3.</span
-            >
+            <span :class="['w-1.5 h-1.5 rounded-full bg-amber-400 mr-2 transition-opacity', activeSection === 'skills' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
+            <span :class="['font-normal mr-1', activeSection === 'skills' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">3.</span>
             <span>skills.json</span>
           </a>
 
+          <!-- 4. projects.go -->
           <a
-            href="#projects"
+            @click.prevent="scrollTo('projetos')"
+            href="#projetos"
             :class="[
               'group flex items-center h-full px-3 border-b-2 transition-all duration-200',
-              activeSection === 'projects'
+              activeSection === 'projetos'
                 ? 'border-cyan-400 bg-slate-500/5 dark:bg-slate-400/5 text-slate-900 dark:text-white'
                 : 'border-transparent text-slate-500 dark:text-slate-400 hover:border-cyan-400 hover:bg-slate-500/5 dark:hover:bg-slate-400/5 hover:text-slate-900 dark:hover:text-white',
             ]"
           >
-            <span
-              :class="[
-                'w-1.5 h-1.5 rounded-full bg-cyan-400 mr-2 transition-opacity',
-                activeSection === 'projects' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100',
-              ]"
-            ></span>
-            <span
-              :class="[
-                'font-normal mr-1',
-                activeSection === 'projects'
-                  ? 'text-slate-500 dark:text-slate-400'
-                  : 'text-slate-300 dark:text-slate-700',
-              ]"
-              >4.</span
-            >
+            <span :class="['w-1.5 h-1.5 rounded-full bg-cyan-400 mr-2 transition-opacity', activeSection === 'projetos' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
+            <span :class="['font-normal mr-1', activeSection === 'projetos' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">4.</span>
             <span>projects.go</span>
           </a>
 
+          <!-- 5. certificates.ts -->
           <a
+            @click.prevent="scrollTo('certificados')"
+            href="#certificados"
+            :class="[
+              'group flex items-center h-full px-3 border-b-2 transition-all duration-200',
+              activeSection === 'certificados'
+                ? 'border-emerald-400 bg-slate-500/5 dark:bg-slate-400/5 text-slate-900 dark:text-white'
+                : 'border-transparent text-slate-500 dark:text-slate-400 hover:border-emerald-400 hover:bg-slate-500/5 dark:hover:bg-slate-400/5 hover:text-slate-900 dark:hover:text-white',
+            ]"
+          >
+            <span :class="['w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2 transition-opacity', activeSection === 'certificados' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
+            <span :class="['font-normal mr-1', activeSection === 'certificados' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">5.</span>
+            <span>certificates.ts</span>
+          </a>
+
+          <!-- 6. contact.js -->
+          <a
+            @click.prevent="scrollTo('contact')"
             href="#contact"
             :class="[
               'group flex items-center h-full px-3 border-b-2 transition-all duration-200',
@@ -185,21 +159,8 @@
                 : 'border-transparent text-slate-500 dark:text-slate-400 hover:border-yellow-400 hover:bg-slate-500/5 dark:hover:bg-slate-400/5 hover:text-slate-900 dark:hover:text-white',
             ]"
           >
-            <span
-              :class="[
-                'w-1.5 h-1.5 rounded-full bg-yellow-400 mr-2 transition-opacity',
-                activeSection === 'contact' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100',
-              ]"
-            ></span>
-            <span
-              :class="[
-                'font-normal mr-1',
-                activeSection === 'contact'
-                  ? 'text-slate-500 dark:text-slate-400'
-                  : 'text-slate-300 dark:text-slate-700',
-              ]"
-              >5.</span
-            >
+            <span :class="['w-1.5 h-1.5 rounded-full bg-yellow-400 mr-2 transition-opacity', activeSection === 'contact' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
+            <span :class="['font-normal mr-1', activeSection === 'contact' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">6.</span>
             <span>contact.js</span>
           </a>
         </div>
@@ -210,108 +171,52 @@
           aria-label="Toggle Menu"
         >
           <div class="w-4 h-4 flex flex-col justify-between items-center relative">
-            <span
-              :class="[
-                'w-full h-0.5 bg-current rounded-sm transition-all duration-300 origin-left',
-                isMenuOpen ? 'rotate-45 translate-x-0.5 -translate-y-px' : '',
-              ]"
-            ></span>
-            <span
-              :class="[
-                'w-full h-0.5 bg-current rounded-sm transition-all duration-300',
-                isMenuOpen ? 'opacity-0 scale-0' : '',
-              ]"
-            ></span>
-            <span
-              :class="[
-                'w-full h-0.5 bg-current rounded-sm transition-all duration-300 origin-left',
-                isMenuOpen ? '-rotate-45 translate-x-0.5 translate-y-px' : '',
-              ]"
-            ></span>
+            <span :class="['w-full h-0.5 bg-current rounded-sm transition-all duration-300 origin-left', isMenuOpen ? 'rotate-45 translate-x-0.5 -translate-y-px' : '']"></span>
+            <span :class="['w-full h-0.5 bg-current rounded-sm transition-all duration-300', isMenuOpen ? 'opacity-0 scale-0' : '']"></span>
+            <span :class="['w-full h-0.5 bg-current rounded-sm transition-all duration-300 origin-left', isMenuOpen ? '-rotate-45 translate-x-0.5 translate-y-px' : '']"></span>
           </div>
         </button>
       </div>
     </div>
 
+    <!-- MENU MOBILE -->
     <div
       :class="[
         'absolute top-16 left-0 w-full bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-900 md:hidden font-mono text-xs transition-all duration-300 overflow-hidden shadow-xl',
-        isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0 pointer-events-none',
+        isMenuOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0 pointer-events-none',
       ]"
     >
       <div class="px-6 py-4 space-y-3 bg-slate-50/50 dark:bg-slate-950/40">
-        <div
-          class="text-[10px] text-slate-400 dark:text-slate-600 font-bold tracking-wider uppercase select-none mb-1"
-        >
+        <div class="text-[10px] text-slate-400 dark:text-slate-600 font-bold tracking-wider uppercase select-none mb-1">
           📁 EXPLORER: PORTFOLIO
         </div>
 
-        <a
-          @click="isMenuOpen = false"
-          href="#home"
-          :class="[
-            'flex items-center gap-2.5 py-1.5 font-bold',
-            activeSection === 'home'
-              ? 'text-orange-500 dark:text-orange-400'
-              : 'text-slate-600 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-400',
-          ]"
-        >
+        <a @click.prevent="scrollTo('home')" href="#home" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'home' ? 'text-orange-500 dark:text-orange-400' : 'text-slate-600 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
           <span>index.html</span>
         </a>
 
-        <a
-          @click="isMenuOpen = false"
-          href="#about"
-          :class="[
-            'flex items-center gap-2.5 py-1.5 font-bold',
-            activeSection === 'about'
-              ? 'text-blue-400 dark:text-blue-400'
-              : 'text-slate-600 dark:text-slate-400 hover:text-blue-400 dark:hover:text-blue-400',
-          ]"
-        >
+        <a @click.prevent="scrollTo('about')" href="#about" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'about' ? 'text-blue-400 dark:text-blue-400' : 'text-slate-600 dark:text-slate-400 hover:text-blue-400 dark:hover:text-blue-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
           <span>README.md</span>
         </a>
 
-        <a
-          @click="isMenuOpen = false"
-          href="#skills"
-          :class="[
-            'flex items-center gap-2.5 py-1.5 font-bold',
-            activeSection === 'skills'
-              ? 'text-amber-400 dark:text-amber-400'
-              : 'text-slate-600 dark:text-slate-400 hover:text-amber-400 dark:hover:text-amber-400',
-          ]"
-        >
+        <a @click.prevent="scrollTo('skills')" href="#skills" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'skills' ? 'text-amber-400 dark:text-amber-400' : 'text-slate-600 dark:text-slate-400 hover:text-amber-400 dark:hover:text-amber-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
           <span>skills.json</span>
         </a>
 
-        <a
-          @click="isMenuOpen = false"
-          href="#projects"
-          :class="[
-            'flex items-center gap-2.5 py-1.5 font-bold',
-            activeSection === 'projects'
-              ? 'text-cyan-400 dark:text-cyan-400'
-              : 'text-slate-600 dark:text-slate-400 hover:text-cyan-400 dark:hover:text-cyan-400',
-          ]"
-        >
+        <a @click.prevent="scrollTo('projetos')" href="#projetos" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'projetos' ? 'text-cyan-400 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-400 hover:text-cyan-400 dark:hover:text-cyan-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
           <span>projects.go</span>
         </a>
 
-        <a
-          @click="isMenuOpen = false"
-          href="#contact"
-          :class="[
-            'flex items-center gap-2.5 py-1.5 font-bold',
-            activeSection === 'contact'
-              ? 'text-yellow-400 dark:text-yellow-400'
-              : 'text-slate-600 dark:text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-400',
-          ]"
-        >
+        <a @click.prevent="scrollTo('certificados')" href="#certificados" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'certificados' ? 'text-emerald-400 dark:text-emerald-400' : 'text-slate-600 dark:text-slate-400 hover:text-emerald-400 dark:hover:text-emerald-400']">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span>certificates.ts</span>
+        </a>
+
+        <a @click.prevent="scrollTo('contact')" href="#contact" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'contact' ? 'text-yellow-400 dark:text-yellow-400' : 'text-slate-600 dark:text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
           <span>contact.js</span>
         </a>
@@ -325,7 +230,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const emit = defineEmits(['toggle-theme'])
 const isMenuOpen = ref(false)
-const activeSection = ref('home') // Inicia no 'home'
+const activeSection = ref('home')
 
 defineProps({
   isDarkMode: {
@@ -338,12 +243,19 @@ const toggleTheme = () => {
   emit('toggle-theme')
 }
 
-// Configuração do IntersectionObserver
+// Função para scroll suave exato com tratamento de deslocamento da navbar
+const scrollTo = (id) => {
+  isMenuOpen.value = false
+  const el = document.getElementById(id)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+    activeSection.value = id
+  }
+}
+
 let observer = null
 
 onMounted(() => {
-  // Configurações do observer: rootMargin com -50% dispara a mudança
-  // exatamente quando a seção cruza a metade da tela (o centro da tela).
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -353,14 +265,12 @@ onMounted(() => {
       })
     },
     {
-      rootMargin: '-50% 0px -50% 0px',
+      rootMargin: '-30% 0px -50% 0px',
     },
   )
 
-  // IDs das seções que você possui no seu layout geral
-  const sectionIds = ['home', 'about', 'skills', 'projects', 'contact']
+  const sectionIds = ['home', 'about', 'skills', 'projetos', 'certificados', 'contact']
 
-  // Procura por esses elementos no DOM e manda o observer observá-los
   sectionIds.forEach((id) => {
     const el = document.getElementById(id)
     if (el) observer.observe(el)
@@ -368,7 +278,6 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  // Limpa o observer para evitar vazamento de memória quando o componente for destruído
   if (observer) {
     observer.disconnect()
   }
