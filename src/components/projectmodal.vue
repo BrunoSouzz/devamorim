@@ -1,8 +1,10 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+
 <template>
   <Transition name="project-modal">
     <div
       v-if="project"
-      class="fixed inset-0 z-[70] flex items-center justify-center p-4 sm:p-6"
+      class="fixed inset-0 z-70 flex items-center justify-center p-4 sm:p-6"
       role="dialog"
       aria-modal="true"
       :aria-label="`Detalhes do projeto ${project.title}`"
@@ -11,7 +13,7 @@
       <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
 
       <article
-        class="relative z-10 w-full max-w-3xl max-h-[calc(100vh-2rem)] overflow-y-auto rounded-2xl border border-slate-200 dark:border-zinc-800/90 bg-white dark:bg-zinc-950 shadow-2xl shadow-black/30"
+        class="relative z-10 w-full max-w-5xl max-h-[calc(100vh-3rem)] overflow-y-auto rounded-2xl border border-slate-200 dark:border-zinc-800/90 bg-white dark:bg-zinc-950 shadow-2xl shadow-black/30"
       >
         <div class="flex items-center justify-between border-b border-slate-200 dark:border-zinc-800 px-4 py-3 font-mono text-xs">
           <div class="flex items-center gap-2 text-slate-500 dark:text-zinc-400">
@@ -20,25 +22,18 @@
             <span class="text-slate-300 dark:text-zinc-700">/</span>
             <span class="text-slate-900 dark:text-zinc-100">{{ project.title }}</span>
           </div>
-          <button
-            type="button"
-            class="rounded-md px-2 py-1 text-slate-400 transition-colors hover:bg-slate-100 hover:text-indigo-600 dark:hover:bg-zinc-900 dark:hover:text-indigo-300"
-            aria-label="Fechar detalhes do projeto"
-            @click="$emit('close')"
-          >
-            ESC ×
-          </button>
+          <span class="text-indigo-500">cd ..</span>
         </div>
 
-        <div class="grid gap-6 p-5 sm:p-7 md:grid-cols-[minmax(0,1.1fr)_minmax(240px,0.9fr)]">
+        <div class="grid gap-8 p-6 sm:p-9 md:grid-cols-[minmax(0,0.9fr)_minmax(360px,1.1fr)]">
           <div>
             <p class="mb-3 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-indigo-500">
               PROJECT_OVERVIEW
             </p>
-            <h2 class="mb-4 text-2xl font-mono font-bold text-slate-950 dark:text-white sm:text-3xl">
+            <h2 class="mb-4 text-3xl font-mono font-bold text-slate-950 dark:text-white sm:text-4xl">
               {{ project.title }}
             </h2>
-            <p class="text-sm leading-7 text-slate-600 dark:text-zinc-400">
+            <p class="text-base leading-8 text-slate-600 dark:text-zinc-400">
               {{ project.details || project.description }}
             </p>
 
@@ -74,16 +69,16 @@
             </div>
           </div>
 
-          <div v-if="project.image" class="flex items-start">
+          <div v-if="project.image" class="flex min-h-64 items-center">
             <img
               :src="project.image"
               :alt="`Imagem do projeto ${project.title}`"
-              class="w-full rounded-xl border border-slate-200 object-cover dark:border-zinc-800"
+              class="max-h-[28rem] w-full rounded-xl border border-slate-200 object-cover shadow-lg shadow-slate-950/10 dark:border-zinc-800 dark:shadow-black/20"
             />
           </div>
           <div
             v-else
-            class="flex min-h-40 items-center justify-center rounded-xl border border-dashed border-slate-200 bg-slate-50 font-mono text-xs text-slate-400 dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-500"
+            class="flex min-h-64 items-center justify-center rounded-xl border border-dashed border-slate-200 bg-slate-50 font-mono text-xs text-slate-400 dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-500"
           >
             IMAGE_NOT_AVAILABLE
           </div>

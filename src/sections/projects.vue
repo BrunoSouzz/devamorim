@@ -59,6 +59,7 @@ import vitalmenImage from '@/assets/images/projects/Vitalmen.png'
 import neuroguiaImage from '@/assets/images/projects/neuroguia.png'
 import downloaderImage from '@/assets/images/projects/vdown.png'
 import budgetImage from '@/assets/images/projects/BudgetCalculator.png'
+import hypersafeImage from '@/assets/images/hypersafe.png'
 
 const emit = defineEmits(['open-project'])
 
@@ -86,7 +87,9 @@ const myProjects = ref([
     description: 'HyperSave é uma aplicação desenvolvida para facilitar o download e gerenciamento de vídeos e áudios a partir de diferentes plataformas, oferecendo uma experiência simples, rápida e intuitiva.',
     tags: ['Node.js', 'Express', 'Tailwindcss', 'JavaScript','Vue.js', 'ytdl-core'],
     githubLink: 'https://github.com/BrunoSouzz/HyperSave',
-    liveLink: 'https://hyper-save.vercel.app/'
+    liveLink: 'https://hyper-save.vercel.app/',
+    image: hypersafeImage,
+    details: 'Aplicação web para baixar e gerenciar vídeos e áudios de diferentes plataformas, com uma experiência rápida construída em Vue, Node.js e Tailwind CSS.',
   },
   {
     title: 'Neuroguia',

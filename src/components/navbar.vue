@@ -46,13 +46,12 @@
         <button
           v-if="isProjectOpen"
           type="button"
-          class="flex items-center gap-2 group font-mono text-xs"
+          class="group flex items-center gap-2 rounded-md border border-indigo-500/30 bg-indigo-500/5 px-2.5 py-1.5 font-mono text-xs font-bold text-indigo-600 transition-all hover:border-indigo-400 hover:bg-indigo-500/10 dark:border-indigo-400/30 dark:bg-indigo-400/5 dark:text-indigo-300 dark:hover:border-indigo-300 dark:hover:bg-indigo-400/10"
           @click="emit('close-project')"
         >
-          <span class="text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-300 group-hover:-translate-x-0.5">&lt;/&gt;</span>
-          <span class="text-slate-900 dark:text-white font-bold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-            cd ..
-          </span>
+          <span class="text-indigo-500 transition-transform duration-300 group-hover:-translate-x-0.5">&lt;</span>
+          <span>cd ..</span>
+          <span class="text-indigo-500">_</span>
         </button>
         <a v-else @click.prevent="scrollTo('home')" href="#home" class="flex items-center gap-2 group font-mono text-xs">
           <span
