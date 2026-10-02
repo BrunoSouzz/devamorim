@@ -2,7 +2,7 @@
 <template>
   <footer class="relative bg-slate-100/80 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-4 text-slate-500 dark:text-slate-400 transition-colors duration-300 select-none font-mono text-xs">
 
-    <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-violet-500/30 dark:via-purple-500/30 to-transparent"></div>
+    <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500/30 dark:via-indigo-500/30 to-transparent"></div>
 
     <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
 
@@ -10,14 +10,14 @@
         <div class="flex items-center gap-1.5 text-slate-900 dark:text-slate-300 font-bold">
           <span>&copy; {{ currentYear }}</span>
           <span class="text-slate-300 dark:text-slate-800">|</span>
-          <span class="text-violet-600 dark:text-purple-400 uppercase tracking-tight">Bruno Amorim</span>
+          <span class="text-indigo-600 dark:text-indigo-400 uppercase tracking-tight">Bruno Amorim</span>
         </div>
 
         <span class="text-slate-300 dark:text-slate-800 hidden md:inline">|</span>
 
         <div class="hidden md:flex items-center gap-3 text-[11px] text-slate-400 dark:text-slate-500">
-          <div class="flex items-center gap-1 hover:text-emerald-500 transition-colors">
-            <span class="text-emerald-500 font-bold">⊗</span> 0
+          <div class="flex items-center gap-1 hover:text-indigo-500 transition-colors">
+            <span class="text-indigo-500 font-bold">⊗</span> 0
           </div>
           <div class="flex items-center gap-1 hover:text-amber-500 transition-colors">
             <span class="text-amber-500 font-bold">⚠</span> 0
@@ -40,7 +40,7 @@
           <span>Ln 104, Col 32</span>
           <span>Spaces: 2</span>
           <span>UTF-8</span>
-          <span class="text-violet-500 dark:text-purple-500 font-bold">Vue v3.x</span>
+          <span class="text-indigo-500 dark:text-indigo-500 font-bold">Vue v3.x</span>
         </div>
 
         <div class="flex items-center gap-3">

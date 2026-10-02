@@ -46,8 +46,8 @@ defineProps({
 
 // Dicionário de variantes CSS do Tailwind
 const variants = {
-  primary: 'bg-violet-600 hover:bg-violet-700 text-white border-transparent shadow-lg shadow-violet-500/10 dark:shadow-purple-500/5 hover:shadow-violet-500/25',
-  secondary: 'bg-transparent border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-violet-500/50 dark:hover:border-purple-500/50 hover:text-violet-600 dark:hover:text-purple-400',
-  terminal: 'bg-slate-100 hover:bg-violet-600/10 dark:bg-slate-950 dark:hover:bg-purple-500/10 border border-slate-200/80 dark:border-slate-800/80 hover:border-violet-500/50 dark:hover:border-purple-500/50 text-slate-600 dark:text-slate-400 hover:text-violet-600 dark:hover:text-purple-400'
+  primary: 'bg-indigo-600 hover:bg-indigo-700 text-white border-transparent shadow-lg shadow-indigo-500/10 dark:shadow-indigo-500/5 hover:shadow-indigo-500/25',
+  secondary: 'bg-transparent border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 hover:text-indigo-600 dark:hover:text-indigo-400',
+  terminal: 'bg-slate-100 hover:bg-indigo-600/10 dark:bg-slate-950 dark:hover:bg-indigo-500/10 border border-slate-200/80 dark:border-slate-800/80 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400'
 }
 </script>

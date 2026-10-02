@@ -7,7 +7,7 @@
       <div class="flex items-center gap-4 sm:gap-6">
         <button
           @click="toggleTheme"
-          class="group/btn w-9 h-9 border border-slate-200 dark:border-slate-900 hover:border-violet-500/50 dark:hover:border-purple-500/50 text-slate-600 dark:text-slate-300 hover:text-violet-600 dark:hover:text-purple-400 bg-slate-50/50 dark:bg-slate-900/40 rounded-lg flex items-center justify-center transition-all relative overflow-hidden cursor-pointer"
+          class="group/btn w-9 h-9 border border-slate-200 dark:border-slate-900 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 bg-slate-50/50 dark:bg-slate-900/40 rounded-lg flex items-center justify-center transition-all relative overflow-hidden cursor-pointer"
           aria-label="Toggle Theme"
         >
           <svg
@@ -37,7 +37,7 @@
             />
           </svg>
           <div
-            class="absolute inset-0 bg-linear-to-b from-transparent via-violet-500/10 dark:via-purple-500/10 to-transparent translate-y-full group-hover/btn:-translate-y-full transition-transform duration-500 ease-out"
+            class="absolute inset-0 bg-linear-to-b from-transparent via-indigo-500/10 dark:via-indigo-500/10 to-transparent translate-y-full group-hover/btn:-translate-y-full transition-transform duration-500 ease-out"
           ></div>
         </button>
 
@@ -45,7 +45,7 @@
 
         <a @click.prevent="scrollTo('home')" href="#home" class="flex items-center gap-2 group font-mono text-xs">
           <span
-            class="text-violet-600 dark:text-purple-400 font-bold transition-transform duration-300 group-hover:scale-110"
+            class="text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-300 group-hover:scale-110"
             >&lt;/&gt;</span
           >
           <div class="flex items-center text-slate-400 dark:text-slate-500 select-none">
