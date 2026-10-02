@@ -17,8 +17,8 @@
 
         <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
-          <span class="text-violet-600 dark:text-purple-400 font-semibold">cat about_me.md</span>
-          <span class="w-2.5 h-5 bg-violet-600 dark:bg-purple-400 animate-pulse"></span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">cat about_me.md</span>
+          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 animate-pulse"></span>
         </div>
 
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
@@ -42,7 +42,7 @@
               <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-800"></span>
               <span class="font-mono text-[11px] text-slate-400 dark:text-slate-500">about_me.md</span>
             </div>
-            <span class="font-mono text-[10px] text-indigo-500 dark:text-purple-500/80 font-bold">UTF-8</span>
+            <span class="font-mono text-[10px] text-indigo-500 dark:text-indigo-500/80 font-bold">UTF-8</span>
           </div>
 
           <div class="p-6 space-y-5 font-mono text-xs sm:text-sm border-l-2 border-indigo-500 dark:border-indigo-500">
