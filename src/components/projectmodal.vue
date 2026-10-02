@@ -22,7 +22,14 @@
             <span class="text-slate-300 dark:text-zinc-700">/</span>
             <span class="text-slate-900 dark:text-zinc-100">{{ project.title }}</span>
           </div>
-          <span class="text-indigo-500">cd ..</span>
+          <button
+            type="button"
+            class="rounded-md px-2 py-1 font-bold text-indigo-500 transition-colors hover:bg-indigo-500/10 hover:text-indigo-400"
+            aria-label="Fechar detalhes do projeto"
+            @click="emit('close')"
+          >
+            cd ..
+          </button>
         </div>
 
         <div class="grid gap-8 p-6 sm:p-9 md:grid-cols-[minmax(0,0.9fr)_minmax(360px,1.1fr)]">
