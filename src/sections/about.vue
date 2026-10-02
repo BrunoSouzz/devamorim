@@ -22,8 +22,15 @@
       <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-14">
 
         <!-- Coluna Esquerda: Texto Principal (Markdown style) -->
-        <div class="lg:col-span-7 border-l-2 border-indigo-500/70 pl-5 sm:pl-7">
-          <div class="space-y-6 font-mono text-xs sm:text-sm">
+        <div class="overflow-hidden rounded-lg border border-slate-200 bg-slate-50/60 dark:border-zinc-800 dark:bg-zinc-900/25 lg:col-span-7">
+          <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3 dark:border-zinc-800">
+            <div class="flex items-center gap-2">
+              <span class="h-2 w-2 rounded-full bg-indigo-500/70"></span>
+              <span class="font-mono text-[11px] text-slate-500 dark:text-zinc-500">README.md</span>
+            </div>
+            <span class="font-mono text-[10px] text-slate-400 dark:text-zinc-600">UTF-8</span>
+          </div>
+          <div class="space-y-6 border-l-2 border-indigo-500/70 p-5 font-mono text-xs sm:p-7 sm:text-sm">
 
             <div class="flex items-start gap-4 group/line">
               <span class="w-5 select-none text-right text-slate-300 group-hover/line:text-indigo-500 dark:text-zinc-700">01</span>
@@ -53,7 +60,7 @@
         <div class="grid w-full grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:col-span-5">
 
           <!-- CARD EDUCAÇÃO -->
-          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
+          <div class="group rounded-lg border border-slate-200 bg-slate-50/70 p-4 space-y-3 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_EDU]
@@ -76,7 +83,7 @@
           </div>
 
           <!-- CARD FOCO -->
-          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
+          <div class="group rounded-lg border border-slate-200 bg-slate-50/70 p-4 space-y-3 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_STACK]
@@ -94,7 +101,7 @@
 
           <!-- eslint-disable-next-line vue/multiline-html-element-content-newline -->
           <!-- CARD ESTÁGIO - Substituindo o card anterior de Diretrizes -->
-          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
+          <div class="group rounded-lg border border-slate-200 bg-slate-50/70 p-4 space-y-3 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_EXP]
@@ -110,7 +117,7 @@
           </div>
 
           <!-- CARD HOBBIES -->
-          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
+          <div class="group rounded-lg border border-slate-200 bg-slate-50/70 p-4 space-y-3 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_IDLE]
