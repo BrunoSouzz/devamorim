@@ -43,7 +43,18 @@
 
         <div class="h-5 w-px bg-slate-200 dark:bg-slate-900"></div>
 
-        <a @click.prevent="scrollTo('home')" href="#home" class="flex items-center gap-2 group font-mono text-xs">
+        <button
+          v-if="isProjectOpen"
+          type="button"
+          class="flex items-center gap-2 group font-mono text-xs"
+          @click="emit('close-project')"
+        >
+          <span class="text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-300 group-hover:-translate-x-0.5">&lt;/&gt;</span>
+          <span class="text-slate-900 dark:text-white font-bold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+            cd ..
+          </span>
+        </button>
+        <a v-else @click.prevent="scrollTo('home')" href="#home" class="flex items-center gap-2 group font-mono text-xs">
           <span
             class="text-indigo-600 dark:text-indigo-400 font-bold transition-transform duration-300 group-hover:scale-110"
             >&lt;/&gt;</span
@@ -236,6 +247,10 @@ defineProps({
   isDarkMode: {
     type: Boolean,
     required: true,
+  },
+  isProjectOpen: {
+    type: Boolean,
+    default: false,
   },
 })
 

@@ -43,6 +43,7 @@
           :tags="project.tags"
           :github-link="project.githubLink"
           :live-link="project.liveLink"
+          @open="emit('open-project', project)"
         />
       </div>
 
@@ -53,6 +54,13 @@
 <script setup>
 import { ref } from 'vue'
 import ProjectCard from '@/components/projectcard.vue'
+import spectraImage from '@/assets/images/projects/Spectra.png'
+import vitalmenImage from '@/assets/images/projects/Vitalmen.png'
+import neuroguiaImage from '@/assets/images/projects/neuroguia.png'
+import downloaderImage from '@/assets/images/projects/vdown.png'
+import budgetImage from '@/assets/images/projects/BudgetCalculator.png'
+
+const emit = defineEmits(['open-project'])
 
 // Lista de dados dos meus projetos
 const myProjects = ref([
@@ -62,12 +70,16 @@ const myProjects = ref([
     tags: ['Python', 'HTML', 'CSS', 'JavaScript', 'Flask', 'Gemini API'],
     githubLink: 'https://github.com/BrunoSouzz/Spectra-AI-Assistant',
     liveLink: 'https://spectra-ai-assistant.vercel.app',
+    image: spectraImage,
+    details: 'Assistente conversacional que combina uma interface web simples com Python, Flask e a API Gemini para responder perguntas de forma rápida e natural.',
   },
   {
     title: 'VitalMen',
     description: 'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um site para os homens saberem mais sobre saúde e bem-estar proprio. As ferramentas utilizadas incluem HTML, CSS e JavaScript no frontend. Python, Flask no backend. PostgreSQL no banco de dados.',
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PostgreSQL'],
     githubLink: 'https://github.com/BrunoSouzz/VitalMen-Project',
+    image: vitalmenImage,
+    details: 'Plataforma acadêmica de saúde e bem-estar masculino, com frontend web, API em Flask e persistência de dados em PostgreSQL.',
   },
   {
     title: 'HyperSave',
@@ -81,18 +93,24 @@ const myProjects = ref([
     description: 'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um aplicativo para ajudar pessoas com deficiências cognitivas a se orientarem melhor no dia a dia. As ferramentas utilizadas incluem Dart e Flutter para o desenvolvimento do aplicativo, e Node.js para o backend.',
     tags: ['Dart', 'Flutter', 'Node.js', 'PostgreSQL'],
     githubLink: 'https://github.com/neuro-guia',
+    image: neuroguiaImage,
+    details: 'Aplicativo pensado para apoiar pessoas com deficiências cognitivas na organização e orientação de tarefas do dia a dia.',
   },
   {
     title: 'Downloader de Vídeos',
     description: 'Uma aplicação para baixar vídeos do youtube de forma simples e eficiente.',
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'pytube'],
-    githubLink: 'https://github.com/BrunoSouzz/videodownloader'
+    githubLink: 'https://github.com/BrunoSouzz/videodownloader',
+    image: downloaderImage,
+    details: 'Aplicação web com fluxo direto para baixar vídeos, construída com uma API em Flask e uma interface leve.',
   },
   {
     title: 'Calculadora de Orçamento',
     description: 'Uma aplicação web para calcular orçamentos de forma simples e eficiente.',
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
-    githubLink: 'https://github.com/BrunoSouzz/budget-calculator'
+    githubLink: 'https://github.com/BrunoSouzz/budget-calculator',
+    image: budgetImage,
+    details: 'Ferramenta web para montar e calcular orçamentos de forma simples, com processamento no backend em Python.',
   },
   {
     title: 'NutriExpress',

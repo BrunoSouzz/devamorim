@@ -2,6 +2,11 @@
 <template>
   <div
     class="group relative bg-white dark:bg-slate-950/60 rounded-xl border border-slate-200 dark:border-slate-900 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:shadow-indigo-500/5 overflow-hidden"
+    role="button"
+    tabindex="0"
+    @click="emit('open')"
+    @keydown.enter="emit('open')"
+    @keydown.space.prevent="emit('open')"
   >
     <!-- Brilho de Alocação de Recurso (Hover) -->
     <div
@@ -26,6 +31,7 @@
             v-if="githubLink"
             :href="githubLink"
             target="_blank"
+            @click.stop
             class="flex items-center gap-1 px-2 py-0.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-all duration-200 hover:-translate-y-0.5"
           >
             <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
@@ -36,6 +42,7 @@
             v-if="liveLink"
             :href="liveLink"
             target="_blank"
+            @click.stop
             class="flex items-center gap-1 px-2 py-0.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-all duration-200 hover:-translate-y-0.5"
           >
             <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
@@ -76,6 +83,8 @@
 </template>
 
 <script setup>
+const emit = defineEmits(['open'])
+
 defineProps({
   title: {
     type: String,
