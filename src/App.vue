@@ -9,10 +9,8 @@
 
       <Skills id="skills" />
 
-      <!-- ID ajustado para 'projetos' -->
       <Projects id="projetos" />
 
-      <!-- ID ajustado para 'certificados' -->
       <Certificados id="certificados" />
 
       <Contact id="contact" />

@@ -22,8 +22,8 @@
 
         <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
-          <span class="text-violet-600 dark:text-purple-400 font-semibold">ls --skills</span>
-          <span class="w-2.5 h-5 bg-violet-600 dark:bg-purple-400 animate-pulse"></span>
+          <span class="text-indigo-600 dark:text-purple-400 font-semibold">ls --skills</span>
+          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-purple-400 animate-pulse"></span>
         </div>
 
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
@@ -34,7 +34,7 @@
           Uma visão detalhada das linguagens, frameworks e ferramentas que utilizo focando em arquitetura limpa, performance e escalabilidade.
         </p>
 
-        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-violet-500/40 dark:via-purple-500/40 to-transparent mt-6"></div>
+        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-purple-500/40 to-transparent mt-6"></div>
 
       </div>
 
@@ -42,12 +42,12 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Módulo 01: Front-End Engine -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
-          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-violet-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
+          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
-            <h3 class="font-mono text-xs text-violet-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-violet-500 dark:bg-purple-500"></span>
+            <h3 class="font-mono text-xs text-indigo-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-purple-500"></span>
               THREAD_01 // FRONT_ENGINE
             </h3>
             <span class="font-mono text-[10px] text-emerald-500 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-950/20 px-1.5 py-0.5 rounded border border-emerald-100 dark:border-emerald-900/30">ACTIVE</span>
@@ -90,15 +90,15 @@
         </div>
 
         <!-- Módulo 02: Back-End Core -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
-          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-violet-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
+          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
-            <h3 class="font-mono text-xs text-violet-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-violet-500 dark:bg-purple-500"></span>
+            <h3 class="font-mono text-xs text-indigo-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-purple-500"></span>
               THREAD_02 // BACK_CORE
             </h3>
-            <span class="font-mono text-[10px] text-violet-500 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/20 px-1.5 py-0.5 rounded border border-violet-100 dark:border-purple-900/30">RUNNING</span>
+            <span class="font-mono text-[10px] text-indigo-500 dark:text-purple-400 font-bold bg-indigo-50 dark:bg-purple-950/20 px-1.5 py-0.5 rounded border border-indigo-1<PASSWORD> dark:border-purple-9<PASSWORD>">RUNNING</span>
           </div>
 
           <div class="space-y-5">
@@ -117,10 +117,10 @@
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-bold">Python <span class="text-[10px] text-slate-400 font-normal">v3.x</span></span>
-                <span class="text-blue-500 dark:text-blue-400 font-medium">54%</span>
+                <span class="text-blue-500 dark:text-blue-400 font-medium">60%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-blue-600 rounded-xs transition-all duration-500 w-[54%] group-hover:bg-linear-to-r group-hover:from-blue-600 group-hover:to-sky-500"></div>
+                <div class="h-full bg-blue-600 rounded-xs transition-all duration-500 w-[60%] group-hover:bg-linear-to-r group-hover:from-blue-600 group-hover:to-sky-500"></div>
               </div>
             </div>
 
@@ -138,12 +138,12 @@
         </div>
 
         <!-- Módulo 03: Mobile & CS Core -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
-          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-violet-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
+          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
-            <h3 class="font-mono text-xs text-violet-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-violet-500 dark:bg-purple-500"></span>
+            <h3 class="font-mono text-xs text-indigo-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-purple-500"></span>
               THREAD_03 // CS_CORE
             </h3>
             <span class="font-mono text-[10px] text-amber-600 dark:text-amber-400 font-bold bg-amber-50 dark:bg-amber-950/20 px-1.5 py-0.5 rounded border border-amber-100 dark:border-amber-900/30">COMPILED</span>
