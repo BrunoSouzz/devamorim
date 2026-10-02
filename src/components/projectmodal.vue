@@ -82,7 +82,7 @@
             <img
               :src="project.image"
               :alt="`Imagem do projeto ${project.title}`"
-              class="max-h-[28rem] w-full rounded-xl border border-slate-200 object-cover shadow-lg shadow-slate-950/10 dark:border-zinc-800 dark:shadow-black/20"
+              class="max-h-112 w-full rounded-xl border border-slate-200 object-cover shadow-lg shadow-slate-950/10 dark:border-zinc-800 dark:shadow-black/20"
             />
           </div>
           <div
