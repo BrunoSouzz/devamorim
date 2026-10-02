@@ -19,10 +19,10 @@
 
       <!-- Cabeçalho (Prompt de Terminal Centralizado) -->
       <div class="flex flex-col items-center text-center mb-16">
-        <div class="flex items-center gap-1.5 text-violet-600 dark:text-purple-400 font-mono text-sm tracking-wide mb-2 select-none">
+        <div class="flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 font-mono text-sm tracking-wide mb-2 select-none">
           <span class="text-slate-400 dark:text-slate-600">bruno@portfolio:~$</span>
           <span>ls --projects</span>
-          <span class="w-1.5 h-3.5 bg-violet-500 dark:bg-purple-400 animate-pulse ml-0.5"></span>
+          <span class="w-1.5 h-3.5 bg-indigo-500 dark:bg-indigo-400 animate-pulse ml-0.5"></span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-mono font-black text-slate-950 dark:text-white tracking-tight">
           Projetos em Destaque
@@ -30,7 +30,7 @@
         <p class="text-slate-500 dark:text-slate-400 max-w-xl text-xs sm:text-sm mt-3 font-sans leading-relaxed">
           Uma seleção de aplicações e sistemas desenvolvidos focando em arquitetura limpa, performance isolada e experiência do usuário.
         </p>
-        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-violet-500/40 dark:via-purple-500/40 to-transparent mt-5"></div>
+        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-indigo-500/40 to-transparent mt-5"></div>
       </div>
 
       <!-- Grid de Artefatos Compilados -->

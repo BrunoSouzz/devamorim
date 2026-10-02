@@ -13,8 +13,8 @@
 
         <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
-          <span class="text-violet-600 dark:text-purple-400 font-semibold">node contact.js</span>
-          <span class="w-2.5 h-5 bg-violet-600 dark:bg-purple-400 animate-pulse"></span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">node contact.js</span>
+          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 animate-pulse"></span>
         </div>
 
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
@@ -56,9 +56,9 @@
               <div class="space-y-1 pl-1">
                 <a
                   href="mailto:devbrunoamorim@gmail.com"
-                  class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-200/60 dark:hover:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:text-violet-600 dark:hover:text-purple-400 transition-all duration-200 group"
+                  class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-200/60 dark:hover:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 group"
                 >
-                  <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-violet-500 dark:group-hover:text-purple-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+                  <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                   </svg>
                   <span>mail.txt</span>
@@ -67,9 +67,9 @@
                 <a
                   href="https://www.linkedin.com/in/dev-brunoamorim"
                   target="_blank"
-                  class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-200/60 dark:hover:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:text-violet-600 dark:hover:text-purple-400 transition-all duration-200 group"
+                  class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-200/60 dark:hover:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 group"
                 >
-                  <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-violet-500 dark:group-hover:text-purple-400 fill-current" viewBox="0 0 24 24">
+                  <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 fill-current" viewBox="0 0 24 24">
                     <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8h2.8v-4.16c0-.22 0-.45.06-.62a1.12 1.12 0 0 1 1-.77c.76 0 1 .56 1 1.39v4.16h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5v-8H5v8h3z"/>
                   </svg>
                   <span>linkedin.url</span>
@@ -78,9 +78,9 @@
                 <a
                   href="https://github.com/BrunoSouzz"
                   target="_blank"
-                  class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-200/60 dark:hover:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:text-violet-600 dark:hover:text-purple-400 transition-all duration-200 group"
+                  class="flex items-center gap-2 px-2 py-1.5 rounded-lg hover:bg-slate-200/60 dark:hover:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 group"
                 >
-                  <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-violet-500 dark:group-hover:text-purple-400 fill-current" viewBox="0 0 24 24">
+                  <svg class="w-3.5 h-3.5 text-slate-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 fill-current" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.061.069-.061 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
                   </svg>
                   <span>github.sh</span>
@@ -111,7 +111,7 @@
             class="bg-slate-50 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 px-4 flex items-center select-none"
           >
             <div
-              class="bg-white dark:bg-slate-900 border-r border-l border-t-2 border-t-violet-500 dark:border-t-purple-500 border-slate-200 dark:border-slate-800 px-4 py-2.5 flex items-center gap-2 text-xs font-mono font-bold text-slate-800 dark:text-slate-200"
+              class="bg-white dark:bg-slate-900 border-r border-l border-t-2 border-t-indigo-500 dark:border-t-indigo-400 border-slate-200 dark:border-slate-800 px-4 py-2.5 flex items-center gap-2 text-xs font-mono font-bold text-slate-800 dark:text-slate-200"
             >
               <span class="text-yellow-500 font-bold">{}</span> payload_message.json
             </div>
@@ -131,7 +131,7 @@
               <div class="flex items-start sm:items-center gap-4 group">
                 <span class="w-6 text-right text-xs text-slate-300 dark:text-slate-600 select-none pt-1 sm:pt-0">02</span>
                 <div class="flex-1 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 pl-4">
-                  <label for="name" class="text-violet-600 dark:text-purple-400 shrink-0 font-medium">"remetente_nome"</label>
+                  <label for="name" class="text-indigo-600 dark:text-indigo-400 shrink-0 font-medium">"remetente_nome"</label>
                   <span class="text-slate-400 dark:text-slate-500 hidden sm:inline">:</span>
                   <input
                     id="name"
@@ -139,7 +139,7 @@
                     type="text"
                     required
                     placeholder='"Como quer ser chamado?"'
-                    class="flex-1 bg-transparent border-b border-dashed border-slate-300 dark:border-slate-700 focus:border-violet-500 dark:focus:border-purple-500 text-slate-900 dark:text-slate-100 text-sm py-0.5 px-1 outline-hidden transition-all placeholder-slate-400/60 dark:placeholder-slate-600 focus:placeholder-slate-300"
+                    class="flex-1 bg-transparent border-b border-dashed border-slate-300 dark:border-slate-700 focus:border-indigo-500 dark:focus:border-indigo-500 text-slate-900 dark:text-slate-100 text-sm py-0.5 px-1 outline-hidden transition-all placeholder-slate-400/60 dark:placeholder-slate-600 focus:placeholder-slate-300"
                   />
                   <span class="text-slate-400 dark:text-slate-500 hidden sm:inline">,</span>
                 </div>
@@ -148,7 +148,7 @@
               <div class="flex items-start sm:items-center gap-4 group">
                 <span class="w-6 text-right text-xs text-slate-300 dark:text-slate-600 select-none pt-1 sm:pt-0">03</span>
                 <div class="flex-1 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 pl-4">
-                  <label for="email" class="text-violet-600 dark:text-purple-400 shrink-0 font-medium">"remetente_email"</label>
+                  <label for="email" class="text-indigo-600 dark:text-indigo-400 shrink-0 font-medium">"remetente_email"</label>
                   <span class="text-slate-400 dark:text-slate-500 hidden sm:inline">:</span>
                   <input
                     id="email"
@@ -156,7 +156,7 @@
                     type="email"
                     required
                     placeholder='"seu@email.com"'
-                    class="flex-1 bg-transparent border-b border-dashed border-slate-300 dark:border-slate-700 focus:border-violet-500 dark:focus:border-purple-500 text-slate-900 dark:text-slate-100 text-sm py-0.5 px-1 outline-hidden transition-all placeholder-slate-400/60 dark:placeholder-slate-600 focus:placeholder-slate-300"
+                    class="flex-1 bg-transparent border-b border-dashed border-slate-300 dark:border-slate-700 focus:border-indigo-500 dark:focus:border-indigo-500 text-slate-900 dark:text-slate-100 text-sm py-0.5 px-1 outline-hidden transition-all placeholder-slate-400/60 dark:placeholder-slate-600 focus:placeholder-slate-300"
                   />
                   <span class="text-slate-400 dark:text-slate-500 hidden sm:inline">,</span>
                 </div>
@@ -165,7 +165,7 @@
               <div class="flex items-start sm:items-center gap-4 group">
                 <span class="w-6 text-right text-xs text-slate-300 dark:text-slate-600 select-none pt-1 sm:pt-0">04</span>
                 <div class="flex-1 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 pl-4">
-                  <label for="subject" class="text-violet-600 dark:text-purple-400 shrink-0 font-medium">"assunto_escopo"</label>
+                  <label for="subject" class="text-indigo-600 dark:text-indigo-400 shrink-0 font-medium">"assunto_escopo"</label>
                   <span class="text-slate-400 dark:text-slate-500 hidden sm:inline">:</span>
                   <input
                     id="subject"
@@ -173,7 +173,7 @@
                     type="text"
                     required
                     placeholder='"Motivo do contato..."'
-                    class="flex-1 bg-transparent border-b border-dashed border-slate-300 dark:border-slate-700 focus:border-violet-500 dark:focus:border-purple-500 text-slate-900 dark:text-slate-100 text-sm py-0.5 px-1 outline-hidden transition-all placeholder-slate-400/60 dark:placeholder-slate-600 focus:placeholder-slate-300"
+                    class="flex-1 bg-transparent border-b border-dashed border-slate-300 dark:border-slate-700 focus:border-indigo-500 dark:focus:border-indigo-500 text-slate-900 dark:text-slate-100 text-sm py-0.5 px-1 outline-hidden transition-all placeholder-slate-400/60 dark:placeholder-slate-600 focus:placeholder-slate-300"
                   />
                   <span class="text-slate-400 dark:text-slate-500 hidden sm:inline">,</span>
                 </div>
@@ -183,7 +183,7 @@
                 <span class="w-6 text-right text-xs text-slate-300 dark:text-slate-600 select-none pt-1">05</span>
                 <div class="flex-1 flex flex-col gap-2 pl-4">
                   <div class="flex items-center gap-2">
-                    <label for="message" class="text-violet-600 dark:text-purple-400 font-medium">"corpo_mensagem"</label>
+                    <label for="message" class="text-indigo-600 dark:text-indigo-400 font-medium">"corpo_mensagem"</label>
                     <span class="text-slate-400 dark:text-slate-500">:</span>
                   </div>
                   <textarea
@@ -192,7 +192,7 @@
                     rows="4"
                     required
                     placeholder='"Escreva os detalhes da ideia ou projeto que deseja desenvolver..."'
-                    class="w-full bg-slate-50 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-800/80 rounded-xl p-3 text-slate-900 dark:text-slate-100 text-sm outline-hidden focus:border-violet-500 dark:focus:border-purple-500 focus:ring-1 focus:ring-purple-500/20 transition-all placeholder-slate-400/60 dark:placeholder-slate-600 resize-none"
+                    class="w-full bg-slate-50 dark:bg-slate-950/40 border border-slate-200 dark:border-slate-800/80 rounded-xl p-3 text-slate-900 dark:text-slate-100 text-sm outline-hidden focus:border-indigo-500 dark:focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/20 transition-all placeholder-slate-400/60 dark:placeholder-slate-600 resize-none"
                   ></textarea>
                 </div>
               </div>

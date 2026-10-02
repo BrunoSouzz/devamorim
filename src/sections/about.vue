@@ -35,46 +35,49 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
+        <!-- Coluna Esquerda: Texto Principal (Markdown style) -->
         <div class="lg:col-span-7 bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl overflow-hidden shadow-xs">
           <div class="flex items-center justify-between px-4 py-2.5 border-b border-slate-200 dark:border-slate-900 bg-slate-100/50 dark:bg-slate-950/50 select-none">
             <div class="flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-800"></span>
               <span class="font-mono text-[11px] text-slate-400 dark:text-slate-500">about_me.md</span>
             </div>
-            <span class="font-mono text-[10px] text-violet-500 dark:text-purple-500/80 font-bold">UTF-8</span>
+            <span class="font-mono text-[10px] text-indigo-500 dark:text-purple-500/80 font-bold">UTF-8</span>
           </div>
 
-          <div class="p-6 space-y-5 font-mono text-xs sm:text-sm border-l-2 border-violet-500 dark:border-purple-500">
+          <div class="p-6 space-y-5 font-mono text-xs sm:text-sm border-l-2 border-indigo-500 dark:border-indigo-500">
 
             <div class="flex items-start gap-4 group/line">
-              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-violet-500">01</span>
+              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-indigo-500">01</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
-                Sou <strong class="font-semibold text-violet-600 dark:text-purple-400">Bruno Amorim</strong>, desenvolvedor focado em construir aplicações eficientes, limpas e com interfaces intuitivas. Busco transformar lógicas complexas em código bem estruturado.
+                Sou <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Bruno Amorim</strong>, desenvolvedor focado em construir aplicações eficientes, limpas e com interfaces intuitivas. Busco transformar lógicas complexas em código bem estruturado seguindo princípios de Clean Code.
               </p>
             </div>
 
             <div class="flex items-start gap-4 group/line">
-              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-violet-500">02</span>
+              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-indigo-500">02</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
-                Atualmente cursando <strong class="font-semibold text-violet-600 dark:text-purple-400">Ciência da Computação</strong> na Uninassau Aracaju, concilio a base teórica acadêmica (algoritmos e estruturas de dados) com a criação de projetos full-stack reais.
+                Atualmente cursando <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Ciência da Computação</strong> na Uninassau Aracaju. Unindo a base acadêmica teórica com a prática profissional, estagio atualmente na área de TI do laboratório <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Patologika</strong>.
               </p>
             </div>
 
             <div class="flex items-start gap-4 group/line">
-              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-violet-500">03</span>
+              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-indigo-500">03</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
-                Minhas principais frentes cobrem ecossistemas reativos no front-end com <strong class="font-semibold text-violet-600 dark:text-purple-400">Vue.js</strong> e <strong class="font-semibold text-violet-600 dark:text-purple-400">Tailwind CSS</strong>, além de soluções integradas no back-end utilizando <strong class="font-semibold text-violet-600 dark:text-purple-400">Node.js</strong> e <strong class="font-semibold text-violet-600 dark:text-purple-400">Python</strong>.
+                Minhas principais frentes cobrem ecossistemas reativos no front-end com <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Vue.js</strong> e <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Tailwind CSS</strong>, além de soluções integradas no back-end utilizando <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Node.js</strong> e <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Python</strong>.
               </p>
             </div>
 
           </div>
         </div>
 
+        <!-- Coluna Direita: Cards de Destaque -->
         <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
 
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <!-- CARD EDUCAÇÃO -->
+          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
-              <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
+              <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_EDU]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// ACADEMIC</span>
@@ -94,9 +97,10 @@
             </div>
           </div>
 
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <!-- CARD FOCO -->
+          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
-              <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
+              <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_STACK]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// ENV_FOCUS</span>
@@ -104,29 +108,33 @@
             <div class="space-y-1">
               <h3 class="font-mono font-bold text-slate-950 dark:text-white text-sm">Foco Atual</h3>
               <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-sans">
-                Aplicações Web SPA modernas, desenvolvimento mobile e microsserviços integrados.
+                Aplicações Web SPA modernas, desenvolvimento Full-stack e microsserviços.
               </p>
             </div>
           </div>
 
+
+          <!-- eslint-disable-next-line vue/multiline-html-element-content-newline -->
+          <!-- CARD ESTÁGIO - Substituindo o card anterior de Diretrizes -->
           <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
-              <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
-                [_LOGIC]
+              <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-violet-900/40">
+                [_EXP]
               </span>
-              <span class="text-slate-400 dark:text-slate-600">// METRICS</span>
+              <span class="text-slate-400 dark:text-slate-600">// CURRENT_ROLE</span>
             </div>
             <div class="space-y-1">
-              <h3 class="font-mono font-bold text-slate-950 dark:text-white text-sm">Diretrizes</h3>
+              <h3 class="font-mono font-bold text-slate-950 dark:text-white text-sm">Estagiário de TI</h3>
               <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-sans">
-                Código limpo (Clean Code), componentização reutilizável e otimização de performance.
+                Atuação no laboratório de patologia <strong class="font-medium text-slate-800 dark:text-slate-200">Patologika</strong>, focando em suporte, infraestrutura e otimização de fluxos digitais.
               </p>
             </div>
           </div>
 
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <!-- CARD HOBBIES -->
+          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
-              <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-purple-900/40">
+              <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_IDLE]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// RUNTIME</span>
@@ -134,7 +142,7 @@
             <div class="space-y-1">
               <h3 class="font-mono font-bold text-slate-950 dark:text-white text-sm">Hobbies</h3>
               <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-sans">
-                Violão acústico (MPB), composição musical autoral e jogos de estratégia/RPG de mesa.
+                Violão acústico (MPB), composição musical autoral e jogos de estratégia.
               </p>
             </div>
           </div>

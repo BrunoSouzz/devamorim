@@ -19,23 +19,23 @@
         <!-- Logs de Inicialização -->
         <div class="space-y-1 font-mono text-[11px] text-slate-400 dark:text-slate-500 select-none">
           <div class="flex items-center gap-2">
-            <span class="text-violet-500 font-bold">[KERNEL]</span>
+            <span class="text-indigo-500 font-bold">[KERNEL]</span>
             <span>Initializing core_profile_sequence... DONE</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-purple-500 font-bold">[ACADEMIC]</span>
+            <span class="text-indigo-500 font-bold">[ACADEMIC]</span>
             <span>Current scope: Computer Science _</span>
-            <span class="w-1 h-3.5 bg-violet-500 dark:bg-purple-500 animate-pulse"></span>
+            <span class="w-1 h-3.5 bg-indigo-500 dark:bg-indigo-500 animate-pulse"></span>
           </div>
         </div>
 
         <!-- Nome Principal -->
         <div class="space-y-2">
           <h1 class="text-4xl sm:text-6xl font-mono font-black text-slate-950 dark:text-white tracking-tight">
-            Bruno Amorim<span class="text-violet-600 dark:text-purple-400">.</span>
+            Bruno Amorim<span class="text-indigo-600 dark:text-indigo-400">.</span>
           </h1>
 
-          <h2 class="text-2xl sm:text-4xl font-mono font-bold bg-linear-to-r from-violet-600 to-indigo-600 dark:from-purple-400 dark:to-purple-500 bg-clip-text text-transparent tracking-tight">
+          <h2 class="text-2xl sm:text-4xl font-mono font-bold bg-linear-to-r from-indigo-600 to-indigo-600 dark:from-indigo-400 dark:to-indigo-500 bg-clip-text text-transparent tracking-tight">
             &gt; Software &amp; Web Developer
           </h2>
         </div>
@@ -58,12 +58,12 @@
             class="group px-5 py-3 bg-slate-950 dark:bg-white text-white dark:text-slate-950 rounded-lg transition-all duration-200 hover:-translate-y-0.5 shadow-md hover:shadow-violet-500/10 flex items-center gap-2"
           >
             <span>./view_projects --detailed</span>
-            <span class="text-violet-400 dark:text-purple-600 font-normal transition-transform group-hover:translate-x-0.5">▶</span>
+            <span class="text-indigo-400 dark:text-indigo-400 font-normal transition-transform group-hover:translate-x-0.5">▶</span>
           </a>
 
           <a
             href="#contact"
-            class="group px-5 py-3 border border-slate-200 dark:border-slate-800 hover:border-violet-500/50 dark:hover:border-purple-500/50 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white bg-white/40 dark:bg-slate-900/20 rounded-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center gap-2"
+            class="group px-5 py-3 border border-slate-200 dark:border-slate-800 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white bg-white/40 dark:bg-slate-900/20 rounded-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center gap-2"
           >
             <span>sh contact.sh</span>
           </a>
@@ -73,16 +73,16 @@
       <!-- Container da Imagem de Perfil / Target Scanner -->
       <div class="w-48 h-48 sm:w-64 sm:h-64 shrink-0 order-1 md:order-2 group relative">
         <!-- Glow de Fundo Sincronizado -->
-        <div class="absolute inset-0 bg-linear-to-tr from-violet-500 to-purple-500 rounded-2xl blur-2xl opacity-15 group-hover:opacity-25 transition-opacity duration-300"></div>
+        <div class="absolute inset-0 bg-linear-to-tr from-indigo-500 to-indigo-500 rounded-2xl blur-2xl opacity-15 group-hover:opacity-25 transition-opacity duration-300"></div>
 
         <!-- Janela de Inspeção da Imagem -->
         <div class="w-full h-full rounded-2xl border border-slate-200 dark:border-slate-800 p-2 relative z-10 bg-white/60 dark:bg-slate-900/40 backdrop-blur-xs transition-colors duration-300">
 
           <!-- Cantos Simulando Mira/Scanner de Código -->
-          <div class="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-violet-500 dark:border-purple-500 rounded-tl-xl"></div>
-          <div class="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-violet-500 dark:border-purple-500 rounded-tr-xl"></div>
-          <div class="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-violet-500 dark:border-purple-500 rounded-bl-xl"></div>
-          <div class="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-violet-500 dark:border-purple-500 rounded-br-xl"></div>
+          <div class="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-indigo-500 dark:border-indigo-500 rounded-tl-xl"></div>
+          <div class="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-indigo-500 dark:border-indigo-500 rounded-tr-xl"></div>
+          <div class="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-indigo-500 dark:border-indigo-500 rounded-bl-xl"></div>
+          <div class="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-indigo-500 dark:border-indigo-500 rounded-br-xl"></div>
 
           <!-- Div de corte da imagem -->
           <div class="w-full h-full rounded-xl flex items-center justify-center overflow-hidden relative bg-slate-100 dark:bg-slate-950">
@@ -93,13 +93,13 @@
             />
 
             <!-- Linha de Scan Dinâmica (Aparece no Hover) -->
-            <div class="absolute inset-x-0 h-0.5 bg-linear-to-r from-transparent via-violet-500/40 to-transparent top-0 opacity-0 group-hover:opacity-100 group-hover:top-full transition-all duration-1000 ease-in-out pointer-events-none"></div>
+            <div class="absolute inset-x-0 h-0.5 bg-linear-to-r from-transparent via-indigo-500/40 to-transparent top-0 opacity-0 group-hover:opacity-100 group-hover:top-full transition-all duration-1000 ease-in-out pointer-events-none"></div>
           </div>
         </div>
 
         <!-- Identificador Inferior Estilizado -->
         <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 font-mono text-[9px] font-bold text-slate-400 dark:text-slate-600 tracking-wider whitespace-nowrap bg-slate-50 dark:bg-slate-950 px-2 select-none z-20 transition-colors duration-300 flex items-center gap-1.5">
-          <span class="w-1 h-1 rounded-full bg-violet-500 animate-pulse"></span>
+          <span class="w-1 h-1 rounded-full bg-indigo-500 animate-pulse"></span>
           <span>B_AMORIM_RENDER.SYS</span>
         </div>
       </div>

@@ -22,8 +22,8 @@
 
         <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
-          <span class="text-indigo-600 dark:text-purple-400 font-semibold">ls --skills</span>
-          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-purple-400 animate-pulse"></span>
+          <span class="text-indigo-600 dark:text-indigo-400 font-semibold">ls --skills</span>
+          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 animate-pulse"></span>
         </div>
 
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
@@ -42,12 +42,12 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Módulo 01: Front-End Engine -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
+        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5">
           <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
-            <h3 class="font-mono text-xs text-indigo-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-purple-500"></span>
+            <h3 class="font-mono text-xs text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-indigo-500"></span>
               THREAD_01 // FRONT_ENGINE
             </h3>
             <span class="font-mono text-[10px] text-emerald-500 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-950/20 px-1.5 py-0.5 rounded border border-emerald-100 dark:border-emerald-900/30">ACTIVE</span>
