@@ -41,9 +41,33 @@
           <div
             class="flex items-center gap-2 border-b border-slate-200 px-4 py-3.5 select-none dark:border-zinc-800"
           >
-            <span class="w-3 h-3 rounded-full bg-red-400 dark:bg-red-500/60"></span>
-            <span class="w-3 h-3 rounded-full bg-yellow-400 dark:bg-yellow-500/60"></span>
-            <span class="w-3 h-3 rounded-full bg-emerald-400 dark:bg-emerald-500/60"></span>
+            <button
+              type="button"
+              class="group relative h-3 w-3 cursor-pointer rounded-full bg-red-400 transition-transform hover:scale-125 focus:outline-hidden focus:ring-2 focus:ring-red-400/50 dark:bg-red-500/60"
+              aria-label="Limpar todos os campos do formulário"
+              title="Limpar formulário"
+              @click="clearForm"
+            >
+              <span class="pointer-events-none absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-[8px] font-bold leading-none text-red-950 group-hover:block">×</span>
+            </button>
+            <button
+              type="button"
+              class="group relative h-3 w-3 cursor-pointer rounded-full bg-yellow-400 transition-transform hover:scale-125 focus:outline-hidden focus:ring-2 focus:ring-yellow-400/50 dark:bg-yellow-500/60"
+              :aria-label="isComposerMinimized ? 'Restaurar formulário de contato' : 'Minimizar formulário de contato'"
+              :title="isComposerMinimized ? 'Restaurar formulário' : 'Minimizar formulário'"
+              @click="toggleMinimize"
+            >
+              <span class="pointer-events-none absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-[8px] font-bold leading-none text-yellow-950 group-hover:block">−</span>
+            </button>
+            <button
+              type="button"
+              class="group relative h-3 w-3 cursor-pointer rounded-full bg-emerald-400 transition-transform hover:scale-125 focus:outline-hidden focus:ring-2 focus:ring-emerald-400/50 dark:bg-emerald-500/60"
+              aria-label="Focar no primeiro campo do formulário"
+              title="Começar a escrever"
+              @click="focusComposer"
+            >
+              <span class="pointer-events-none absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-[7px] font-bold leading-none text-emerald-950 group-hover:block">↗</span>
+            </button>
             <span class="ml-2 font-mono text-[10px] tracking-wider font-bold text-slate-400 dark:text-slate-500"
               >EXPLORER</span
             >
@@ -122,7 +146,10 @@
 
           <form
             @submit.prevent="handleSubmit"
-            class="p-6 md:p-8 flex-1 flex flex-col justify-between font-mono text-sm relative"
+            :class="[
+              'relative flex flex-1 flex-col justify-between font-mono text-sm transition-[max-height,padding] duration-300',
+              isComposerMinimized ? 'max-h-0 overflow-hidden p-0' : 'p-6 md:p-8',
+            ]"
           >
             <div class="space-y-4">
 
@@ -138,6 +165,7 @@
                   <span class="text-slate-400 dark:text-slate-500 hidden sm:inline">:</span>
                   <input
                     id="name"
+                    ref="nameInput"
                     v-model="formData.name"
                     type="text"
                     required
@@ -268,6 +296,8 @@ import Button from '@/components/button.vue'
 const contactEmail = 'devbrunoamorim@gmail.com'
 const emailCopyLabel = ref('Copiar e-mail')
 const emailCopyError = ref(false)
+const isComposerMinimized = ref(false)
+const nameInput = ref(null)
 
 const copyEmail = async () => {
   emailCopyError.value = false
@@ -282,6 +312,26 @@ const copyEmail = async () => {
     console.error('Erro ao copiar e-mail:', error)
     emailCopyError.value = true
   }
+}
+
+const clearForm = () => {
+  formData.value = { name: '', email: '', subject: '', message: '' }
+  submitStatus.value = null
+  emailCopyError.value = false
+}
+
+const toggleMinimize = () => {
+  isComposerMinimized.value = !isComposerMinimized.value
+}
+
+const focusComposer = () => {
+  if (isComposerMinimized.value) {
+    isComposerMinimized.value = false
+  }
+
+  requestAnimationFrame(() => {
+    nameInput.value?.focus()
+  })
 }
 
 const formData = ref({
