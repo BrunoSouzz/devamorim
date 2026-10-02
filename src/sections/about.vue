@@ -2,67 +2,45 @@
 <template>
   <section
     id="about"
-    class="py-20 bg-white dark:bg-slate-950/60 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
+    class="relative scroll-mt-20 overflow-hidden bg-white py-20 text-slate-900 transition-colors duration-300 dark:bg-[#09090b] dark:text-white"
   >
-    <div class="absolute top-8 left-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden sm:block tracking-widest">
-      + SYS.LOC_0x7A2F
-    </div>
-    <div class="absolute bottom-8 right-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden sm:block tracking-widest">
-      // SEC_ABOUT_END
-    </div>
-
     <div class="max-w-6xl mx-auto px-6 relative z-10">
-
-      <div class="flex flex-col items-center text-center mb-16">
-
-        <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
+      <div class="mb-12 flex flex-col items-center text-center">
+        <div class="mb-3 flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-zinc-500 sm:text-sm">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold">cat about_me.md</span>
-          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 terminal-blink"></span>
+          <span class="terminal-blink h-3.5 w-1 bg-indigo-500"></span>
         </div>
-
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
+        <h2 class="mb-4 text-3xl font-mono font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl md:text-5xl">
           Sobre Mim
         </h2>
-
-        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        <p class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-zinc-400 sm:text-base">
           Um pouco sobre minha trajetória, minha paixão por tecnologia e o que me motiva a construir soluções digitais de alto impacto.
         </p>
-
-        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-indigo-500/40 to-transparent mt-6"></div>
-
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-14">
 
         <!-- Coluna Esquerda: Texto Principal (Markdown style) -->
-        <div class="lg:col-span-7 bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl overflow-hidden shadow-xs">
-          <div class="flex items-center justify-between px-4 py-2.5 border-b border-slate-200 dark:border-slate-900 bg-slate-100/50 dark:bg-slate-950/50 select-none">
-            <div class="flex items-center gap-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-800"></span>
-              <span class="font-mono text-[11px] text-slate-400 dark:text-slate-500">about_me.md</span>
-            </div>
-            <span class="font-mono text-[10px] text-indigo-500 dark:text-indigo-500/80 font-bold">UTF-8</span>
-          </div>
-
-          <div class="p-6 space-y-5 font-mono text-xs sm:text-sm border-l-2 border-indigo-500 dark:border-indigo-500">
+        <div class="lg:col-span-7 border-l-2 border-indigo-500/70 pl-5 sm:pl-7">
+          <div class="space-y-6 font-mono text-xs sm:text-sm">
 
             <div class="flex items-start gap-4 group/line">
-              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-indigo-500">01</span>
+              <span class="w-5 select-none text-right text-slate-300 group-hover/line:text-indigo-500 dark:text-zinc-700">01</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
                 Sou <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Bruno Amorim</strong>, desenvolvedor focado em construir aplicações eficientes, limpas e com interfaces intuitivas. Busco transformar lógicas complexas em código bem estruturado seguindo princípios de Clean Code.
               </p>
             </div>
 
             <div class="flex items-start gap-4 group/line">
-              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-indigo-500">02</span>
+              <span class="w-5 select-none text-right text-slate-300 group-hover/line:text-indigo-500 dark:text-zinc-700">02</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
                 Atualmente cursando <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Ciência da Computação</strong> na Uninassau Aracaju. Unindo a base acadêmica teórica com a prática profissional, estagio atualmente na área de TI do laboratório <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Patologika</strong>.
               </p>
             </div>
 
             <div class="flex items-start gap-4 group/line">
-              <span class="text-slate-300 dark:text-slate-700 select-none text-right w-5 group-hover/line:text-indigo-500">03</span>
+              <span class="w-5 select-none text-right text-slate-300 group-hover/line:text-indigo-500 dark:text-zinc-700">03</span>
               <p class="text-slate-600 dark:text-slate-400 font-sans text-sm sm:text-base leading-relaxed">
                 Minhas principais frentes cobrem ecossistemas reativos no front-end com <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Vue.js</strong> e <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Tailwind CSS</strong>, além de soluções integradas no back-end utilizando <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Node.js</strong> e <strong class="font-semibold text-indigo-600 dark:text-indigo-400">Python</strong>.
               </p>
@@ -72,10 +50,10 @@
         </div>
 
         <!-- Coluna Direita: Cards de Destaque -->
-        <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+        <div class="grid w-full grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:col-span-5">
 
           <!-- CARD EDUCAÇÃO -->
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_EDU]
@@ -98,7 +76,7 @@
           </div>
 
           <!-- CARD FOCO -->
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_STACK]
@@ -116,7 +94,7 @@
 
           <!-- eslint-disable-next-line vue/multiline-html-element-content-newline -->
           <!-- CARD ESTÁGIO - Substituindo o card anterior de Diretrizes -->
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_EXP]
@@ -132,7 +110,7 @@
           </div>
 
           <!-- CARD HOBBIES -->
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <div class="group space-y-3 border-b border-slate-200 pb-6 transition-colors duration-200 hover:border-indigo-500/50 dark:border-zinc-800 dark:hover:border-indigo-500/50">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
               <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_IDLE]
