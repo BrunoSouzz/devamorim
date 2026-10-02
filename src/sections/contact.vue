@@ -36,7 +36,7 @@
         class="flex h-auto w-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white/70 dark:border-zinc-800 dark:bg-zinc-900/35 md:min-h-145 md:flex-row"
       >
         <div
-          class="flex w-full shrink-0 flex-col border-b border-slate-200 bg-slate-50/70 dark:border-zinc-800 dark:bg-zinc-950/20 md:w-60 md:border-b-0 md:border-r"
+          class="hidden"
         >
           <div
             class="flex items-center gap-2 border-b border-slate-200 px-4 py-3.5 select-none dark:border-zinc-800"
@@ -133,7 +133,7 @@
           </div>
         </div>
 
-        <div         class="flex flex-1 flex-col bg-white/30 dark:bg-zinc-950/10">
+        <div class="flex flex-1 flex-col bg-white/30 dark:bg-zinc-950/10">
           <nav class="flex flex-wrap items-center gap-1 border-b border-slate-200 bg-slate-50/70 px-3 py-2 dark:border-zinc-800 dark:bg-zinc-950/30" aria-label="Abas de contato">
             <button
               v-for="tab in contactTabs"
@@ -168,7 +168,7 @@
             @submit.prevent="handleSubmit"
             :class="[
               'relative flex flex-1 flex-col justify-between font-mono text-sm transition-[max-height,padding] duration-300',
-              isComposerMinimized ? 'max-h-0 overflow-hidden p-0' : 'p-6 md:p-8',
+              'p-6 md:p-8',
             ]"
           >
             <div class="space-y-4">
@@ -304,7 +304,14 @@
             </div>
           </form>
 
-          <div v-else-if="activeTab === 'profiles'" class="grid flex-1 gap-6 p-6 md:grid-cols-2 md:p-8" role="tabpanel">
+          <div v-else-if="activeTab === 'profiles'" class="relative grid flex-1 gap-6 overflow-hidden p-6 md:grid-cols-2 md:p-8" role="tabpanel">
+            <div class="pointer-events-none absolute inset-x-8 top-5 flex items-end gap-1 opacity-40" aria-hidden="true">
+              <span class="h-2 w-1 animate-pulse rounded-full bg-indigo-400"></span>
+              <span class="h-4 w-1 animate-pulse rounded-full bg-indigo-500 [animation-delay:150ms]"></span>
+              <span class="h-7 w-1 animate-pulse rounded-full bg-indigo-400 [animation-delay:300ms]"></span>
+              <span class="h-3 w-1 animate-pulse rounded-full bg-indigo-500 [animation-delay:450ms]"></span>
+              <span class="ml-1 font-mono text-[10px] text-indigo-500">syncing_profiles...</span>
+            </div>
             <div class="rounded-lg border border-slate-200 bg-white/60 p-5 dark:border-zinc-800 dark:bg-zinc-900/30">
               <div class="mb-4 flex items-center gap-3">
                 <img :src="profileImages.linkedin" alt="Perfil do LinkedIn de Bruno Amorim" class="h-14 w-14 rounded-full border border-indigo-500/30 object-cover object-top" />
@@ -337,23 +344,6 @@
             </div>
           </div>
 
-          <div v-else class="flex-1 p-6 md:p-8" role="tabpanel">
-            <div class="mb-4 flex items-center justify-between border-b border-slate-200 pb-3 dark:border-zinc-800">
-              <span class="font-mono text-xs font-bold text-indigo-600 dark:text-indigo-300">README.md</span>
-              <a href="https://github.com/BrunoSouzz/BrunoSouzz" target="_blank" rel="noopener noreferrer" class="font-mono text-[11px] text-slate-500 hover:text-indigo-600 dark:text-zinc-500 dark:hover:text-indigo-300">
-                ver_no_github ↗
-              </a>
-            </div>
-            <div class="space-y-4 font-mono text-xs leading-7 text-slate-600 dark:text-zinc-400 sm:text-sm">
-              <p><span class="text-indigo-500">#</span> Bruno Amorim</p>
-              <p>Programmer · estudante de Ciência da Computação · Brasil</p>
-              <p class="text-slate-500 dark:text-zinc-500">Construo aplicações web e APIs com foco em interfaces claras, arquitetura limpa e aprendizado contínuo.</p>
-              <div class="border-l-2 border-indigo-500/60 pl-4 text-slate-500 dark:text-zinc-500">
-                <p><span class="text-indigo-500">stack</span>: Vue, Tailwind, Node.js, Python, Java</p>
-                <p><span class="text-indigo-500">status</span>: disponível para novas conexões</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -372,15 +362,14 @@ const profileImages = {
   github: githubProfileImage,
   linkedin: linkedinProfileImage,
 }
+const isComposerMinimized = ref(false)
+const nameInput = ref(null)
 const contactTabs = [
   { id: 'email', label: 'payload_message.json' },
   { id: 'profiles', label: 'profiles.json' },
-  { id: 'readme', label: 'README.md' },
 ]
 const emailCopyLabel = ref('Copiar e-mail')
 const emailCopyError = ref(false)
-const isComposerMinimized = ref(false)
-const nameInput = ref(null)
 
 const copyEmail = async () => {
   emailCopyError.value = false
@@ -408,13 +397,8 @@ const toggleMinimize = () => {
 }
 
 const focusComposer = () => {
-  if (isComposerMinimized.value) {
-    isComposerMinimized.value = false
-  }
-
-  requestAnimationFrame(() => {
-    nameInput.value?.focus()
-  })
+  isComposerMinimized.value = false
+  requestAnimationFrame(() => nameInput.value?.focus())
 }
 
 const formData = ref({
