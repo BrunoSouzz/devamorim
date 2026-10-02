@@ -2,7 +2,7 @@
 <template>
   <section
     id="about"
-    class="py-20 bg-white dark:bg-slate-950 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
+    class="py-20 bg-white dark:bg-slate-950/60 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
   >
     <div class="absolute top-8 left-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden sm:block tracking-widest">
       + SYS.LOC_0x7A2F

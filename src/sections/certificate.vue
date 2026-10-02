@@ -2,7 +2,7 @@
 <template>
   <section
     id="certificados"
-    class="py-20 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
+    class="py-20 bg-slate-50 dark:bg-slate-950/60 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
   >
     <!-- Background Grid Alinhado com a Identidade de Workspace -->
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808007_1px,transparent_1px),linear-gradient(to_bottom,#80808007_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none"></div>

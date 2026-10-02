@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white text-slate-800 dark:bg-slate-900 dark:text-white font-sans antialiased selection:bg-emerald-500/30 transition-colors duration-300">
+  <div class="min-h-screen bg-white text-slate-900 dark:bg-slate-800/40 dark:text-white font-sans antialiased selection:bg-emerald-500/30 transition-colors duration-300">
     <Navbar :isDarkMode="isDarkMode" @toggle-theme="onToggleTheme" />
 
     <main>
@@ -16,7 +16,7 @@
       <Contact id="contact" />
     </main>
 
-    <Footer class="bg-slate-950 dark:bg-black border-t border-slate-900 dark:border-slate-800 py-8 text-center text-sm text-slate-500 dark:text-slate-600 transition-colors duration-300"/>
+    <Footer class="bg-slate-950 dark:bg-black border-t border-slate-900 dark:border-slate-800/40 py-8 text-center text-sm text-slate-500 dark:text-slate-600 transition-colors duration-300"/>
   </div>
 </template>
 

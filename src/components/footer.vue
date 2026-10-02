@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <footer class="relative bg-slate-100/80 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-4 text-slate-500 dark:text-slate-400 transition-colors duration-300 select-none font-mono text-xs">
+  <footer class="relative bg-slate-100/80 dark:bg-slate-950/60 border-t border-slate-200 dark:border-slate-900 py-4 text-slate-500 dark:text-slate-400 transition-colors duration-300 select-none font-mono text-xs">
 
     <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500/30 dark:via-indigo-500/30 to-transparent"></div>
 

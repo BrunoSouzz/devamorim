@@ -2,7 +2,7 @@
 <template>
   <section
     id="contato"
-    class="py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-300 relative overflow-hidden"
+    class="py-24 bg-slate-50 dark:bg-slate-950/60 text-slate-900 dark:text-white transition-colors duration-300 relative overflow-hidden"
   >
     <div
       class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px] pointer-events-none"

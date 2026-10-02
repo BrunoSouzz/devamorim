@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <nav
-    class="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-900 z-50 transition-all duration-300"
+    class="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-950/60 backdrop-blur-md border-b border-slate-200 dark:border-slate-900 z-50 transition-all duration-300"
   >
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between relative">
       <div class="flex items-center gap-4 sm:gap-6">

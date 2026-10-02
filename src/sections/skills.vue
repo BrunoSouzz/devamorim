@@ -2,7 +2,7 @@
 <template>
   <section
     id="skills"
-    class="py-20 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
+    class="py-20 bg-slate-50 dark:bg-slate-950/60 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
   >
     <!-- Background Grid Alinhado com a Identidade de Workspace -->
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808007_1px,transparent_1px),linear-gradient(to_bottom,#80808007_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none"></div>
@@ -52,7 +52,6 @@
             </h3>
             <span class="font-mono text-[10px] text-emerald-500 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-950/20 px-1.5 py-0.5 rounded border border-emerald-100 dark:border-emerald-900/30">ACTIVE</span>
           </div>
-
           <div class="space-y-5">
             <!-- Skill: Vue.js (Emerald/Teal) -->
             <div class="space-y-2">
