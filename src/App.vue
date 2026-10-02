@@ -1,5 +1,6 @@
 <template>
   <div class="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-white font-sans antialiased selection:bg-emerald-500/30 transition-colors duration-300">
+    <SiteCursor />
     <Navbar :isDarkMode="isDarkMode" @toggle-theme="onToggleTheme" />
 
     <main>
@@ -30,6 +31,7 @@ import Skills from './sections/skills.vue'
 import Projects from './sections/projects.vue'
 import Certificados from './sections/certificate.vue'
 import Contact from './sections/contact.vue'
+import SiteCursor from './components/sitecursor.vue'
 
 const isDarkMode = ref(true)
 
