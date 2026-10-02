@@ -25,12 +25,24 @@
           Envie uma requisição para iniciar uma nova conexão de projeto, discutir uma oportunidade ou apenas trocar uma ideia.
         </p>
 
+        <button
+          type="button"
+          @click="copyEmail"
+          class="mt-5 inline-flex items-center gap-2 rounded-lg border border-slate-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 px-3.5 py-2 font-mono text-xs text-slate-600 dark:text-zinc-300 transition-colors hover:border-indigo-400/60 hover:text-indigo-600 dark:hover:border-indigo-400/60 dark:hover:text-indigo-300"
+        >
+          <span class="text-indigo-500" aria-hidden="true">&gt;_</span>
+          <span>{{ emailCopyLabel }}</span>
+        </button>
+        <p v-if="emailCopyError" class="mt-2 text-xs text-red-500 dark:text-red-400" role="status">
+          Não foi possível copiar automaticamente. Use: {{ contactEmail }}
+        </p>
+
         <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-indigo-500/40 to-transparent mt-6"></div>
 
       </div>
 
       <div
-        class="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row h-auto md:min-h-145"
+        class="w-full bg-white dark:bg-zinc-900/70 border border-slate-200 dark:border-zinc-800/80 rounded-2xl shadow-xl shadow-slate-950/5 dark:shadow-black/20 overflow-hidden flex flex-col md:flex-row h-auto md:min-h-145"
       >
         <div
           class="w-full md:w-64 bg-slate-50/80 dark:bg-slate-900/40 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800 flex flex-col shrink-0"
@@ -262,6 +274,25 @@
 import { ref } from 'vue'
 import Button from '@/components/button.vue'
 
+const contactEmail = 'devbrunoamorim@gmail.com'
+const emailCopyLabel = ref('Copiar e-mail')
+const emailCopyError = ref(false)
+
+const copyEmail = async () => {
+  emailCopyError.value = false
+
+  try {
+    await navigator.clipboard.writeText(contactEmail)
+    emailCopyLabel.value = 'E-mail copiado!'
+    setTimeout(() => {
+      emailCopyLabel.value = 'Copiar e-mail'
+    }, 2500)
+  } catch (error) {
+    console.error('Erro ao copiar e-mail:', error)
+    emailCopyError.value = true
+  }
+}
+
 const formData = ref({
   name: '',
   email: '',
@@ -282,9 +313,7 @@ const handleSubmit = async () => {
   submitStatus.value = null
 
   try {
-    const CONTACT_EMAIL = 'devbrunoamorim@gmail.com'
-
-    const response = await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
+    const response = await fetch(`https://formsubmit.co/ajax/${contactEmail}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
