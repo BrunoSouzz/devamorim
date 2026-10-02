@@ -1,44 +1,68 @@
-# devamorim
+# 🌐 DevAmorim — Portfólio Pessoal
 
-This template should help get you started developing with Vue 3 in Vite.
+<p align="center">
+  <img src="https://img.shields.io/badge/Vue.js-3.x-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue 3" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
 
-## Recommended IDE Setup
+> Aplicação web desenvolvida para apresentar minha trajetória profissional, competências técnicas e os principais projetos desenvolvidos em Full Stack, Mobile e Automação.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+🔗 **Acesse o site ao vivo:** [devamorim.vercel.app](https://devamorim.vercel.app)
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 📋 Sumário
 
-## Customize configuration
+- [Visão Geral](#-visão-geral)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Como Executar Localmente](#-como-executar-localmente)
+- [Deploy & Build](#-deploy--build)
+- [Autor](#-autor)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## 🎨 Visão Geral
 
-```sh
-npm install
-```
+O **DevAmorim** foi construído com foco em performance, acessibilidade e design responsivo. A interface é dividida em seções modulares para proporcionar uma navegação fluida ao visitante:
 
-### Compile and Hot-Reload for Development
+- **Hero Section:** Apresentação inicial e síntese do meu perfil profissional.
+- **Projetos:** Exposição dos meus principais trabalhos com links diretos, repositórios e tecnologias utilizadas.
+- **Contato:** Canais diretos para conexões profissionais e envio de mensagens.
 
-```sh
-npm run dev
-```
+---
 
-### Compile and Minify for Production
+## 🛠️ Tecnologias Utilizadas
 
-```sh
-npm run build
-```
+- **Core:** [Vue 3](https://vuejs.org/) (Composition API)
+- **Bundler / Build Tool:** [Vite](https://vitejs.dev/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+- **Ícones & UI:** Feather / Lucide / FontAwesome
+- **Hospedagem & CI/CD:** [Vercel](https://vercel.com) / [Netlify](https://netlify.com)
 
-### Lint with [ESLint](https://eslint.org/)
+---
 
-```sh
-npm run lint
-```
+## 📂 Estrutura do Projeto
+
+```text
+devamorim/
+├── public/                 # Arquivos estáticos (favicon, imagens, assets)
+├── src/
+│   ├── assets/
+│   │   └── css/
+│   │       └── tailwind.css # Configuração principal de estilos do Tailwind
+│   ├── components/
+│   │   ├── projectcard.vue  # Componente reutilizável para exibição de projetos
+│   │   └── footer.vue       # Rodapé do site com redes sociais
+│   ├── sections/
+│   │   ├── hero.vue         # Seção de apresentação principal
+│   │   ├── projects.vue     # Seção com a listagem de projetos
+│   │   └── contact.vue      # Seção com informações e formulário de contato
+│   ├── App.vue              # Componente raiz da aplicação
+│   └── main.js              # Ponto de entrada (initialization do Vue)
+├── index.html               # Documento HTML principal
+├── tailwind.config.js       # Configurações do Tailwind CSS
+├── vite.config.js           # Configurações do Vite
+└── package.json             # Dependências e scripts do projeto
