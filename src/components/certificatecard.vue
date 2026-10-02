@@ -93,7 +93,7 @@ const techThemes = {
   flutter: 'text-sky-500 dark:text-sky-400 bg-sky-500/5 dark:bg-sky-500/10 border-sky-200 dark:border-sky-500/20',
   firebase: 'text-amber-500 dark:text-amber-400 bg-amber-500/5 dark:bg-amber-500/10 border-amber-200 dark:border-amber-500/20',
   cybersecurity: 'text-red-600 dark:text-red-400 bg-red-500/5 dark:bg-red-500/10 border-red-200/60 dark:border-red-500/20',
-  'network security': 'text-purple-600 dark:text-purple-400 bg-indigo-500/5 dark:bg-purple-500/10 border-indigo-200 dark:border-indigo-500/20',
+  'network security': 'text-indigo-600 dark:text-indigo-400 bg-indigo-500/5 dark:bg-indigo-500/10 border-indigo-200 dark:border-indigo-500/20',
   'ethical hacking': 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-200 dark:border-emerald-500/20',
 }
 
