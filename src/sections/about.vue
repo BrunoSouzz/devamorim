@@ -116,9 +116,9 @@
 
           <!-- eslint-disable-next-line vue/multiline-html-element-content-newline -->
           <!-- CARD ESTÁGIO - Substituindo o card anterior de Diretrizes -->
-          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-violet-500/40 dark:hover:border-purple-500/40 transition-all duration-200 hover:-translate-y-0.5">
+          <div class="group relative p-5 bg-slate-50 dark:bg-slate-900/20 border border-slate-200 dark:border-slate-900 rounded-xl space-y-3 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-200 hover:-translate-y-0.5">
             <div class="flex items-center justify-between font-mono text-[10px] select-none">
-              <span class="text-violet-600 dark:text-purple-400 font-bold bg-violet-50 dark:bg-purple-950/30 px-2 py-0.5 rounded border border-violet-100 dark:border-violet-900/40">
+              <span class="text-indigo-600 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/30 px-2 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/40">
                 [_EXP]
               </span>
               <span class="text-slate-400 dark:text-slate-600">// CURRENT_ROLE</span>
