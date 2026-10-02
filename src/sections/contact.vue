@@ -2,33 +2,26 @@
 <template>
   <section
     id="contato"
-    class="py-24 bg-slate-50 dark:bg-slate-950/60 text-slate-900 dark:text-white transition-colors duration-300 relative overflow-hidden"
+    class="relative overflow-hidden bg-slate-50 py-20 text-slate-900 transition-colors duration-300 dark:bg-[#09090b] dark:text-white"
   >
-    <div
-      class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px] pointer-events-none"
-    ></div>
-
     <div class="w-full max-w-5xl mx-auto px-6 relative z-10">
-      <div class="flex flex-col items-center text-center mb-12">
-
-        <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
+      <div class="mb-12 flex flex-col items-center text-center">
+        <div class="mb-3 flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-zinc-500 sm:text-sm">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold">node contact.js</span>
-          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 terminal-blink"></span>
+          <span class="terminal-blink h-3.5 w-1 bg-indigo-500"></span>
         </div>
-
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
+        <h2 class="mb-4 text-3xl font-mono font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl md:text-5xl">
           Contato
         </h2>
-
-        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        <p class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-zinc-400 sm:text-base">
           Envie uma requisição para iniciar uma nova conexão de projeto, discutir uma oportunidade ou apenas trocar uma ideia.
         </p>
 
         <button
           type="button"
           @click="copyEmail"
-          class="mt-5 inline-flex items-center gap-2 rounded-lg border border-slate-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/60 px-3.5 py-2 font-mono text-xs text-slate-600 dark:text-zinc-300 transition-colors hover:border-indigo-400/60 hover:text-indigo-600 dark:hover:border-indigo-400/60 dark:hover:text-indigo-300"
+          class="mt-5 inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white/70 px-3.5 py-2 font-mono text-xs text-slate-600 transition-colors hover:border-indigo-400/60 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-300 dark:hover:border-indigo-400/60 dark:hover:text-indigo-300"
         >
           <span class="text-indigo-500" aria-hidden="true">&gt;_</span>
           <span>{{ emailCopyLabel }}</span>
@@ -37,18 +30,16 @@
           Não foi possível copiar automaticamente. Use: {{ contactEmail }}
         </p>
 
-        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-indigo-500/40 to-transparent mt-6"></div>
-
       </div>
 
       <div
-        class="w-full bg-white dark:bg-zinc-900/70 border border-slate-200 dark:border-zinc-800/80 rounded-2xl shadow-xl shadow-slate-950/5 dark:shadow-black/20 overflow-hidden flex flex-col md:flex-row h-auto md:min-h-145"
+        class="flex h-auto w-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white/70 dark:border-zinc-800 dark:bg-zinc-900/35 md:min-h-145 md:flex-row"
       >
         <div
-          class="w-full md:w-64 bg-slate-50/80 dark:bg-slate-900/40 border-b md:border-b-0 md:border-r border-slate-200 dark:border-slate-800 flex flex-col shrink-0"
+          class="flex w-full shrink-0 flex-col border-b border-slate-200 bg-slate-50/70 dark:border-zinc-800 dark:bg-zinc-950/20 md:w-60 md:border-b-0 md:border-r"
         >
           <div
-            class="px-4 py-3.5 border-b border-slate-200 dark:border-slate-800/60 flex items-center gap-2 select-none"
+            class="flex items-center gap-2 border-b border-slate-200 px-4 py-3.5 select-none dark:border-zinc-800"
           >
             <span class="w-3 h-3 rounded-full bg-red-400 dark:bg-red-500/60"></span>
             <span class="w-3 h-3 rounded-full bg-yellow-400 dark:bg-yellow-500/60"></span>
@@ -118,9 +109,9 @@
           </div>
         </div>
 
-        <div class="flex-1 flex flex-col bg-slate-100/20 dark:bg-slate-900/10">
+        <div         class="flex flex-1 flex-col bg-white/30 dark:bg-zinc-950/10">
           <div
-            class="bg-slate-50 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 px-4 flex items-center select-none"
+            class="flex items-center border-b border-slate-200 bg-slate-50/70 px-4 select-none dark:border-zinc-800 dark:bg-zinc-950/30"
           >
             <div
               class="bg-white dark:bg-slate-900 border-r border-l border-t-2 border-t-indigo-500 dark:border-t-indigo-400 border-slate-200 dark:border-slate-800 px-4 py-2.5 flex items-center gap-2 text-xs font-mono font-bold text-slate-800 dark:text-slate-200"

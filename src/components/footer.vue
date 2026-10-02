@@ -1,19 +1,17 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <footer class="relative bg-slate-100/80 dark:bg-slate-950/60 border-t border-slate-200 dark:border-slate-900 py-4 text-slate-500 dark:text-slate-400 transition-colors duration-300 select-none font-mono text-xs">
+  <footer class="border-t border-slate-200 bg-slate-50/80 py-5 font-mono text-xs text-slate-500 transition-colors duration-300 select-none dark:border-zinc-800 dark:bg-[#09090b] dark:text-zinc-500">
 
-    <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500/30 dark:via-indigo-500/30 to-transparent"></div>
-
-    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
+    <div class="relative z-10 mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 sm:flex-row">
 
       <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-2 text-center sm:text-left">
         <div class="flex items-center gap-1.5 text-slate-900 dark:text-slate-300 font-bold">
           <span>&copy; {{ currentYear }}</span>
-          <span class="text-slate-300 dark:text-slate-800">|</span>
+          <span class="text-slate-300 dark:text-zinc-800">/</span>
           <span class="text-indigo-600 dark:text-indigo-400 uppercase tracking-tight">Bruno Amorim</span>
         </div>
 
-        <span class="text-slate-300 dark:text-slate-800 hidden md:inline">|</span>
+        <span class="hidden text-slate-300 dark:text-zinc-800 md:inline">/</span>
 
         <div class="hidden md:flex items-center gap-3 text-[11px] text-slate-400 dark:text-slate-500">
           <div class="flex items-center gap-1 hover:text-indigo-500 transition-colors">
@@ -24,7 +22,7 @@
           </div>
         </div>
 
-        <span class="text-slate-300 dark:text-slate-800 hidden sm:inline">|</span>
+        <span class="hidden text-slate-300 dark:text-zinc-800 sm:inline">/</span>
 
         <p class="text-[11px] text-slate-400 dark:text-slate-500">
           compilado com
@@ -48,7 +46,7 @@
           <a
             href="https://github.com/BrunoSouzz"
             target="_blank"
-            class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 hover:bg-indigo-500/5 dark:hover:bg-indigo-500/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.15)] dark:hover:shadow-[0_0_20px_rgba(129,140,248,0.2)] transition-all duration-300 cursor-pointer"
+            class="group flex items-center gap-1.5 rounded-md border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-slate-700 transition-colors hover:border-indigo-500/50 hover:bg-indigo-500/5 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-300 dark:hover:border-indigo-500/50 dark:hover:bg-indigo-500/10 dark:hover:text-indigo-400"
             title="Acessar GitHub"
           >
             <svg class="w-3.5 h-3.5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
@@ -60,7 +58,7 @@
           <a
             href="https://www.linkedin.com/in/dev-brunoamorim"
             target="_blank"
-            class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 hover:bg-indigo-500/5 dark:hover:bg-indigo-500/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.15)] dark:hover:shadow-[0_0_20px_rgba(129,140,248,0.2)] transition-all duration-300 cursor-pointer"
+            class="group flex items-center gap-1.5 rounded-md border border-slate-200 bg-slate-50 px-2.5 py-1.5 text-slate-700 transition-colors hover:border-indigo-500/50 hover:bg-indigo-500/5 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900/50 dark:text-zinc-300 dark:hover:border-indigo-500/50 dark:hover:bg-indigo-500/10 dark:hover:text-indigo-400"
             title="Acessar LinkedIn"
           >
             <svg class="w-3.5 h-3.5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
