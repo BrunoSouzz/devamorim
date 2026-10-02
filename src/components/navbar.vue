@@ -1,8 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <nav
-    class="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-950/60 backdrop-blur-md border-b border-slate-200 dark:border-slate-900 z-50 transition-all duration-300"
+    class="fixed top-0 left-0 w-full bg-white/85 dark:bg-[#09090b]/90 backdrop-blur-md border-b border-slate-200 dark:border-zinc-800/80 z-50 transition-all duration-300"
   >
+    <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-indigo-500/70 to-transparent"></div>
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between relative">
       <div class="flex items-center gap-4 sm:gap-6">
         <button
@@ -69,15 +70,20 @@
         </a>
 
         <div
-          class="hidden sm:flex items-center gap-1.5 px-2 py-0.5 bg-slate-100 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-900 text-slate-500 dark:text-slate-400 font-mono text-[10px] rounded-md select-none"
+          class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 bg-slate-100/80 dark:bg-zinc-900/70 border border-slate-200 dark:border-zinc-800 text-slate-500 dark:text-zinc-400 font-mono text-[10px] rounded-md select-none"
+          title="Branch atual"
         >
-          <span class="text-xs">🌐</span>
-          <span class="font-bold text-slate-700 dark:text-slate-300">main</span>
+          <span class="text-indigo-500">&gt;_</span>
+          <span class="text-slate-400 dark:text-zinc-500">git:</span>
+          <span class="font-bold text-slate-700 dark:text-zinc-200">(</span>
+          <span class="font-bold text-indigo-600 dark:text-indigo-300">main</span>
+          <span class="font-bold text-slate-700 dark:text-zinc-200">)</span>
+          <span class="terminal-blink ml-0.5 h-1.5 w-1.5 rounded-full bg-emerald-500" aria-label="Online"></span>
         </div>
       </div>
 
       <div class="flex items-center gap-4 lg:gap-6">
-        <div class="hidden md:flex items-center h-16 font-mono text-[11px] font-bold tracking-wide">
+        <div class="hidden md:flex items-center h-16 font-mono text-[11px] font-bold tracking-wide border-l border-slate-200 dark:border-zinc-800/70 pl-2">
           <!-- 1. index.html -->
           <a
             @click.prevent="scrollTo('home')"
@@ -192,13 +198,13 @@
     <!-- MENU MOBILE -->
     <div
       :class="[
-        'absolute top-16 left-0 w-full bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-900 md:hidden font-mono text-xs transition-all duration-300 overflow-hidden shadow-xl',
+        'absolute top-16 left-0 w-full bg-white dark:bg-[#09090b] border-b border-slate-200 dark:border-zinc-800/80 md:hidden font-mono text-xs transition-all duration-300 overflow-hidden shadow-xl',
         isMenuOpen ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0 pointer-events-none',
       ]"
     >
-      <div class="px-6 py-4 space-y-3 bg-slate-50/50 dark:bg-slate-950/40">
+      <div class="px-6 py-4 space-y-3 bg-slate-50/50 dark:bg-zinc-950/70">
         <div class="text-[10px] text-slate-400 dark:text-slate-600 font-bold tracking-wider uppercase select-none mb-1">
-          📁 EXPLORER: PORTFOLIO
+          <span class="text-indigo-500">&gt;_</span> EXPLORER: PORTFOLIO
         </div>
 
         <a @click.prevent="scrollTo('home')" href="#home" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'home' ? 'text-orange-500 dark:text-orange-400' : 'text-slate-600 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-400']">
