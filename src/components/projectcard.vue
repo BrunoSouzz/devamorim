@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
-    class="group relative bg-white dark:bg-slate-950/60 rounded-xl border border-slate-200 dark:border-slate-900 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 hover:shadow-xl hover:shadow-violet-500/5 dark:hover:shadow-indigo-500/5 overflow-hidden"
+    class="group relative bg-white dark:bg-slate-950/60 rounded-xl border border-slate-200 dark:border-slate-900 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:shadow-indigo-500/5 overflow-hidden"
   >
     <!-- Brilho de Alocação de Recurso (Hover) -->
     <div
@@ -46,7 +46,7 @@
 
       <!-- Título do Projeto (Identidade Mono) -->
       <h3
-        class="text-base font-mono font-bold text-slate-950 dark:text-white mb-2 group-hover:text-violet-600 dark:group-hover:text-purple-400 transition-colors duration-200"
+        class="text-base font-mono font-bold text-slate-950 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200"
       >
         {{ title }}
       </h3>
@@ -110,7 +110,7 @@ const techThemes = {
   html: 'text-orange-600 dark:text-orange-400 bg-orange-500/5 dark:bg-orange-500/10 border-orange-200 dark:border-orange-500/20',
   css: 'text-indigo-600 dark:text-indigo-400 bg-indigo-500/5 dark:bg-indigo-500/10 border-indigo-200 dark:border-indigo-500/20',
   'gemini api':
-    'text-fuchsia-600 dark:text-fuchsia-400 bg-fuchsia-500/5 dark:bg-fuchsia-500/10 border-fuchsia-200 dark:border-fuchsia-500/20',
+    'text-indigo-600 dark:text-indigo-400 bg-indigo-500/5 dark:bg-indigo-500/10 border-indigo-200 dark:border-indigo-500/20',
   postgresql:
     'text-cyan-600 dark:text-cyan-400 bg-cyan-500/5 dark:bg-cyan-500/10 border-cyan-200 dark:border-cyan-500/20',
   mysql:
@@ -137,7 +137,7 @@ const techThemes = {
   jpa: 'text-orange-600 dark:text-orange-400 bg-orange-500/5 dark:bg-orange-500/10 border-orange-200/60 dark:border-orange-500/20',
 
   'rest api':
-    'text-violet-600 dark:text-violet-400 bg-violet-500/5 dark:bg-violet-500/10 border-violet-200/60 dark:border-violet-500/20',
+    'text-indigo-600 dark:text-indigo-400 bg-indigo-500/5 dark:bg-indigo-500/10 border-indigo-200/60 dark:border-indigo-500/20',
 }
 
 // Retorna a cor específica ou um roxo padrão do sistema caso a tecnologia seja nova
@@ -145,7 +145,7 @@ const getThemeClass = (tag) => {
   const normalized = tag.toLowerCase().trim()
   return (
     techThemes[normalized] ||
-    'text-violet-600 dark:text-purple-400 bg-violet-500/5 dark:bg-purple-500/10 border-violet-200 dark:border-purple-500/20'
+    'text-indigo-600 dark:text-indigo-400 bg-indigo-500/5 dark:bg-indigo-500/10 border-indigo-200 dark:border-indigo-500/20'
   )
 }
 </script>

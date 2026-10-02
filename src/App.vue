@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white text-slate-900 dark:bg-slate-800/40 dark:text-white font-sans antialiased selection:bg-emerald-500/30 transition-colors duration-300">
+  <div class="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-white font-sans antialiased selection:bg-emerald-500/30 transition-colors duration-300">
     <Navbar :isDarkMode="isDarkMode" @toggle-theme="onToggleTheme" />
 
     <main>

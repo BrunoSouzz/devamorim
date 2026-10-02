@@ -8,8 +8,8 @@
     <div class="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px] pointer-events-none"></div>
 
     <!-- Linhas Laser Decorativas do Sistema -->
-    <div class="absolute top-32 left-0 w-1/3 h-px bg-linear-to-r from-violet-500/0 via-violet-500/20 to-transparent hidden lg:block"></div>
-    <div class="absolute bottom-32 right-0 w-1/3 h-px bg-linear-to-l from-purple-500/0 via-purple-500/20 to-transparent hidden lg:block"></div>
+    <div class="absolute top-32 left-0 w-1/3 h-px bg-linear-to-r from-indigo-500/0 via-indigo-500/20 to-transparent hidden lg:block"></div>
+    <div class="absolute bottom-32 right-0 w-1/3 h-px bg-linear-to-l from-indigo-500/0 via-indigo-500/20 to-transparent hidden lg:block"></div>
 
     <div class="max-w-6xl w-full mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
 
@@ -55,7 +55,7 @@
         <div class="flex flex-wrap gap-4 pt-2 font-mono text-xs font-bold">
           <a
             href="#projects"
-            class="group px-5 py-3 bg-slate-950 dark:bg-white text-white dark:text-slate-950 rounded-lg transition-all duration-200 hover:-translate-y-0.5 shadow-md hover:shadow-violet-500/10 flex items-center gap-2"
+            class="group px-5 py-3 bg-slate-950 dark:bg-white text-white dark:text-slate-950 rounded-lg transition-all duration-200 hover:-translate-y-0.5 shadow-md hover:shadow-indigo-500/10 flex items-center gap-2"
           >
             <span>./view_projects --detailed</span>
             <span class="text-indigo-400 dark:text-indigo-400 font-normal transition-transform group-hover:translate-x-0.5">▶</span>

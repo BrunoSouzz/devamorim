@@ -52,7 +52,7 @@
             <span>portfolio</span>
             <span class="mx-1 text-slate-500 dark:text-slate-400">/</span>
             <span
-              class="text-slate-900 dark:text-white font-bold group-hover:text-violet-600 dark:group-hover:text-purple-400 transition-colors"
+              class="text-slate-900 dark:text-white font-bold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
               >bruno</span
             >
           </div>

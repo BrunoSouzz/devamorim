@@ -48,7 +48,7 @@
           <a
             href="https://github.com/BrunoSouzz"
             target="_blank"
-            class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-purple-400 hover:border-violet-500/50 dark:hover:border-purple-500/50 hover:bg-violet-500/5 dark:hover:bg-purple-500/10 hover:shadow-[0_0_15px_rgba(139,92,246,0.15)] dark:hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] transition-all duration-300 cursor-pointer"
+            class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 hover:bg-indigo-500/5 dark:hover:bg-indigo-500/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.15)] dark:hover:shadow-[0_0_20px_rgba(129,140,248,0.2)] transition-all duration-300 cursor-pointer"
             title="Acessar GitHub"
           >
             <svg class="w-3.5 h-3.5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">
@@ -60,7 +60,7 @@
           <a
             href="https://www.linkedin.com/in/dev-brunoamorim"
             target="_blank"
-            class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 hover:text-violet-600 dark:hover:text-purple-400 hover:border-violet-500/50 dark:hover:border-purple-500/50 hover:bg-violet-500/5 dark:hover:bg-purple-500/10 hover:shadow-[0_0_15px_rgba(139,92,246,0.15)] dark:hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] transition-all duration-300 cursor-pointer"
+            class="group flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800/80 bg-slate-50 dark:bg-slate-900/50 text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 dark:hover:border-indigo-500/50 hover:bg-indigo-500/5 dark:hover:bg-indigo-500/10 hover:shadow-[0_0_15px_rgba(99,102,241,0.15)] dark:hover:shadow-[0_0_20px_rgba(129,140,248,0.2)] transition-all duration-300 cursor-pointer"
             title="Acessar LinkedIn"
           >
             <svg class="w-3.5 h-3.5 fill-current transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" aria-hidden="true">

@@ -5,7 +5,7 @@
   >
     <!-- Brilho de Alocação de Recurso (Hover) -->
     <div
-      class="absolute -inset-px bg-linear-to-br from-indigo-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xs -z-10 pointer-events-none"
+      class="absolute -inset-px bg-linear-to-br from-indigo-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xs -z-10 pointer-events-none"
     ></div>
 
     <div>

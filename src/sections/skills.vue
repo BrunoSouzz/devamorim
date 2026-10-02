@@ -34,7 +34,7 @@
           Uma visão detalhada das linguagens, frameworks e ferramentas que utilizo focando em arquitetura limpa, performance e escalabilidade.
         </p>
 
-        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-purple-500/40 to-transparent mt-6"></div>
+        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-indigo-500/40 to-transparent mt-6"></div>
 
       </div>
 
@@ -89,7 +89,7 @@
         </div>
 
         <!-- Módulo 02: Back-End Core -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
+        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5">
           <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
@@ -97,7 +97,7 @@
               <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-indigo-500"></span>
               THREAD_02 // BACK_CORE
             </h3>
-            <span class="font-mono text-[10px] text-indigo-500 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-purple-950/20 px-1.5 py-0.5 rounded border border-indigo-1<PASSWORD> dark:border-purple-9<PASSWORD>">RUNNING</span>
+            <span class="font-mono text-[10px] text-indigo-500 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/20 px-1.5 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/30">RUNNING</span>
           </div>
 
           <div class="space-y-5">
@@ -123,14 +123,14 @@
               </div>
             </div>
 
-            <!-- Skill: REST APIs & SQL -->
+            <!-- Skill: REST APIs & SQL (Cyan/Blue) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-bold">PostgreSQL <span class="text-[10px] text-slate-400 font-normal">v17.x</span></span>
-                <span class="text-indigo-500 dark:text-indigo-400 font-medium">45%</span>
+                <span class="text-cyan-600 dark:text-cyan-400 font-medium">45%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[45%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-indigo-500"></div>
+                <div class="h-full bg-cyan-500 rounded-xs transition-all duration-500 w-[45%] group-hover:bg-linear-to-r group-hover:from-cyan-500 group-hover:to-blue-500"></div>
               </div>
             </div>
           </div>
@@ -160,25 +160,25 @@
               </div>
             </div>
 
-            <!-- Skill: Arquitetura de Software (Violet/Purple) -->
+            <!-- Skill: Estruturas de Dados (Rose/Amber) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-bold">Estruturas de Dados</span>
-                <span class="text-fuchsia-600 dark:text-fuchsia-400 font-medium">50%</span>
+                <span class="text-rose-600 dark:text-rose-400 font-medium">50%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-fuchsia-500 rounded-xs transition-all duration-500 w-[50%] group-hover:bg-linear-to-r group-hover:from-fuchsia-500 group-hover:to-pink-500"></div>
+                <div class="h-full bg-rose-500 rounded-xs transition-all duration-500 w-[50%] group-hover:bg-linear-to-r group-hover:from-rose-500 group-hover:to-amber-400"></div>
               </div>
             </div>
 
-            <!-- Skill: Análise de Algoritmos (Violet/Purple) -->
+            <!-- Skill: Arquitetura de Software (Indigo/Blue) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-bold">Arquitetura de Software</span>
                 <span class="text-indigo-600 dark:text-indigo-400 font-medium">65%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-indigo-500"></div>
+                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-blue-400"></div>
               </div>
             </div>
           </div>
