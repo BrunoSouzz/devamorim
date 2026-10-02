@@ -10,12 +10,12 @@
       :aria-label="`Detalhes do projeto ${project.title}`"
       @click.self="$emit('close')"
     >
-      <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-sm"></div>
+      <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-sm"></div>
 
       <article
-        class="relative z-10 w-full max-w-5xl max-h-[calc(100vh-3rem)] overflow-y-auto rounded-2xl border border-slate-200 dark:border-zinc-800/90 bg-white dark:bg-zinc-950 shadow-2xl shadow-black/30"
+        class="relative z-10 max-h-[calc(100vh-3rem)] w-full max-w-4xl overflow-y-auto rounded-lg border border-slate-200 bg-white shadow-xl shadow-black/20 dark:border-zinc-800 dark:bg-zinc-950 dark:shadow-black/30"
       >
-        <div class="flex items-center justify-between border-b border-slate-200 dark:border-zinc-800 px-4 py-3 font-mono text-xs">
+        <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3 font-mono text-xs dark:border-zinc-800">
           <div class="flex items-center gap-2 text-slate-500 dark:text-zinc-400">
             <span class="text-indigo-500">&gt;_</span>
             <span>project.details</span>
@@ -24,7 +24,7 @@
           </div>
           <button
             type="button"
-            class="group flex items-center gap-2 rounded-md border border-indigo-500/35 bg-indigo-500/5 px-3 py-1.5 font-bold text-indigo-600 transition-all hover:border-indigo-400 hover:bg-indigo-500/10 hover:text-indigo-500 dark:border-indigo-400/35 dark:bg-indigo-400/5 dark:text-indigo-300 dark:hover:border-indigo-300 dark:hover:bg-indigo-400/10"
+            class="group flex items-center gap-2 rounded-md border border-indigo-500/35 bg-indigo-500/5 px-3 py-1.5 font-bold text-indigo-600 transition-colors hover:border-indigo-400 hover:bg-indigo-500/10 hover:text-indigo-500 dark:border-indigo-400/35 dark:bg-indigo-400/5 dark:text-indigo-300 dark:hover:border-indigo-300 dark:hover:bg-indigo-400/10"
             aria-label="Fechar detalhes do projeto"
             @click="emit('close')"
           >
@@ -34,7 +34,7 @@
           </button>
         </div>
 
-        <div class="grid gap-8 p-6 sm:p-9 md:grid-cols-[minmax(0,0.9fr)_minmax(360px,1.1fr)]">
+        <div class="grid gap-8 p-6 sm:p-8 md:grid-cols-[minmax(0,0.9fr)_minmax(280px,1.1fr)]">
           <div>
             <p class="mb-3 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-indigo-500">
               PROJECT_OVERVIEW
@@ -82,7 +82,7 @@
             <img
               :src="project.image"
               :alt="`Imagem do projeto ${project.title}`"
-              class="max-h-112 w-full rounded-xl border border-slate-200 object-cover shadow-lg shadow-slate-950/10 dark:border-zinc-800 dark:shadow-black/20"
+              class="max-h-112 w-full rounded-lg border border-slate-200 object-cover dark:border-zinc-800"
             />
           </div>
           <div

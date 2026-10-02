@@ -1,26 +1,21 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
-    class="group relative bg-white dark:bg-slate-950/60 rounded-xl border border-slate-200 dark:border-slate-900 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:shadow-indigo-500/5 overflow-hidden"
+    class="group flex flex-col justify-between overflow-hidden rounded-lg border border-slate-200 bg-white/70 p-5 transition-colors duration-300 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50"
     role="button"
     tabindex="0"
     @click="emit('open')"
     @keydown.enter="emit('open')"
     @keydown.space.prevent="emit('open')"
   >
-    <!-- Brilho de Alocação de Recurso (Hover) -->
-    <div
-      class="absolute -inset-px bg-linear-to-br from-indigo-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xs -z-10 pointer-events-none"
-    ></div>
-
     <div>
       <!-- Header do Card: Metadados e Links -->
-      <div class="flex items-center justify-between mb-4 select-none">
+      <div class="mb-4 flex items-center justify-between select-none">
         <span
           class="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider flex items-center gap-1.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200"
         >
           <span
-            class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-700 group-hover:bg-indigo-500 dark:group-hover:bg-indigo-400 animate-pulse"
+            class="h-1.5 w-1.5 rounded-full bg-slate-300 transition-colors group-hover:bg-indigo-500 dark:bg-zinc-700 dark:group-hover:bg-indigo-400"
           ></span>
           PROJECT_ARTIFACT
         </span>
@@ -32,7 +27,7 @@
             :href="githubLink"
             target="_blank"
             @click.stop
-            class="flex items-center gap-1 px-2 py-0.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-all duration-200 hover:-translate-y-0.5"
+            class="flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-slate-500 transition-colors hover:border-indigo-500/40 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-400 dark:hover:border-indigo-500/40 dark:hover:text-indigo-400"
           >
             <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
             <span>git</span>
@@ -43,7 +38,7 @@
             :href="liveLink"
             target="_blank"
             @click.stop
-            class="flex items-center gap-1 px-2 py-0.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 text-slate-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-all duration-200 hover:-translate-y-0.5"
+            class="flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-slate-500 transition-colors hover:border-indigo-500/40 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-400 dark:hover:border-indigo-500/40 dark:hover:text-indigo-400"
           >
             <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
             <span>live</span>
@@ -53,7 +48,7 @@
 
       <!-- Título do Projeto (Identidade Mono) -->
       <h3
-        class="text-base font-mono font-bold text-slate-950 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200"
+        class="mb-2 text-base font-mono font-bold text-slate-950 transition-colors duration-200 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-400"
       >
         {{ title }}
       </h3>
@@ -66,7 +61,7 @@
 
     <!-- Footer: Dependências/Tags Técnicas com Syntax Highlighting -->
     <div
-      class="flex flex-wrap gap-1.5 mt-5 pt-3.5 border-t border-slate-100 dark:border-slate-900 font-mono text-[10px]"
+      class="mt-5 flex flex-wrap gap-1.5 border-t border-slate-200 pt-4 font-mono text-[10px] dark:border-zinc-800"
     >
       <span
         v-for="tag in tags"
