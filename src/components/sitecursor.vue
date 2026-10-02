@@ -1,43 +1,29 @@
 <template>
   <div
     class="site-cursor"
-    :class="{ 'is-visible': isVisible, 'is-interactive': isInteractive, 'is-clicking': isClicking }"
+    :class="{
+      'is-visible': isVisible,
+      'is-interactive': isInteractive,
+      'is-clicking': isClicking,
+    }"
     :style="{ '--cursor-x': `${position.x}px`, '--cursor-y': `${position.y}px` }"
     aria-hidden="true"
   >
-    <span class="site-cursor__orbit site-cursor__orbit--one"></span>
-    <span class="site-cursor__orbit site-cursor__orbit--two"></span>
-    <span class="site-cursor__crosshair site-cursor__crosshair--horizontal"></span>
-    <span class="site-cursor__crosshair site-cursor__crosshair--vertical"></span>
-    <span class="site-cursor__core"></span>
-    <span
-      v-for="particle in particles"
-      :key="particle.id"
-      class="site-cursor__particle"
-      :style="{
-        '--particle-x': `${particle.x}px`,
-        '--particle-y': `${particle.y}px`,
-        '--particle-delay': `${particle.delay}ms`,
-      }"
-    ></span>
+    <img class="site-cursor__trail" :src="logoUrl" alt="" />
+    <img class="site-cursor__logo" :src="logoUrl" alt="" />
     <span v-if="cursorLabel" class="site-cursor__label">{{ cursorLabel }}</span>
   </div>
 </template>
 
 <script setup>
 import { onBeforeUnmount, onMounted, reactive, ref } from 'vue'
+import logoUrl from '../assets/images/l32.svg'
 
 const position = reactive({ x: 0, y: 0 })
 const isVisible = ref(false)
 const isInteractive = ref(false)
 const isClicking = ref(false)
 const cursorLabel = ref('')
-const particles = Array.from({ length: 7 }, (_, index) => ({
-  id: index,
-  x: Math.cos(index * 0.9) * (18 + index * 2),
-  y: Math.sin(index * 0.9) * (18 + index * 2),
-  delay: index * 45,
-}))
 
 let clickTimeout
 
@@ -49,6 +35,7 @@ const getInteractiveTarget = (target) => {
 const updateInteractiveState = (target) => {
   const interactiveTarget = getInteractiveTarget(target)
   isInteractive.value = Boolean(interactiveTarget)
+
   if (!interactiveTarget) {
     cursorLabel.value = ''
     return
@@ -82,7 +69,7 @@ const onPointerDown = () => {
   clearTimeout(clickTimeout)
   clickTimeout = window.setTimeout(() => {
     isClicking.value = false
-  }, 280)
+  }, 260)
 }
 
 onMounted(() => {
@@ -119,158 +106,73 @@ onBeforeUnmount(() => {
   opacity: 1;
 }
 
-.site-cursor__crosshair,
-.site-cursor__core,
-.site-cursor__orbit,
-.site-cursor__particle,
+.site-cursor__logo,
+.site-cursor__trail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transform: translate(-7px, -7px);
+  transition:
+    width 180ms ease,
+    height 180ms ease,
+    transform 180ms ease,
+    filter 180ms ease,
+    opacity 180ms ease;
+}
+
+.site-cursor__logo {
+  filter: drop-shadow(0 0 5px rgb(99 102 241 / 55%));
+}
+
+.site-cursor__trail {
+  transform: translate(-2px, -2px) scale(0.72);
+  filter: blur(5px) drop-shadow(0 0 8px rgb(99 102 241 / 45%));
+  opacity: 0.35;
+}
+
 .site-cursor__label {
   position: absolute;
-  display: block;
-  transform: translate(-50%, -50%);
-}
-
-.site-cursor__core {
-  width: 9px;
-  height: 9px;
-  border: 2px solid #c7d2fe;
-  border-radius: 2px;
-  background: #6366f1;
-  box-shadow:
-    0 0 9px 2px rgb(129 140 248 / 85%),
-    0 0 24px rgb(99 102 241 / 40%);
-  rotate: 45deg;
-  transition:
-    scale 180ms ease,
-    rotate 180ms ease,
-    background-color 180ms ease;
-}
-
-.site-cursor__crosshair {
-  background: rgb(165 180 252 / 80%);
-  transition:
-    width 180ms ease,
-    height 180ms ease,
-    background-color 180ms ease;
-}
-
-.site-cursor__crosshair--horizontal {
-  width: 38px;
-  height: 1px;
-}
-
-.site-cursor__crosshair--vertical {
-  width: 1px;
-  height: 38px;
-}
-
-.site-cursor__orbit {
-  width: 28px;
-  height: 28px;
-  border: 1px solid rgb(129 140 248 / 65%);
-  border-radius: 9999px;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  animation: cursor-spin 2.8s linear infinite;
-  transition:
-    width 180ms ease,
-    height 180ms ease,
-    border-color 180ms ease;
-}
-
-.site-cursor__orbit--one {
-  rotate: 25deg;
-}
-
-.site-cursor__orbit--two {
-  width: 38px;
-  height: 38px;
-  rotate: 205deg;
-  animation-duration: 4.2s;
-  animation-direction: reverse;
-  opacity: 0.6;
-}
-
-.site-cursor__particle {
-  width: 3px;
-  height: 3px;
-  left: var(--particle-x);
-  top: var(--particle-y);
-  border-radius: 9999px;
-  background: #818cf8;
-  box-shadow: 0 0 7px 1px rgb(129 140 248 / 70%);
-  opacity: 0;
-  animation: particle-fade 900ms ease-in-out infinite alternate;
-  animation-delay: var(--particle-delay);
-}
-
-.site-cursor__label {
-  top: 27px;
-  left: 25px;
+  top: 22px;
+  left: 22px;
   color: #c7d2fe;
   font: 700 8px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
   letter-spacing: 0.12em;
   white-space: nowrap;
   opacity: 0;
-  transition: opacity 180ms ease;
+  transform: translateY(4px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
 }
 
-.site-cursor.is-interactive .site-cursor__orbit--one {
-  width: 42px;
-  height: 42px;
-  border-color: #818cf8;
-  animation-duration: 1.5s;
+.site-cursor.is-interactive .site-cursor__logo {
+  width: 38px;
+  height: 38px;
+  transform: translate(-9px, -9px) rotate(-8deg);
+  filter: drop-shadow(0 0 9px rgb(129 140 248 / 85%));
 }
 
-.site-cursor.is-interactive .site-cursor__orbit--two {
-  width: 52px;
-  height: 52px;
-  border-color: rgb(165 180 252 / 70%);
-}
-
-.site-cursor.is-interactive .site-cursor__core {
-  scale: 1.35;
-  rotate: 135deg;
-  background: #818cf8;
-}
-
-.site-cursor.is-interactive .site-cursor__crosshair--horizontal {
-  width: 52px;
-}
-
-.site-cursor.is-interactive .site-cursor__crosshair--vertical {
-  height: 52px;
+.site-cursor.is-interactive .site-cursor__trail {
+  transform: translate(3px, 3px) scale(0.85) rotate(-8deg);
+  opacity: 0.5;
 }
 
 .site-cursor.is-interactive .site-cursor__label {
   opacity: 1;
+  transform: translateY(0);
 }
 
-.site-cursor.is-clicking .site-cursor__orbit {
-  width: 64px;
-  height: 64px;
-  border-color: #e0e7ff;
+.site-cursor.is-clicking .site-cursor__logo {
+  transform: translate(-9px, -9px) scale(0.78) rotate(8deg);
+  filter: drop-shadow(0 0 14px rgb(165 180 252 / 100%));
 }
 
-.site-cursor.is-clicking .site-cursor__core {
-  scale: 0.8;
-  rotate: 225deg;
-}
-
-@keyframes cursor-spin {
-  to {
-    rotate: 385deg;
-  }
-}
-
-@keyframes particle-fade {
-  from {
-    opacity: 0.15;
-    scale: 0.65;
-  }
-  to {
-    opacity: 0.85;
-    scale: 1.25;
-  }
+.site-cursor.is-clicking .site-cursor__trail {
+  transform: translate(7px, 7px) scale(1);
+  opacity: 0;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -290,13 +192,10 @@ onBeforeUnmount(() => {
 
 @media (prefers-reduced-motion: reduce) {
   .site-cursor,
-  .site-cursor__core,
-  .site-cursor__crosshair,
-  .site-cursor__orbit,
-  .site-cursor__particle,
+  .site-cursor__logo,
+  .site-cursor__trail,
   .site-cursor__label {
     transition: none;
-    animation: none;
   }
 }
 </style>
