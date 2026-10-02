@@ -1,21 +1,15 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
-    class="group relative bg-white dark:bg-slate-950/60 rounded-xl border border-slate-200 dark:border-slate-900 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 hover:shadow-xl hover:shadow-indigo-500/5 dark:hover:shadow-indigo-500/5 overflow-hidden"
+    class="group flex flex-col justify-between overflow-hidden rounded-lg border border-slate-200 bg-white/70 p-5 transition-colors duration-300 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50"
   >
-    <!-- Brilho de Alocação de Recurso (Hover) -->
-    <div
-      class="absolute -inset-px bg-linear-to-br from-indigo-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xs -z-10 pointer-events-none"
-    ></div>
-
     <div>
-      <!-- Header do Card: Categoria & Ano -->
-      <div class="flex items-center justify-between mb-4 select-none">
+      <div class="mb-4 flex items-center justify-between select-none">
         <span
           class="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider flex items-center gap-1.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200"
         >
           <span
-            class="w-1 h-1 rounded-full bg-slate-300 dark:bg-slate-700 group-hover:bg-indigo-500 dark:group-hover:bg-indigo-400 animate-pulse"
+            class="h-1.5 w-1.5 rounded-full bg-slate-300 transition-colors group-hover:bg-indigo-500 dark:bg-zinc-700 dark:group-hover:bg-indigo-400"
           ></span>
           {{ certificate.category || 'CERTIFICATE' }}
         </span>
@@ -25,25 +19,39 @@
         </span>
       </div>
 
-      <!-- Título do Certificado -->
       <h3
-        class="text-base font-mono font-bold text-slate-950 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200"
+        class="mb-2 text-base font-mono font-bold text-slate-950 transition-colors duration-200 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-400"
       >
         {{ certificate.title }}
       </h3>
 
-      <!-- Emissor / Instituição -->
-      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-sans mb-4 flex items-center gap-1.5">
+      <p class="mb-4 flex items-center gap-1.5 text-xs font-sans text-slate-600 dark:text-slate-400 sm:text-sm">
         <svg class="w-3.5 h-3.5 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
         </svg>
         <span>{{ certificate.issuer }}</span>
       </p>
 
-      <!-- Tags de Tecnologias com o mesmo Syntax Highlighting do projectcard -->
+      <div class="relative mb-5 flex h-36 items-center justify-center overflow-hidden rounded-md border border-slate-200 bg-slate-100 dark:border-zinc-800 dark:bg-zinc-950">
+        <img
+          v-if="certificate.preview"
+          :src="certificate.preview"
+          :alt="`Prévia desfocada do certificado ${certificate.title}`"
+          class="h-full w-full scale-105 object-cover opacity-75 blur-[5px] transition duration-500 group-hover:scale-110"
+        />
+        <div v-else class="flex flex-col items-center gap-2 text-slate-400 dark:text-zinc-600">
+          <span class="font-mono text-3xl">.pdf</span>
+          <span class="font-mono text-[10px] uppercase tracking-widest">document_preview</span>
+        </div>
+        <div class="absolute inset-0 bg-slate-950/25"></div>
+        <span class="absolute rounded border border-white/20 bg-slate-950/60 px-2 py-1 font-mono text-[10px] text-white/90">
+          PREVIEW_LOCKED
+        </span>
+      </div>
+
       <div
         v-if="certificate.skills && certificate.skills.length"
-        class="flex flex-wrap gap-1.5 mb-5 font-mono text-[10px]"
+        class="mb-5 flex flex-wrap gap-1.5 font-mono text-[10px]"
       >
         <span
           v-for="skill in certificate.skills"
@@ -58,14 +66,13 @@
       </div>
     </div>
 
-    <!-- Botão de Ação Estilizado de Terminal -->
-    <div class="pt-3.5 border-t border-slate-100 dark:border-slate-900">
+    <div class="border-t border-slate-200 pt-4 dark:border-zinc-800">
       <a
         v-if="certificate.link"
         :href="certificate.link"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex items-center justify-center gap-2 w-full px-3 py-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-all duration-200 font-mono text-xs hover:-translate-y-0.5"
+        class="flex w-full items-center justify-center gap-2 rounded-md border border-indigo-500/30 bg-indigo-500/5 px-3 py-2 font-mono text-xs text-indigo-600 transition-colors hover:border-indigo-500/60 hover:bg-indigo-500/10 dark:text-indigo-300"
       >
         <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
         <span>{{ certificate.linkType === 'linkedin' ? 'view_linkedin' : 'view_pdf' }}</span>

@@ -2,38 +2,24 @@
 <template>
   <section
     id="certificados"
-    class="py-20 bg-slate-50 dark:bg-slate-950/60 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
+    class="relative scroll-mt-20 overflow-hidden bg-slate-50 py-20 text-slate-900 transition-colors duration-300 dark:bg-[#09090b] dark:text-white"
   >
-    <!-- Background Grid Alinhado com a Identidade de Workspace -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808007_1px,transparent_1px),linear-gradient(to_bottom,#80808007_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none"></div>
-
-    <!-- Linhas de Telemetria Laterais -->
-    <div class="absolute top-12 left-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden lg:block tracking-widest">
-      + SYS.CERTS_INIT_0x05
-    </div>
-    <div class="absolute bottom-12 right-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden lg:block tracking-widest">
-      // TOTAL_CERTIFICATES [03]
-    </div>
-
     <div class="max-w-6xl mx-auto px-6 relative z-10">
-      <!-- Cabeçalho de Terminal Centralizado -->
-      <div class="flex flex-col items-center text-center mb-16">
-        <div class="flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 font-mono text-sm tracking-wide mb-2 select-none">
-          <span class="text-slate-400 dark:text-slate-600">bruno@portfolio:~$</span>
-          <span>ls --certificates</span>
-          <span class="w-1.5 h-3.5 bg-indigo-500 dark:bg-indigo-400 terminal-blink ml-0.5"></span>
+      <div class="mb-12 flex flex-col items-center text-center">
+        <div class="mb-3 flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-zinc-500 sm:text-sm">
+          <span>bruno@portfolio:~$</span>
+          <span class="font-semibold text-indigo-600 dark:text-indigo-400">ls --certificates</span>
+          <span class="terminal-blink h-3.5 w-1 bg-indigo-500"></span>
         </div>
-        <h2 class="text-3xl sm:text-4xl font-mono font-black text-slate-950 dark:text-white tracking-tight">
+        <h2 class="mb-4 text-3xl font-mono font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
           Certificações & Cursos
         </h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-xl text-xs sm:text-sm mt-3 font-sans leading-relaxed">
+        <p class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-zinc-400 sm:text-base">
           Cursos concluídos e certificações técnicas que comprovam minha bagagem prática.
         </p>
-        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-emerald-500/40 dark:via-emerald-500/40 to-transparent mt-5"></div>
       </div>
 
-      <!-- Grid de Certificados -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <CertificateCard
           v-for="cert in certificates"
           :key="cert.id"
@@ -55,6 +41,7 @@ const certificates = ref([
     issuer: "Cisco Networking Academy",
     date: "2026",
     category: "CYBERSECURITY",
+    preview: "/certificates/introduction-to-cybersecurity.png",
     link: "https://www.linkedin.com/posts/dev-brunoamorim_cybersecurity-seguranaexadainformaaexaeto-activity-7439001813426716672-ArCY",
     linkType: "linkedin",
     skills: ["Cybersecurity", "Network Security", "Ethical Hacking"]
