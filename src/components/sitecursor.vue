@@ -9,15 +9,17 @@
     :style="{ '--cursor-x': `${position.x}px`, '--cursor-y': `${position.y}px` }"
     aria-hidden="true"
   >
-    <img class="site-cursor__trail" :src="logoUrl" alt="" />
-    <img class="site-cursor__logo" :src="logoUrl" alt="" />
+    <span class="site-cursor__trail" aria-hidden="true"></span>
+    <span class="site-cursor__mark" aria-hidden="true">
+      <span class="site-cursor__prompt">&gt;</span>
+      <span class="site-cursor__underscore">_</span>
+    </span>
     <span v-if="cursorLabel" class="site-cursor__label">{{ cursorLabel }}</span>
   </div>
 </template>
 
 <script setup>
 import { onBeforeUnmount, onMounted, reactive, ref } from 'vue'
-import logoUrl from '../assets/images/l32.svg'
 
 const position = reactive({ x: 0, y: 0 })
 const isVisible = ref(false)
@@ -106,31 +108,49 @@ onBeforeUnmount(() => {
   opacity: 1;
 }
 
-.site-cursor__logo,
-.site-cursor__trail {
+.site-cursor__trail,
+.site-cursor__mark {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  transform: translate(-7px, -7px);
+  transform: translate(-50%, -50%);
   transition:
-    width 180ms ease,
-    height 180ms ease,
     transform 180ms ease,
     filter 180ms ease,
     opacity 180ms ease;
 }
 
-.site-cursor__logo {
-  filter: drop-shadow(0 0 5px rgb(99 102 241 / 55%));
+.site-cursor__mark {
+  display: flex;
+  align-items: baseline;
+  color: #c7d2fe;
+  font: 800 17px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: -0.16em;
+  text-shadow:
+    0 0 5px rgb(129 140 248 / 90%),
+    0 0 13px rgb(99 102 241 / 60%);
+  filter: drop-shadow(0 2px 3px rgb(2 6 23 / 80%));
 }
 
 .site-cursor__trail {
-  transform: translate(-2px, -2px) scale(0.72);
-  filter: blur(5px) drop-shadow(0 0 8px rgb(99 102 241 / 45%));
-  opacity: 0.35;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgb(129 140 248 / 45%);
+  border-radius: 5px;
+  background: rgb(99 102 241 / 10%);
+  box-shadow:
+    0 0 8px rgb(99 102 241 / 35%),
+    inset 0 0 8px rgb(129 140 248 / 15%);
+  opacity: 0.7;
+}
+
+.site-cursor__prompt {
+  color: #818cf8;
+}
+
+.site-cursor__underscore {
+  color: #e0e7ff;
+  animation: cursor-blink 900ms steps(1) infinite;
 }
 
 .site-cursor__label {
@@ -148,16 +168,16 @@ onBeforeUnmount(() => {
     transform 180ms ease;
 }
 
-.site-cursor.is-interactive .site-cursor__logo {
-  width: 38px;
-  height: 38px;
-  transform: translate(-9px, -9px) rotate(-8deg);
-  filter: drop-shadow(0 0 9px rgb(129 140 248 / 85%));
+.site-cursor.is-interactive .site-cursor__mark {
+  transform: translate(-50%, -50%) scale(1.18);
+  filter: drop-shadow(0 2px 4px rgb(2 6 23 / 80%));
 }
 
 .site-cursor.is-interactive .site-cursor__trail {
-  transform: translate(3px, 3px) scale(0.85) rotate(-8deg);
-  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(1.3) rotate(45deg);
+  border-color: #818cf8;
+  background: rgb(99 102 241 / 18%);
+  opacity: 0.9;
 }
 
 .site-cursor.is-interactive .site-cursor__label {
@@ -165,14 +185,26 @@ onBeforeUnmount(() => {
   transform: translateY(0);
 }
 
-.site-cursor.is-clicking .site-cursor__logo {
-  transform: translate(-9px, -9px) scale(0.78) rotate(8deg);
-  filter: drop-shadow(0 0 14px rgb(165 180 252 / 100%));
+.site-cursor.is-clicking .site-cursor__mark {
+  transform: translate(-50%, -50%) scale(0.82);
+  color: #ffffff;
 }
 
 .site-cursor.is-clicking .site-cursor__trail {
-  transform: translate(7px, 7px) scale(1);
+  transform: translate(-50%, -50%) scale(1.7);
+  border-color: #c7d2fe;
   opacity: 0;
+}
+
+@keyframes cursor-blink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  46%,
+  100% {
+    opacity: 0.25;
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -192,10 +224,11 @@ onBeforeUnmount(() => {
 
 @media (prefers-reduced-motion: reduce) {
   .site-cursor,
-  .site-cursor__logo,
   .site-cursor__trail,
+  .site-cursor__mark,
   .site-cursor__label {
     transition: none;
+    animation: none;
   }
 }
 </style>
