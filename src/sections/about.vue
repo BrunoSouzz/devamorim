@@ -2,7 +2,7 @@
 <template>
   <section
     id="about"
-    class="relative scroll-mt-20 overflow-hidden bg-white py-20 text-slate-900 transition-colors duration-300 dark:bg-[#09090b] dark:text-white"
+    class="section-reveal relative scroll-mt-20 overflow-hidden bg-white py-20 text-slate-900 transition-colors duration-300 dark:bg-[#09090b] dark:text-white"
   >
     <div class="max-w-6xl mx-auto px-6 relative z-10">
       <div class="mb-12 flex flex-col items-center text-center">

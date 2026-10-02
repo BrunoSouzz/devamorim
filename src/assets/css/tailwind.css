@@ -42,6 +42,14 @@ h4 {
   animation: terminal-blink 1.05s steps(1, end) infinite;
 }
 
+.section-reveal {
+  animation: section-reveal 700ms ease-out both;
+}
+
+.section-reveal > div {
+  animation: section-content-reveal 700ms ease-out both;
+}
+
 @keyframes terminal-blink {
   0%,
   48% {
@@ -54,8 +62,32 @@ h4 {
   }
 }
 
+@keyframes section-reveal {
+  from {
+    opacity: 0.65;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes section-content-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .terminal-blink {
+  .terminal-blink,
+  .section-reveal,
+  .section-reveal > div {
     animation: none;
   }
 }

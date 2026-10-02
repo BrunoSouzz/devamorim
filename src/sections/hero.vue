@@ -2,7 +2,7 @@
 <template>
   <section
     id="home"
-    class="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-50 pt-20 pb-16 transition-colors duration-300 dark:bg-[#09090b]"
+    class="section-reveal relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-50 pt-20 pb-16 transition-colors duration-300 dark:bg-[#09090b]"
   >
     <div class="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-6 md:flex-row md:justify-between md:gap-20">
       <div class="order-2 w-full max-w-2xl space-y-7 text-left md:order-1">
