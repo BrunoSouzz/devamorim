@@ -94,11 +94,11 @@
           <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
-            <h3 class="font-mono text-xs text-indigo-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-purple-500"></span>
+            <h3 class="font-mono text-xs text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-indigo-500"></span>
               THREAD_02 // BACK_CORE
             </h3>
-            <span class="font-mono text-[10px] text-indigo-500 dark:text-purple-400 font-bold bg-indigo-50 dark:bg-purple-950/20 px-1.5 py-0.5 rounded border border-indigo-1<PASSWORD> dark:border-purple-9<PASSWORD>">RUNNING</span>
+            <span class="font-mono text-[10px] text-indigo-500 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-purple-950/20 px-1.5 py-0.5 rounded border border-indigo-1<PASSWORD> dark:border-purple-9<PASSWORD>">RUNNING</span>
           </div>
 
           <div class="space-y-5">
@@ -131,19 +131,19 @@
                 <span class="text-indigo-500 dark:text-indigo-400 font-medium">45%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[45%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-violet-500"></div>
+                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[45%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-indigo-500"></div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Módulo 03: Mobile & CS Core -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-purple-500/40 transition-all duration-300 hover:-translate-y-0.5">
+        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5">
           <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
-            <h3 class="font-mono text-xs text-indigo-600 dark:text-purple-400 font-bold uppercase tracking-wider flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-purple-500"></span>
+            <h3 class="font-mono text-xs text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-indigo-500"></span>
               THREAD_03 // CS_CORE
             </h3>
             <span class="font-mono text-[10px] text-amber-600 dark:text-amber-400 font-bold bg-amber-50 dark:bg-amber-950/20 px-1.5 py-0.5 rounded border border-amber-100 dark:border-amber-900/30">COMPILED</span>
@@ -176,10 +176,10 @@
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
                 <span class="text-slate-700 dark:text-slate-300 font-bold">Arquitetura de Software</span>
-                <span class="text-violet-600 dark:text-purple-400 font-medium">65%</span>
+                <span class="text-indigo-600 dark:text-indigo-400 font-medium">65%</span>
               </div>
               <div class="h-2 w-full bg-slate-100 dark:bg-slate-950 rounded border border-slate-200/60 dark:border-slate-800 overflow-hidden p-0.5">
-                <div class="h-full bg-violet-500 rounded-xs transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-violet-500 group-hover:to-purple-500"></div>
+                <div class="h-full bg-indigo-500 rounded-xs transition-all duration-500 w-[65%] group-hover:bg-linear-to-r group-hover:from-indigo-500 group-hover:to-indigo-500"></div>
               </div>
             </div>
           </div>
