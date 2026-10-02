@@ -65,9 +65,9 @@
         :href="certificate.link"
         target="_blank"
         rel="noopener noreferrer"
-        class="flex items-center justify-center gap-2 w-full px-3 py-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-violet-500/40 dark:hover:border-purple-500/40 text-slate-600 dark:text-slate-400 hover:text-violet-600 dark:hover:text-purple-400 rounded-md transition-all duration-200 font-mono text-xs hover:-translate-y-0.5"
+        class="flex items-center justify-center gap-2 w-full px-3 py-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 rounded-md transition-all duration-200 font-mono text-xs hover:-translate-y-0.5"
       >
-        <span class="text-violet-500 dark:text-purple-400 font-bold">~</span>
+        <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
         <span>{{ certificate.linkType === 'linkedin' ? 'view_linkedin' : 'view_pdf' }}</span>
       </a>
     </div>
@@ -93,7 +93,7 @@ const techThemes = {
   flutter: 'text-sky-500 dark:text-sky-400 bg-sky-500/5 dark:bg-sky-500/10 border-sky-200 dark:border-sky-500/20',
   firebase: 'text-amber-500 dark:text-amber-400 bg-amber-500/5 dark:bg-amber-500/10 border-amber-200 dark:border-amber-500/20',
   cybersecurity: 'text-red-600 dark:text-red-400 bg-red-500/5 dark:bg-red-500/10 border-red-200/60 dark:border-red-500/20',
-  'network security': 'text-purple-600 dark:text-purple-400 bg-purple-500/5 dark:bg-purple-500/10 border-purple-200 dark:border-purple-500/20',
+  'network security': 'text-purple-600 dark:text-purple-400 bg-indigo-500/5 dark:bg-purple-500/10 border-indigo-200 dark:border-indigo-500/20',
   'ethical hacking': 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 dark:bg-emerald-500/10 border-emerald-200 dark:border-emerald-500/20',
 }
 
@@ -101,7 +101,7 @@ const getThemeClass = (tag) => {
   const normalized = tag.toLowerCase().trim()
   return (
     techThemes[normalized] ||
-    'text-violet-600 dark:text-purple-400 bg-violet-500/5 dark:bg-purple-500/10 border-violet-200 dark:border-purple-500/20'
+    'text-indigo-600 dark:text-indigo-400 bg-indigo-500/5 dark:bg-indigo-500/10 border-indigo-200 dark:border-indigo-500/20'
   )
 }
 </script>

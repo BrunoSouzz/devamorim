@@ -18,10 +18,10 @@
     <div class="max-w-6xl mx-auto px-6 relative z-10">
       <!-- Cabeçalho de Terminal Centralizado -->
       <div class="flex flex-col items-center text-center mb-16">
-        <div class="flex items-center gap-1.5 text-indigo-600 dark:text-violet-400 font-mono text-sm tracking-wide mb-2 select-none">
+        <div class="flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 font-mono text-sm tracking-wide mb-2 select-none">
           <span class="text-slate-400 dark:text-slate-600">bruno@portfolio:~$</span>
           <span>ls --certificates</span>
-          <span class="w-1.5 h-3.5 bg-indigo-500 dark:bg-violet-400 animate-pulse ml-0.5"></span>
+          <span class="w-1.5 h-3.5 bg-indigo-500 dark:bg-indigo-400 animate-pulse ml-0.5"></span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-mono font-black text-slate-950 dark:text-white tracking-tight">
           Certificações & Cursos
