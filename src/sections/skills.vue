@@ -2,57 +2,35 @@
 <template>
   <section
     id="skills"
-    class="py-20 bg-slate-50 dark:bg-slate-950/60 text-slate-900 dark:text-white scroll-mt-20 transition-colors duration-300 relative overflow-hidden"
+    class="relative scroll-mt-20 overflow-hidden bg-slate-50 py-20 text-slate-900 transition-colors duration-300 dark:bg-[#09090b] dark:text-white"
   >
-    <!-- Background Grid Alinhado com a Identidade de Workspace -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808007_1px,transparent_1px),linear-gradient(to_bottom,#80808007_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none"></div>
-
-    <!-- Linhas de Telemetria Laterais -->
-    <div class="absolute top-12 left-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden lg:block tracking-widest">
-      + MATRIX.DIAG_0x99FF
-    </div>
-    <div class="absolute bottom-12 right-8 text-slate-300 dark:text-slate-800 font-mono text-xs select-none pointer-events-none hidden lg:block tracking-widest">
-      // CORE_STACK_LOADED [OK]
-    </div>
-
     <div class="max-w-6xl mx-auto px-6 relative z-10">
-
-      <!-- Cabeçalho (Comando do Analisador de Sistema) -->
-      <div class="flex flex-col items-center text-center mb-16">
-
-        <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
+      <div class="mb-12 flex flex-col items-center text-center">
+        <div class="mb-3 flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-zinc-500 sm:text-sm">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold">ls --skills</span>
-          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 terminal-blink"></span>
+          <span class="terminal-blink h-3.5 w-1 bg-indigo-500"></span>
         </div>
-
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">
+        <h2 class="mb-4 text-3xl font-mono font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl md:text-5xl">
           Competências Técnicas
         </h2>
-
-        <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        <p class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-zinc-400 sm:text-base">
           Uma visão detalhada das linguagens, frameworks e ferramentas que utilizo focando em arquitetura limpa, performance e escalabilidade.
         </p>
-
-        <div class="h-0.5 w-20 bg-linear-to-r from-transparent via-indigo-500/40 dark:via-indigo-500/40 to-transparent mt-6"></div>
-
       </div>
 
-      <!-- Grid de Módulos de Performance -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 
         <!-- Módulo 01: Front-End Engine -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5">
-          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-          <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
+        <div class="group overflow-hidden rounded-lg border border-slate-200 bg-white/70 transition-colors duration-300 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50">
+          <div class="flex items-center justify-between border-b border-slate-200 px-5 py-4 select-none dark:border-zinc-800">
             <h3 class="font-mono text-xs text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-indigo-500"></span>
               THREAD_01 // FRONT_ENGINE
             </h3>
             <span class="font-mono text-[10px] text-emerald-500 dark:text-emerald-400 font-bold bg-emerald-50 dark:bg-emerald-950/20 px-1.5 py-0.5 rounded border border-emerald-100 dark:border-emerald-900/30">ACTIVE</span>
           </div>
-          <div class="space-y-5">
+          <div class="space-y-5 p-5">
             <!-- Skill: Vue.js (Emerald/Teal) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
@@ -89,10 +67,8 @@
         </div>
 
         <!-- Módulo 02: Back-End Core -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5">
-          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-          <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
+        <div class="group overflow-hidden rounded-lg border border-slate-200 bg-white/70 transition-colors duration-300 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50">
+          <div class="flex items-center justify-between border-b border-slate-200 px-5 py-4 select-none dark:border-zinc-800">
             <h3 class="font-mono text-xs text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-indigo-500"></span>
               THREAD_02 // BACK_CORE
@@ -100,7 +76,7 @@
             <span class="font-mono text-[10px] text-indigo-500 dark:text-indigo-400 font-bold bg-indigo-50 dark:bg-indigo-950/20 px-1.5 py-0.5 rounded border border-indigo-100 dark:border-indigo-900/30">RUNNING</span>
           </div>
 
-          <div class="space-y-5">
+          <div class="space-y-5 p-5">
             <!-- Skill: Node.js (Green/Lime) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
@@ -137,10 +113,8 @@
         </div>
 
         <!-- Módulo 03: Mobile & CS Core -->
-        <div class="group relative p-6 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-900 rounded-xl space-y-6 hover:border-indigo-500/40 dark:hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5">
-          <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-          <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-900 pb-3 select-none">
+        <div class="group overflow-hidden rounded-lg border border-slate-200 bg-white/70 transition-colors duration-300 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50">
+          <div class="flex items-center justify-between border-b border-slate-200 px-5 py-4 select-none dark:border-zinc-800">
             <h3 class="font-mono text-xs text-indigo-600 dark:text-indigo-400 font-bold uppercase tracking-wider flex items-center gap-2">
               <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 dark:bg-indigo-500"></span>
               THREAD_03 // CS_CORE
@@ -148,7 +122,7 @@
             <span class="font-mono text-[10px] text-amber-600 dark:text-amber-400 font-bold bg-amber-50 dark:bg-amber-950/20 px-1.5 py-0.5 rounded border border-amber-100 dark:border-amber-900/30">COMPILED</span>
           </div>
 
-          <div class="space-y-5">
+          <div class="space-y-5 p-5">
             <!-- Skill: Flutter / Dart (Sky/Light Blue) -->
             <div class="space-y-2">
               <div class="flex justify-between font-mono text-xs">
