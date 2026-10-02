@@ -51,7 +51,7 @@
         >
           <span class="text-indigo-500 transition-transform duration-300 group-hover:-translate-x-0.5">&lt;</span>
           <span>cd ..</span>
-          <span class="text-indigo-500">_</span>
+          <span class="terminal-blink text-indigo-500">_</span>
         </button>
         <a v-else @click.prevent="scrollTo('home')" href="#home" class="flex items-center gap-2 group font-mono text-xs">
           <span

@@ -24,11 +24,13 @@
           </div>
           <button
             type="button"
-            class="rounded-md px-2 py-1 font-bold text-indigo-500 transition-colors hover:bg-indigo-500/10 hover:text-indigo-400"
+            class="group flex items-center gap-2 rounded-md border border-indigo-500/35 bg-indigo-500/5 px-3 py-1.5 font-bold text-indigo-600 transition-all hover:border-indigo-400 hover:bg-indigo-500/10 hover:text-indigo-500 dark:border-indigo-400/35 dark:bg-indigo-400/5 dark:text-indigo-300 dark:hover:border-indigo-300 dark:hover:bg-indigo-400/10"
             aria-label="Fechar detalhes do projeto"
             @click="emit('close')"
           >
-            cd ..
+            <span class="text-indigo-400 transition-transform duration-200 group-hover:-translate-x-0.5">&lt;</span>
+            <span>cd ..</span>
+            <span class="terminal-blink text-indigo-400">_</span>
           </button>
         </div>
 

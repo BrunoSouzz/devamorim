@@ -18,7 +18,7 @@
         <div class="font-mono text-sm sm:text-base mb-4 flex items-center gap-2 select-none">
           <span class="text-slate-500 dark:text-slate-500">bruno@portfolio:~$</span>
           <span class="text-indigo-600 dark:text-indigo-400 font-semibold">cat about_me.md</span>
-          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 animate-pulse"></span>
+          <span class="w-2.5 h-5 bg-indigo-600 dark:bg-indigo-400 terminal-blink"></span>
         </div>
 
         <h2 class="text-3xl sm:text-4xl md:text-5xl font-mono font-bold text-slate-900 dark:text-white tracking-wide mb-5">

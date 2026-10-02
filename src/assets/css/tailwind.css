@@ -38,6 +38,28 @@ h4 {
   text-wrap: balance;
 }
 
+.terminal-blink {
+  animation: terminal-blink 1.05s steps(1, end) infinite;
+}
+
+@keyframes terminal-blink {
+  0%,
+  48% {
+    opacity: 1;
+  }
+
+  49%,
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .terminal-blink {
+    animation: none;
+  }
+}
+
 ::selection {
   background-color: rgba(99, 102, 241, 0.2);
   color: #3730a3;

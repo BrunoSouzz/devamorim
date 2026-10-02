@@ -25,7 +25,7 @@
           <div class="flex items-center gap-2">
             <span class="text-indigo-500 font-bold">[ACADEMIC]</span>
             <span>Current scope: Computer Science _</span>
-            <span class="w-1 h-3.5 bg-indigo-500 dark:bg-indigo-500 animate-pulse"></span>
+            <span class="w-1 h-3.5 bg-indigo-500 dark:bg-indigo-500 terminal-blink"></span>
           </div>
         </div>
 

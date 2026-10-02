@@ -22,7 +22,7 @@
         <div class="flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 font-mono text-sm tracking-wide mb-2 select-none">
           <span class="text-slate-400 dark:text-slate-600">bruno@portfolio:~$</span>
           <span>ls --projects</span>
-          <span class="w-1.5 h-3.5 bg-indigo-500 dark:bg-indigo-400 animate-pulse ml-0.5"></span>
+          <span class="w-1.5 h-3.5 bg-indigo-500 dark:bg-indigo-400 terminal-blink ml-0.5"></span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-mono font-black text-slate-950 dark:text-white tracking-tight">
           Projetos em Destaque
