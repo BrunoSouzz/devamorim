@@ -33,8 +33,9 @@
       </div>
 
       <div
-        class="flex h-auto w-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white/70 dark:border-zinc-800 dark:bg-zinc-900/35 md:min-h-145 md:flex-row"
+        class="contact-panel relative flex h-auto w-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white/70 dark:border-zinc-800 dark:bg-zinc-900/35 md:min-h-145 md:flex-row"
       >
+        <div class="contact-panel__scan pointer-events-none absolute inset-y-0 left-0 w-px bg-linear-to-b from-transparent via-indigo-400/70 to-transparent" aria-hidden="true"></div>
         <div
           class="hidden"
         >
@@ -454,3 +455,77 @@ const handleSubmit = async () => {
   }
 }
 </script>
+
+<style scoped>
+.contact-panel {
+  animation: contact-panel-in 700ms ease-out both;
+}
+
+.contact-panel::before {
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: linear-gradient(120deg, transparent 25%, rgb(99 102 241 / 0.28), transparent 75%) border-box;
+  content: '';
+  pointer-events: none;
+  mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  animation: contact-border-flow 5s ease-in-out infinite;
+}
+
+.contact-panel__scan {
+  animation: contact-scan 4.5s ease-in-out infinite;
+}
+
+@keyframes contact-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contact-border-flow {
+  0%,
+  100% {
+    opacity: 0.25;
+    background-position: 0% 50%;
+  }
+
+  50% {
+    opacity: 0.75;
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes contact-scan {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(-15%);
+  }
+
+  20%,
+  80% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(115%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-panel,
+  .contact-panel::before,
+  .contact-panel__scan {
+    animation: none;
+  }
+}
+</style>
