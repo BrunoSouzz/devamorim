@@ -52,6 +52,7 @@ const certificates = ref([
     issuer: "SENAI",
     date: "2026",
     category: "PROGRAMMING",
+    preview: "/certificates/preview_senai.png",
     link: "/certificates/Certificado_SENAI - python essentianls.pdf",
     linkType: "file",
     skills: ["Python", "HTML", "CSS", "JavaScript", "PostgreSQL"]
@@ -62,6 +63,7 @@ const certificates = ref([
     issuer: "Sebrae",
     date: "2026",
     category: "EVENTS",
+    preview: "/certificates/preview_starup.png",
     link: "/certificates/Certificado_startuday.pdf",
     linkType: "file",
     skills: ["Innovation", "Entrepreneurship", "Business Development"]
