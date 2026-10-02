@@ -240,11 +240,11 @@
                 type="submit"
                 variant="primary"
                 :disabled="isSubmitting"
-                class="w-full sm:w-auto shrink-0 group/btn relative overflow-hidden shadow-lg shadow-violet-500/10 dark:shadow-purple-500/5"
+                class="w-full sm:w-auto shrink-0 group/btn relative overflow-hidden shadow-lg shadow-indigo-500/10 dark:shadow-indigo-500/5"
               >
                 <template #icon-right>
                   <span
-                    class="text-purple-300 dark:text-purple-400 font-bold transition-transform group-hover/btn:translate-x-1 duration-200"
+                    class="text-indigo-300 dark:text-indigo-400 font-bold transition-transform group-hover/btn:translate-x-1 duration-200"
                     >▶</span
                   >
                 </template>
