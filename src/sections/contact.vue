@@ -134,7 +134,26 @@
         </div>
 
         <div         class="flex flex-1 flex-col bg-white/30 dark:bg-zinc-950/10">
+          <nav class="flex flex-wrap items-center gap-1 border-b border-slate-200 bg-slate-50/70 px-3 py-2 dark:border-zinc-800 dark:bg-zinc-950/30" aria-label="Abas de contato">
+            <button
+              v-for="tab in contactTabs"
+              :key="tab.id"
+              type="button"
+              :class="[
+                'rounded-md px-3 py-1.5 font-mono text-[11px] transition-colors',
+                activeTab === tab.id
+                  ? 'bg-white text-indigo-600 shadow-xs dark:bg-zinc-900 dark:text-indigo-300'
+                  : 'text-slate-500 hover:bg-white/70 hover:text-indigo-600 dark:text-zinc-500 dark:hover:bg-zinc-900/60 dark:hover:text-indigo-300',
+              ]"
+              :aria-selected="activeTab === tab.id"
+              role="tab"
+              @click="activeTab = tab.id"
+            >
+              {{ tab.label }}
+            </button>
+          </nav>
           <div
+            v-if="activeTab === 'email'"
             class="flex items-center border-b border-slate-200 bg-slate-50/70 px-4 select-none dark:border-zinc-800 dark:bg-zinc-950/30"
           >
             <div
@@ -145,6 +164,7 @@
           </div>
 
           <form
+            v-if="activeTab === 'email'"
             @submit.prevent="handleSubmit"
             :class="[
               'relative flex flex-1 flex-col justify-between font-mono text-sm transition-[max-height,padding] duration-300',
@@ -283,6 +303,57 @@
               </Button>
             </div>
           </form>
+
+          <div v-else-if="activeTab === 'profiles'" class="grid flex-1 gap-6 p-6 md:grid-cols-2 md:p-8" role="tabpanel">
+            <div class="rounded-lg border border-slate-200 bg-white/60 p-5 dark:border-zinc-800 dark:bg-zinc-900/30">
+              <div class="mb-4 flex items-center gap-3">
+                <img :src="profileImages.linkedin" alt="Perfil do LinkedIn de Bruno Amorim" class="h-14 w-14 rounded-full border border-indigo-500/30 object-cover object-top" />
+                <div>
+                  <h3 class="font-mono text-sm font-bold text-slate-900 dark:text-white">LinkedIn</h3>
+                  <p class="font-mono text-[11px] text-slate-500 dark:text-zinc-500">network.profile</p>
+                </div>
+              </div>
+              <p class="mb-5 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+                Perfil profissional, experiências e atualizações sobre minha trajetória em tecnologia.
+              </p>
+              <a href="https://www.linkedin.com/in/dev-brunoamorim" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-md border border-indigo-500/30 px-3 py-2 font-mono text-xs text-indigo-600 transition-colors hover:bg-indigo-500/10 dark:text-indigo-300">
+                abrir_linkedin ↗
+              </a>
+            </div>
+            <div class="rounded-lg border border-slate-200 bg-white/60 p-5 dark:border-zinc-800 dark:bg-zinc-900/30">
+              <div class="mb-4 flex items-center gap-3">
+                <img :src="profileImages.github" alt="Perfil do GitHub de Bruno Amorim" class="h-14 w-14 rounded-full border border-indigo-500/30 object-cover object-top" />
+                <div>
+                  <h3 class="font-mono text-sm font-bold text-slate-900 dark:text-white">GitHub</h3>
+                  <p class="font-mono text-[11px] text-slate-500 dark:text-zinc-500">code.profile</p>
+                </div>
+              </div>
+              <p class="mb-5 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+                Repositórios, projetos experimentais e soluções construídas com foco em código limpo.
+              </p>
+              <a href="https://github.com/BrunoSouzz" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-md border border-indigo-500/30 px-3 py-2 font-mono text-xs text-indigo-600 transition-colors hover:bg-indigo-500/10 dark:text-indigo-300">
+                abrir_github ↗
+              </a>
+            </div>
+          </div>
+
+          <div v-else class="flex-1 p-6 md:p-8" role="tabpanel">
+            <div class="mb-4 flex items-center justify-between border-b border-slate-200 pb-3 dark:border-zinc-800">
+              <span class="font-mono text-xs font-bold text-indigo-600 dark:text-indigo-300">README.md</span>
+              <a href="https://github.com/BrunoSouzz/BrunoSouzz" target="_blank" rel="noopener noreferrer" class="font-mono text-[11px] text-slate-500 hover:text-indigo-600 dark:text-zinc-500 dark:hover:text-indigo-300">
+                ver_no_github ↗
+              </a>
+            </div>
+            <div class="space-y-4 font-mono text-xs leading-7 text-slate-600 dark:text-zinc-400 sm:text-sm">
+              <p><span class="text-indigo-500">#</span> Bruno Amorim</p>
+              <p>Programmer · estudante de Ciência da Computação · Brasil</p>
+              <p class="text-slate-500 dark:text-zinc-500">Construo aplicações web e APIs com foco em interfaces claras, arquitetura limpa e aprendizado contínuo.</p>
+              <div class="border-l-2 border-indigo-500/60 pl-4 text-slate-500 dark:text-zinc-500">
+                <p><span class="text-indigo-500">stack</span>: Vue, Tailwind, Node.js, Python, Java</p>
+                <p><span class="text-indigo-500">status</span>: disponível para novas conexões</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -292,8 +363,20 @@
 <script setup>
 import { ref } from 'vue'
 import Button from '@/components/button.vue'
+import githubProfileImage from '@/assets/images/githubpfp.png'
+import linkedinProfileImage from '@/assets/images/linkdlnpfp.png'
 
 const contactEmail = 'devbrunoamorim@gmail.com'
+const activeTab = ref('email')
+const profileImages = {
+  github: githubProfileImage,
+  linkedin: linkedinProfileImage,
+}
+const contactTabs = [
+  { id: 'email', label: 'payload_message.json' },
+  { id: 'profiles', label: 'profiles.json' },
+  { id: 'readme', label: 'README.md' },
+]
 const emailCopyLabel = ref('Copiar e-mail')
 const emailCopyError = ref(false)
 const isComposerMinimized = ref(false)
