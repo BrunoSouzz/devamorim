@@ -313,34 +313,56 @@
               <span class="h-3 w-1 animate-pulse rounded-full bg-indigo-500 [animation-delay:450ms]"></span>
               <span class="ml-1 font-mono text-[10px] text-indigo-500">syncing_profiles...</span>
             </div>
-            <div class="rounded-lg border border-slate-200 bg-white/60 p-5 dark:border-zinc-800 dark:bg-zinc-900/30">
-              <div class="mb-4 flex items-center gap-3">
-                <img :src="profileImages.linkedin" alt="Perfil do LinkedIn de Bruno Amorim" class="h-14 w-14 rounded-full border border-indigo-500/30 object-cover object-top" />
-                <div>
-                  <h3 class="font-mono text-sm font-bold text-slate-900 dark:text-white">LinkedIn</h3>
-                  <p class="font-mono text-[11px] text-slate-500 dark:text-zinc-500">network.profile</p>
+            <div class="group relative overflow-hidden rounded-lg border border-slate-200 bg-white/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/60 hover:shadow-lg hover:shadow-sky-500/10 dark:border-zinc-800 dark:bg-zinc-900/30 dark:hover:border-sky-400/50">
+              <div class="absolute right-0 top-0 h-24 w-24 rounded-full bg-sky-400/10 blur-2xl transition-opacity group-hover:opacity-100 dark:bg-sky-500/10" aria-hidden="true"></div>
+              <div class="relative mb-5 flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-sky-400/30 bg-sky-500/10 text-sky-600 dark:text-sky-300">
+                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V8.999h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.287ZM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125ZM3.555 20.452h3.563V8.999H3.555v11.453Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-mono text-base font-bold text-slate-900 dark:text-white">LinkedIn</h3>
+                    <p class="font-mono text-[11px] text-slate-500 dark:text-zinc-500">@dev-brunoamorim</p>
+                  </div>
                 </div>
+                <span class="flex items-center gap-1.5 font-mono text-[10px] text-emerald-600 dark:text-emerald-400">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  online
+                </span>
               </div>
-              <p class="mb-5 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
-                Perfil profissional, experiências e atualizações sobre minha trajetória em tecnologia.
+              <p class="relative mb-5 min-h-18 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+                Acompanhe minha trajetória profissional, experiências acadêmicas e os projetos em que estou transformando ideias em soluções digitais.
               </p>
-              <a href="https://www.linkedin.com/in/dev-brunoamorim" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-md border border-indigo-500/30 px-3 py-2 font-mono text-xs text-indigo-600 transition-colors hover:bg-indigo-500/10 dark:text-indigo-300">
-                abrir_linkedin ↗
+              <a href="https://www.linkedin.com/in/dev-brunoamorim" target="_blank" rel="noopener noreferrer" class="relative inline-flex items-center gap-2 rounded-md border border-sky-400/40 bg-sky-500/5 px-3 py-2 font-mono text-xs text-sky-700 transition-colors hover:border-sky-400 hover:bg-sky-500/10 dark:text-sky-300">
+                abrir_linkedin <span aria-hidden="true">↗</span>
               </a>
             </div>
-            <div class="rounded-lg border border-slate-200 bg-white/60 p-5 dark:border-zinc-800 dark:bg-zinc-900/30">
-              <div class="mb-4 flex items-center gap-3">
-                <img :src="profileImages.github" alt="Perfil do GitHub de Bruno Amorim" class="h-14 w-14 rounded-full border border-indigo-500/30 object-cover object-top" />
-                <div>
-                  <h3 class="font-mono text-sm font-bold text-slate-900 dark:text-white">GitHub</h3>
-                  <p class="font-mono text-[11px] text-slate-500 dark:text-zinc-500">code.profile</p>
+            <div class="group relative overflow-hidden rounded-lg border border-slate-200 bg-white/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-400/60 hover:shadow-lg hover:shadow-indigo-500/10 dark:border-zinc-800 dark:bg-zinc-900/30 dark:hover:border-indigo-400/50">
+              <div class="absolute right-0 top-0 h-24 w-24 rounded-full bg-indigo-400/10 blur-2xl transition-opacity group-hover:opacity-100 dark:bg-indigo-500/10" aria-hidden="true"></div>
+              <div class="relative mb-5 flex items-start justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-14 w-14 items-center justify-center rounded-xl border border-indigo-400/30 bg-indigo-500/10 text-indigo-600 dark:text-indigo-300">
+                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.5.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.605-3.369-1.342-3.369-1.342-.454-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.094.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.5 9.5 0 0 1 2.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.203 2.397.1 2.65.64.7 1.028 1.594 1.028 2.688 0 3.848-2.339 4.69-4.566 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.523 2 12 2Z" clip-rule="evenodd"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="font-mono text-base font-bold text-slate-900 dark:text-white">GitHub</h3>
+                    <p class="font-mono text-[11px] text-slate-500 dark:text-zinc-500">@BrunoSouzz</p>
+                  </div>
                 </div>
+                <span class="flex items-center gap-1.5 font-mono text-[10px] text-emerald-600 dark:text-emerald-400">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  active
+                </span>
               </div>
-              <p class="mb-5 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
-                Repositórios, projetos experimentais e soluções construídas com foco em código limpo.
+              <p class="relative mb-5 min-h-18 text-sm leading-relaxed text-slate-600 dark:text-zinc-400">
+                Explore meus repositórios, estudos e projetos em produção. É onde compartilho código, experimentos e minha evolução como desenvolvedor.
               </p>
-              <a href="https://github.com/BrunoSouzz" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-md border border-indigo-500/30 px-3 py-2 font-mono text-xs text-indigo-600 transition-colors hover:bg-indigo-500/10 dark:text-indigo-300">
-                abrir_github ↗
+              <a href="https://github.com/BrunoSouzz" target="_blank" rel="noopener noreferrer" class="relative inline-flex items-center gap-2 rounded-md border border-indigo-400/40 bg-indigo-500/5 px-3 py-2 font-mono text-xs text-indigo-700 transition-colors hover:border-indigo-400 hover:bg-indigo-500/10 dark:text-indigo-300">
+                abrir_github <span aria-hidden="true">↗</span>
               </a>
             </div>
           </div>
@@ -354,15 +376,9 @@
 <script setup>
 import { ref } from 'vue'
 import Button from '@/components/button.vue'
-import githubProfileImage from '@/assets/images/githubpfp.png'
-import linkedinProfileImage from '@/assets/images/linkdlnpfp.png'
 
 const contactEmail = 'devbrunoamorim@gmail.com'
 const activeTab = ref('email')
-const profileImages = {
-  github: githubProfileImage,
-  linkedin: linkedinProfileImage,
-}
 const isComposerMinimized = ref(false)
 const nameInput = ref(null)
 const contactTabs = [
