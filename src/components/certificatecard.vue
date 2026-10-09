@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
-    class="group flex flex-col justify-between overflow-hidden rounded-lg border border-slate-200 bg-white/70 p-5 transition-colors duration-300 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50"
+    class="group flex flex-col justify-between rounded-lg border border-slate-200 bg-white/70 p-5 transition-colors duration-300 hover:border-indigo-500/50 dark:border-zinc-800 dark:bg-zinc-900/35 dark:hover:border-indigo-500/50"
   >
     <div>
       <div class="mb-4 flex items-center justify-between select-none">
@@ -44,9 +44,14 @@
           <span class="font-mono text-[10px] uppercase tracking-widest">document_preview</span>
         </div>
         <div class="absolute inset-0 bg-slate-950/25"></div>
-        <span class="absolute rounded border border-white/20 bg-slate-950/60 px-2 py-1 font-mono text-[10px] text-white/90">
+        <button
+          type="button"
+          class="absolute cursor-pointer rounded border border-white/20 bg-slate-950/60 px-2 py-1 font-mono text-[10px] text-white/90 transition-colors hover:border-indigo-300 hover:bg-slate-950/80"
+          aria-label="Solicitar visualização do certificado"
+          @click="showConfirmation = true"
+        >
           PREVIEW_LOCKED
-        </span>
+        </button>
       </div>
 
       <div
@@ -66,7 +71,37 @@
       </div>
     </div>
 
-    <div class="border-t border-slate-200 pt-4 dark:border-zinc-800">
+    <div class="relative border-t border-slate-200 pt-4 dark:border-zinc-800">
+      <div
+        v-if="showConfirmation"
+        class="absolute bottom-full right-0 z-10 mb-3 w-56 rounded-lg border border-indigo-500/30 bg-white p-3 text-left shadow-xl shadow-slate-900/10 dark:border-indigo-400/30 dark:bg-zinc-900 dark:shadow-black/30"
+        role="dialog"
+        aria-label="Confirmação para visualizar certificado"
+      >
+        <span
+          class="absolute -bottom-1.5 right-8 h-3 w-3 rotate-45 border-b border-r border-indigo-500/30 bg-white dark:border-indigo-400/30 dark:bg-zinc-900"
+          aria-hidden="true"
+        ></span>
+        <p class="relative mb-3 font-mono text-[11px] leading-relaxed text-slate-700 dark:text-zinc-300">
+          você quer mesmo ver desse jeito?
+        </p>
+        <div class="relative flex justify-end gap-2 font-mono text-[10px]">
+          <button
+            type="button"
+            class="rounded border border-slate-200 px-2 py-1 text-slate-500 transition-colors hover:border-slate-400 hover:text-slate-700 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500 dark:hover:text-zinc-200"
+            @click="showConfirmation = false"
+          >
+            não
+          </button>
+          <button
+            type="button"
+            class="rounded border border-indigo-500/40 bg-indigo-500/10 px-2 py-1 text-indigo-600 transition-colors hover:border-indigo-500 hover:bg-indigo-500/20 dark:text-indigo-300"
+            @click="confirmView"
+          >
+            sim
+          </button>
+        </div>
+      </div>
       <a
         v-if="certificate.link"
         :href="certificate.link"
@@ -82,7 +117,16 @@
 </template>
 
 <script setup>
-defineProps({
+import { ref } from 'vue'
+
+const showConfirmation = ref(false)
+
+const confirmView = () => {
+  showConfirmation.value = false
+  window.open(props.certificate.link, '_blank', 'noopener,noreferrer')
+}
+
+const props = defineProps({
   certificate: {
     type: Object,
     required: true,
