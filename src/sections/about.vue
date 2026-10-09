@@ -113,6 +113,12 @@
               <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed font-sans">
                 Atuação no laboratório de patologia <strong class="font-medium text-slate-800 dark:text-slate-200">Patologika</strong>, focando em suporte, infraestrutura e otimização de fluxos digitais.
               </p>
+              <div class="pt-1">
+                <span class="inline-flex items-center gap-1.5 rounded border border-emerald-100 bg-emerald-50 px-2 py-0.5 font-mono text-[10px] text-emerald-600 dark:border-emerald-900/30 dark:bg-emerald-950/30 dark:text-emerald-400">
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 terminal-blink dark:bg-emerald-400"></span>
+                  ATIVO
+                </span>
+              </div>
             </div>
           </div>
 
