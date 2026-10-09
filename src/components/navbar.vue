@@ -73,7 +73,7 @@
           title="Branch atual: main"
         >
           <span class="font-bold text-indigo-600 dark:text-indigo-300">main</span>
-          <span class="terminal-blink h-1.5 w-1.5 rounded-full bg-emerald-500" aria-label="Online"></span>
+          <span class="animate-pulse h-1.5 w-1.5 rounded-full bg-emerald-500" aria-label="Online"></span>
         </div>
       </div>
 
