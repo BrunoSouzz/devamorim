@@ -36,15 +36,19 @@
         <img
           v-if="certificate.preview"
           :src="certificate.preview"
-          :alt="`Prévia desfocada do certificado ${certificate.title}`"
-          class="h-full w-full scale-105 object-cover opacity-75 blur-[5px] transition duration-500 group-hover:scale-110"
+          :alt="`${isPreviewRevealed ? 'Prévia' : 'Prévia desfocada'} do certificado ${certificate.title}`"
+          :class="[
+            'h-full w-full object-cover transition duration-500 group-hover:scale-110',
+            isPreviewRevealed ? 'scale-105 opacity-100' : 'scale-105 opacity-75 blur-[5px]',
+          ]"
         />
         <div v-else class="flex flex-col items-center gap-2 text-slate-400 dark:text-zinc-600">
           <span class="font-mono text-3xl">.pdf</span>
           <span class="font-mono text-[10px] uppercase tracking-widest">document_preview</span>
         </div>
-        <div class="absolute inset-0 bg-slate-950/25"></div>
+        <div v-if="!isPreviewRevealed" class="absolute inset-0 bg-slate-950/25"></div>
         <button
+          v-if="!isPreviewRevealed"
           type="button"
           class="absolute cursor-pointer rounded border border-white/20 bg-slate-950/60 px-2 py-1 font-mono text-[10px] text-white/90 transition-colors hover:border-indigo-300 hover:bg-slate-950/80"
           aria-label="Solicitar visualização do certificado"
@@ -120,10 +124,11 @@
 import { ref } from 'vue'
 
 const showConfirmation = ref(false)
+const isPreviewRevealed = ref(false)
 
 const confirmView = () => {
   showConfirmation.value = false
-  window.open(props.certificate.link, '_blank', 'noopener,noreferrer')
+  isPreviewRevealed.value = true
 }
 
 const props = defineProps({
