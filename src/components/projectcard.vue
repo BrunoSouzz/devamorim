@@ -9,8 +9,8 @@
     @keydown.space.prevent="emit('open')"
   >
     <div>
-      <!-- Header do Card: Metadados e Links -->
-      <div class="mb-4 flex items-center justify-between select-none">
+      <!-- Header do Card -->
+      <div class="mb-4 flex items-center select-none">
         <span
           class="font-mono text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-wider flex items-center gap-1.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-200"
         >
@@ -20,30 +20,6 @@
           PROJECT_ARTIFACT
         </span>
 
-        <!-- Botões de Ação Estilizados de Terminal -->
-        <div class="flex items-center gap-2 font-mono text-[11px]">
-          <a
-            v-if="githubLink"
-            :href="githubLink"
-            target="_blank"
-            @click.stop
-            class="flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-slate-500 transition-colors hover:border-indigo-500/40 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-400 dark:hover:border-indigo-500/40 dark:hover:text-indigo-400"
-          >
-            <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
-            <span>git</span>
-          </a>
-
-          <a
-            v-if="liveLink"
-            :href="liveLink"
-            target="_blank"
-            @click.stop
-            class="flex items-center gap-1 rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-slate-500 transition-colors hover:border-indigo-500/40 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-400 dark:hover:border-indigo-500/40 dark:hover:text-indigo-400"
-          >
-            <span class="text-indigo-500 dark:text-indigo-400 font-bold">~</span>
-            <span>live</span>
-          </a>
-        </div>
       </div>
 
       <!-- Título do Projeto (Identidade Mono) -->
@@ -92,14 +68,6 @@ defineProps({
   tags: {
     type: Array,
     default: () => [],
-  },
-  githubLink: {
-    type: String,
-    default: '',
-  },
-  liveLink: {
-    type: String,
-    default: '',
   },
 })
 

@@ -15,7 +15,7 @@
           Projetos em Destaque
         </h2>
         <p class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-zinc-400 sm:text-base">
-          Uma seleção de aplicações e sistemas desenvolvidos focando em arquitetura limpa, performance isolada e experiência do usuário.
+          Clique em um card para ver os detalhes e acessar os links do projeto.
         </p>
       </div>
 
@@ -26,8 +26,6 @@
           :title="project.title"
           :description="project.description"
           :tags="project.tags"
-          :github-link="project.githubLink"
-          :live-link="project.liveLink"
           @open="emit('open-project', project)"
         />
       </div>
