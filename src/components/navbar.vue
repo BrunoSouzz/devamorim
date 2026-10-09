@@ -93,6 +93,7 @@
             <span :class="['w-1.5 h-1.5 rounded-full bg-orange-500 mr-2 transition-opacity', activeSection === 'home' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
             <span :class="['font-normal mr-1', activeSection === 'home' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">1.</span>
             <span>index.html</span>
+            <span v-if="activeSection === 'home'" class="terminal-blink ml-1 text-orange-500" aria-hidden="true">_</span>
           </a>
 
           <!-- 2. README.md -->
@@ -109,6 +110,7 @@
             <span :class="['w-1.5 h-1.5 rounded-full bg-blue-400 mr-2 transition-opacity', activeSection === 'about' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
             <span :class="['font-normal mr-1', activeSection === 'about' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">2.</span>
             <span>README.md</span>
+            <span v-if="activeSection === 'about'" class="terminal-blink ml-1 text-blue-400" aria-hidden="true">_</span>
           </a>
 
           <!-- 3. skills.json -->
@@ -125,6 +127,7 @@
             <span :class="['w-1.5 h-1.5 rounded-full bg-amber-400 mr-2 transition-opacity', activeSection === 'skills' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
             <span :class="['font-normal mr-1', activeSection === 'skills' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">3.</span>
             <span>skills.json</span>
+            <span v-if="activeSection === 'skills'" class="terminal-blink ml-1 text-amber-400" aria-hidden="true">_</span>
           </a>
 
           <!-- 4. projects.go -->
@@ -141,6 +144,7 @@
             <span :class="['w-1.5 h-1.5 rounded-full bg-cyan-400 mr-2 transition-opacity', activeSection === 'projetos' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
             <span :class="['font-normal mr-1', activeSection === 'projetos' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">4.</span>
             <span>projects.go</span>
+            <span v-if="activeSection === 'projetos'" class="terminal-blink ml-1 text-cyan-400" aria-hidden="true">_</span>
           </a>
 
           <!-- 5. certificates.ts -->
@@ -157,6 +161,7 @@
             <span :class="['w-1.5 h-1.5 rounded-full bg-emerald-400 mr-2 transition-opacity', activeSection === 'certificados' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
             <span :class="['font-normal mr-1', activeSection === 'certificados' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">5.</span>
             <span>certificates.ts</span>
+            <span v-if="activeSection === 'certificados'" class="terminal-blink ml-1 text-emerald-400" aria-hidden="true">_</span>
           </a>
 
           <!-- 6. contact.js -->
@@ -173,6 +178,7 @@
             <span :class="['w-1.5 h-1.5 rounded-full bg-yellow-400 mr-2 transition-opacity', activeSection === 'contact' ? 'opacity-100' : 'opacity-60 group-hover:opacity-100']"></span>
             <span :class="['font-normal mr-1', activeSection === 'contact' ? 'text-slate-500 dark:text-slate-400' : 'text-slate-300 dark:text-slate-700']">6.</span>
             <span>contact.js</span>
+            <span v-if="activeSection === 'contact'" class="terminal-blink ml-1 text-yellow-400" aria-hidden="true">_</span>
           </a>
         </div>
 
@@ -205,31 +211,37 @@
         <a @click.prevent="scrollTo('home')" href="#home" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'home' ? 'text-orange-500 dark:text-orange-400' : 'text-slate-600 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
           <span>index.html</span>
+          <span v-if="activeSection === 'home'" class="terminal-blink text-orange-500" aria-hidden="true">_</span>
         </a>
 
         <a @click.prevent="scrollTo('about')" href="#about" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'about' ? 'text-blue-400 dark:text-blue-400' : 'text-slate-600 dark:text-slate-400 hover:text-blue-400 dark:hover:text-blue-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
           <span>README.md</span>
+          <span v-if="activeSection === 'about'" class="terminal-blink text-blue-400" aria-hidden="true">_</span>
         </a>
 
         <a @click.prevent="scrollTo('skills')" href="#skills" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'skills' ? 'text-amber-400 dark:text-amber-400' : 'text-slate-600 dark:text-slate-400 hover:text-amber-400 dark:hover:text-amber-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
           <span>skills.json</span>
+          <span v-if="activeSection === 'skills'" class="terminal-blink text-amber-400" aria-hidden="true">_</span>
         </a>
 
         <a @click.prevent="scrollTo('projetos')" href="#projetos" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'projetos' ? 'text-cyan-400 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-400 hover:text-cyan-400 dark:hover:text-cyan-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
           <span>projects.go</span>
+          <span v-if="activeSection === 'projetos'" class="terminal-blink text-cyan-400" aria-hidden="true">_</span>
         </a>
 
         <a @click.prevent="scrollTo('certificados')" href="#certificados" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'certificados' ? 'text-emerald-400 dark:text-emerald-400' : 'text-slate-600 dark:text-slate-400 hover:text-emerald-400 dark:hover:text-emerald-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
           <span>certificates.ts</span>
+          <span v-if="activeSection === 'certificados'" class="terminal-blink text-emerald-400" aria-hidden="true">_</span>
         </a>
 
         <a @click.prevent="scrollTo('contact')" href="#contact" :class="['flex items-center gap-2.5 py-1.5 font-bold', activeSection === 'contact' ? 'text-yellow-400 dark:text-yellow-400' : 'text-slate-600 dark:text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-400']">
           <span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
           <span>contact.js</span>
+          <span v-if="activeSection === 'contact'" class="terminal-blink text-yellow-400" aria-hidden="true">_</span>
         </a>
       </div>
     </div>
