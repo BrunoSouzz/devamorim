@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section
-    id="contato"
+    id="contact"
     class="section-reveal relative overflow-hidden bg-slate-50 py-20 text-slate-900 transition-colors duration-300 dark:bg-[#09090b] dark:text-white"
   >
     <div class="w-full max-w-5xl mx-auto px-6 relative z-10">
