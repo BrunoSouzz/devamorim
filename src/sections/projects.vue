@@ -6,15 +6,21 @@
   >
     <div class="max-w-6xl mx-auto px-6 relative z-10">
       <div class="mb-12 flex flex-col items-center text-center">
-        <div class="mb-3 flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-zinc-500 sm:text-sm">
+        <div
+          class="mb-3 flex items-center gap-2 font-mono text-xs text-slate-500 dark:text-zinc-500 sm:text-sm"
+        >
           <span class="text-slate-400 dark:text-slate-600">bruno@portfolio:~$</span>
           <span class="font-semibold text-indigo-600 dark:text-indigo-400">ls --projects</span>
           <span class="terminal-blink h-3.5 w-1 bg-indigo-500"></span>
         </div>
-        <h2 class="mb-4 text-3xl font-mono font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+        <h2
+          class="mb-4 text-3xl font-mono font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl"
+        >
           Projetos em Destaque
         </h2>
-        <p class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-zinc-400 sm:text-base">
+        <p
+          class="mx-auto max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-zinc-400 sm:text-base"
+        >
           Clique em um card para ver os detalhes e acessar os links do projeto.
         </p>
       </div>
@@ -29,7 +35,6 @@
           @open="emit('open-project', project)"
         />
       </div>
-
     </div>
   </section>
 </template>
@@ -43,6 +48,7 @@ import neuroguiaImage from '@/assets/images/projects/neuroguia.png'
 import downloaderImage from '@/assets/images/projects/vdown.png'
 import budgetImage from '@/assets/images/projects/BudgetCalculator.png'
 import hypersafeImage from '@/assets/images/hypersafe.png'
+import fileorganizer from '@/assets/images/projects/fileorganizer.png'
 
 const emit = defineEmits(['open-project'])
 
@@ -50,37 +56,46 @@ const emit = defineEmits(['open-project'])
 const myProjects = ref([
   {
     title: 'Spectra I.A',
-    description: 'Um chatbot inteligente, desenvolvido com Python e Flask, utilizando a API do gemini para fornecer respostas automáticas.',
+    description:
+      'Um chatbot inteligente, desenvolvido com Python e Flask, utilizando a API do gemini para fornecer respostas automáticas.',
     tags: ['Python', 'HTML', 'CSS', 'JavaScript', 'Flask', 'Gemini API'],
     githubLink: 'https://github.com/BrunoSouzz/Spectra-AI-Assistant',
     liveLink: 'https://spectra-ai-assistant.vercel.app',
     image: spectraImage,
-    details: 'Assistente conversacional que combina uma interface web simples com Python, Flask e a API Gemini para responder perguntas de forma rápida e natural.',
+    details:
+      'Assistente conversacional que combina uma interface web simples com Python, Flask e a API Gemini para responder perguntas de forma rápida e natural.',
   },
   {
     title: 'VitalMen',
-    description: 'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um site para os homens saberem mais sobre saúde e bem-estar proprio. As ferramentas utilizadas incluem HTML, CSS e JavaScript no frontend. Python, Flask no backend. PostgreSQL no banco de dados.',
+    description:
+      'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um site para os homens saberem mais sobre saúde e bem-estar proprio. As ferramentas utilizadas incluem HTML, CSS e JavaScript no frontend. Python, Flask no backend. PostgreSQL no banco de dados.',
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PostgreSQL'],
     githubLink: 'https://github.com/BrunoSouzz/VitalMen-Project',
+    liveLink: 'https://vitalmen.vercel.app',
     image: vitalmenImage,
-    details: 'Plataforma acadêmica de saúde e bem-estar masculino, com frontend web, API em Flask e persistência de dados em PostgreSQL.',
+    details:
+      'Plataforma acadêmica de saúde e bem-estar masculino, com frontend web, API em Flask e persistência de dados em PostgreSQL.',
   },
   {
     title: 'HyperSave',
-    description: 'HyperSave é uma aplicação desenvolvida para facilitar o download e gerenciamento de vídeos e áudios a partir de diferentes plataformas, oferecendo uma experiência simples, rápida e intuitiva.',
-    tags: ['Node.js', 'Express', 'Tailwindcss', 'JavaScript','Vue.js', 'ytdl-core'],
+    description:
+      'HyperSave é uma aplicação desenvolvida para facilitar o download e gerenciamento de vídeos e áudios a partir de diferentes plataformas, oferecendo uma experiência simples, rápida e intuitiva.',
+    tags: ['Node.js', 'Express', 'Tailwindcss', 'JavaScript', 'Vue.js', 'ytdl-core'],
     githubLink: 'https://github.com/BrunoSouzz/HyperSave',
     liveLink: 'https://hyper-save.vercel.app/',
     image: hypersafeImage,
-    details: 'Aplicação web para baixar e gerenciar vídeos e áudios de diferentes plataformas, com uma experiência rápida construída em Vue, Node.js e Tailwind CSS.',
+    details:
+      'Aplicação web para baixar e gerenciar vídeos e áudios de diferentes plataformas, com uma experiência rápida construída em Vue, Node.js e Tailwind CSS.',
   },
   {
     title: 'Neuroguia',
-    description: 'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um aplicativo para ajudar pessoas com deficiências cognitivas a se orientarem melhor no dia a dia. As ferramentas utilizadas incluem Dart e Flutter para o desenvolvimento do aplicativo, e Node.js para o backend.',
+    description:
+      'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um aplicativo para ajudar pessoas com deficiências cognitivas a se orientarem melhor no dia a dia. As ferramentas utilizadas incluem Dart e Flutter para o desenvolvimento do aplicativo, e Node.js para o backend.',
     tags: ['Dart', 'Flutter', 'Node.js', 'PostgreSQL'],
     githubLink: 'https://github.com/neuro-guia',
     image: neuroguiaImage,
-    details: 'Aplicativo pensado para apoiar pessoas com deficiências cognitivas na organização e orientação de tarefas do dia a dia.',
+    details:
+      'Aplicativo pensado para apoiar pessoas com deficiências cognitivas na organização e orientação de tarefas do dia a dia.',
   },
   {
     title: 'Downloader de Vídeos',
@@ -88,7 +103,8 @@ const myProjects = ref([
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'pytube'],
     githubLink: 'https://github.com/BrunoSouzz/videodownloader',
     image: downloaderImage,
-    details: 'Aplicação web com fluxo direto para baixar vídeos, construída com uma API em Flask e uma interface leve.',
+    details:
+      'Aplicação web com fluxo direto para baixar vídeos, construída com uma API em Flask e uma interface leve.',
   },
   {
     title: 'Calculadora de Orçamento',
@@ -96,13 +112,25 @@ const myProjects = ref([
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
     githubLink: 'https://github.com/BrunoSouzz/budget-calculator',
     image: budgetImage,
-    details: 'Ferramenta web para montar e calcular orçamentos de forma simples, com processamento no backend em Python.',
+    details:
+      'Ferramenta web para montar e calcular orçamentos de forma simples, com processamento no backend em Python.',
   },
   {
     title: 'NutriExpress',
-    description: 'API REST desenvolvida para gerenciamento de pedidos e produtos de um serviço de alimentação saudável, aplicando arquitetura em camadas e persistência de dados.',
+    description:
+      'API REST desenvolvida para gerenciamento de pedidos e produtos de um serviço de alimentação saudável, aplicando arquitetura em camadas e persistência de dados.',
     tags: ['Java', 'Spring Boot', 'JPA', 'PostgreSQL', 'REST API'],
-    githubLink: 'https://github.com/BrunoSouzz/NutriExpress'
-  }
+    githubLink: 'https://github.com/BrunoSouzz/NutriExpress',
+    details:
+      'API REST para gerenciar pedidos e produtos de um serviço de alimentação saudável, com arquitetura em camadas e persistência de dados.',
+  },
+  {
+    title: 'Organizador de Arquivos',
+    description: 'Utilitário automatizado para organizar e categorizar arquivos em pastas de forma rápida e eficiente.',
+    tags: ['Python', 'Automation', 'File Management', 'Utility'],
+    githubLink: 'https://github.com/BrunoSouzz/file_organizer',
+    image: fileorganizer,
+    details: 'Aplicação desenvolvida em Python para limpeza e estruturação automática de diretórios, facilitando a gestão e o agrupamento de arquivos por categorias.',
+  },
 ])
 </script>
