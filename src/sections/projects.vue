@@ -45,8 +45,6 @@ import ProjectCard from '@/components/projectcard.vue'
 import spectraImage from '@/assets/images/projects/Spectra.png'
 import vitalmenImage from '@/assets/images/projects/Vitalmen.png'
 import neuroguiaImage from '@/assets/images/projects/neuroguia.png'
-import downloaderImage from '@/assets/images/projects/vdown.png'
-import budgetImage from '@/assets/images/projects/BudgetCalculator.png'
 import hypersafeImage from '@/assets/images/hypersafe.png'
 import fileorganizer from '@/assets/images/projects/fileorganizer.png'
 import expensemonitor from '@/assets/images/projects/expense.png'
@@ -67,15 +65,12 @@ const myProjects = ref([
       'Assistente conversacional que combina uma interface web simples com Python, Flask e a API Gemini para responder perguntas de forma rápida e natural.',
   },
   {
-    title: 'VitalMen',
-    description:
-      'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um site para os homens saberem mais sobre saúde e bem-estar proprio. As ferramentas utilizadas incluem HTML, CSS e JavaScript no frontend. Python, Flask no backend. PostgreSQL no banco de dados.',
-    tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PostgreSQL'],
-    githubLink: 'https://github.com/BrunoSouzz/VitalMen-Project',
-    liveLink: 'https://vitalmen.vercel.app',
-    image: vitalmenImage,
-    details:
-      'Plataforma acadêmica de saúde e bem-estar masculino, com frontend web, API em Flask e persistência de dados em PostgreSQL.',
+    title: 'Organizador de Arquivos',
+    description: 'Utilitário automatizado para organizar e categorizar arquivos em pastas de forma rápida e eficiente.',
+    tags: ['Python', 'Automation', 'File Management', 'Utility'],
+    githubLink: 'https://github.com/BrunoSouzz/file_organizer',
+    image: fileorganizer,
+    details: 'Aplicação desenvolvida em Python para limpeza e estruturação automática de diretórios, facilitando a gestão e o agrupamento de arquivos por categorias.',
   },
   {
     title: 'HyperSave',
@@ -89,6 +84,14 @@ const myProjects = ref([
       'Aplicação web para baixar e gerenciar vídeos e áudios de diferentes plataformas, com uma experiência rápida construída em Vue, Node.js e Tailwind CSS.',
   },
   {
+    title: 'Expense Monitor (Monitoramento de Despesas)',
+    description: 'Aplicativo para monitoramento de despesas, permitindo aos usuários registrar, categorizar e analisar seus gastos de forma eficiente.',
+    tags: ['Javascript', 'vue.js', 'Node.js', 'Cors', 'tailwindcss', 'electron'],
+    githubLink: 'https://github.com/BrunoSouzz/expense_monitor',
+    image: expensemonitor,
+    details: 'Aplicativo desktop desenvolvido com Electron e Vue.js, permitindo aos usuários registrar, categorizar e analisar suas despesas de forma eficiente, com uma interface intuitiva e recursos de visualização de dados.',
+  },
+  {
     title: 'Neuroguia',
     description:
       'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um aplicativo para ajudar pessoas com deficiências cognitivas a se orientarem melhor no dia a dia. As ferramentas utilizadas incluem Dart e Flutter para o desenvolvimento do aplicativo, e Node.js para o backend.',
@@ -97,24 +100,6 @@ const myProjects = ref([
     image: neuroguiaImage,
     details:
       'Aplicativo pensado para apoiar pessoas com deficiências cognitivas na organização e orientação de tarefas do dia a dia.',
-  },
-  {
-    title: 'Downloader de Vídeos',
-    description: 'Uma aplicação para baixar vídeos do youtube de forma simples e eficiente.',
-    tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'pytube'],
-    githubLink: 'https://github.com/BrunoSouzz/videodownloader',
-    image: downloaderImage,
-    details:
-      'Aplicação web com fluxo direto para baixar vídeos, construída com uma API em Flask e uma interface leve.',
-  },
-  {
-    title: 'Calculadora de Orçamento',
-    description: 'Uma aplicação web para calcular orçamentos de forma simples e eficiente.',
-    tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'MySQL'],
-    githubLink: 'https://github.com/BrunoSouzz/budget-calculator',
-    image: budgetImage,
-    details:
-      'Ferramenta web para montar e calcular orçamentos de forma simples, com processamento no backend em Python.',
   },
   {
     title: 'NutriExpress',
@@ -126,20 +111,16 @@ const myProjects = ref([
       'API REST para gerenciar pedidos e produtos de um serviço de alimentação saudável, com arquitetura em camadas e persistência de dados.',
   },
   {
-    title: 'Organizador de Arquivos',
-    description: 'Utilitário automatizado para organizar e categorizar arquivos em pastas de forma rápida e eficiente.',
-    tags: ['Python', 'Automation', 'File Management', 'Utility'],
-    githubLink: 'https://github.com/BrunoSouzz/file_organizer',
-    image: fileorganizer,
-    details: 'Aplicação desenvolvida em Python para limpeza e estruturação automática de diretórios, facilitando a gestão e o agrupamento de arquivos por categorias.',
-  },
-  {
-    title: 'Expense Monitor (Monitoramento de Despesas)',
-    description: 'Aplicativo para monitoramento de despesas, permitindo aos usuários registrar, categorizar e analisar seus gastos de forma eficiente.',
-    tags: ['Javascript', 'vue.js', 'Node.js', 'Cors', 'tailwindcss', 'electron'],
-    githubLink: 'https://github.com/BrunoSouzz/expense_monitor',
-    image: expensemonitor,
-    details: 'Aplicativo desktop desenvolvido com Electron e Vue.js, permitindo aos usuários registrar, categorizar e analisar suas despesas de forma eficiente, com uma interface intuitiva e recursos de visualização de dados.',
+    title: 'VitalMen',
+    description:
+      'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um site para os homens saberem mais sobre saúde e bem-estar proprio. As ferramentas utilizadas incluem HTML, CSS e JavaScript no frontend. Python, Flask no backend. PostgreSQL no banco de dados.',
+    tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PostgreSQL'],
+    githubLink: 'https://github.com/BrunoSouzz/VitalMen-Project',
+    liveLink: 'https://vitalmen.vercel.app',
+    image: vitalmenImage,
+    details:
+      'Plataforma acadêmica de saúde e bem-estar masculino, com frontend web, API em Flask e persistência de dados em PostgreSQL.',
   },
 ])
 </script>
+
