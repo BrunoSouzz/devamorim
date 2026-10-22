@@ -49,6 +49,7 @@ import downloaderImage from '@/assets/images/projects/vdown.png'
 import budgetImage from '@/assets/images/projects/BudgetCalculator.png'
 import hypersafeImage from '@/assets/images/hypersafe.png'
 import fileorganizer from '@/assets/images/projects/fileorganizer.png'
+import expensemonitor from '@/assets/images/projects/expense.png'
 
 const emit = defineEmits(['open-project'])
 
@@ -131,6 +132,14 @@ const myProjects = ref([
     githubLink: 'https://github.com/BrunoSouzz/file_organizer',
     image: fileorganizer,
     details: 'Aplicação desenvolvida em Python para limpeza e estruturação automática de diretórios, facilitando a gestão e o agrupamento de arquivos por categorias.',
+  },
+  {
+    title: 'Expense Monitor (Monitoramento de Despesas)',
+    description: 'Aplicativo para monitoramento de despesas, permitindo aos usuários registrar, categorizar e analisar seus gastos de forma eficiente.',
+    tags: ['Javascript', 'vue.js', 'Node.js', 'Cors', 'tailwindcss', 'electron'],
+    githubLink: 'https://github.com/BrunoSouzz/expense_monitor',
+    image: expensemonitor,
+    details: 'Aplicativo desktop desenvolvido com Electron e Vue.js, permitindo aos usuários registrar, categorizar e analisar suas despesas de forma eficiente, com uma interface intuitiva e recursos de visualização de dados.',
   },
 ])
 </script>
