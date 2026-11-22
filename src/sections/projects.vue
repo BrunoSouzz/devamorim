@@ -88,6 +88,7 @@ const myProjects = ref([
     description: 'Aplicativo para monitoramento de despesas, permitindo aos usuários registrar, categorizar e analisar seus gastos de forma eficiente.',
     tags: ['Javascript', 'vue.js', 'Node.js', 'Cors', 'tailwindcss', 'electron'],
     githubLink: 'https://github.com/BrunoSouzz/expense_monitor',
+    Livelink: 'https://expense-monitor-bay.vercel.app/',
     image: expensemonitor,
     details: 'Aplicativo desktop desenvolvido com Electron e Vue.js, permitindo aos usuários registrar, categorizar e analisar suas despesas de forma eficiente, com uma interface intuitiva e recursos de visualização de dados.',
   },
@@ -116,7 +117,6 @@ const myProjects = ref([
       'Um projeto proposto pela faculdade para ser feito em grupo, o objetivo é criar um site para os homens saberem mais sobre saúde e bem-estar proprio. As ferramentas utilizadas incluem HTML, CSS e JavaScript no frontend. Python, Flask no backend. PostgreSQL no banco de dados.',
     tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'PostgreSQL'],
     githubLink: 'https://github.com/BrunoSouzz/VitalMen-Project',
-    liveLink: 'https://vitalmen.vercel.app',
     image: vitalmenImage,
     details:
       'Plataforma acadêmica de saúde e bem-estar masculino, com frontend web, API em Flask e persistência de dados em PostgreSQL.',
